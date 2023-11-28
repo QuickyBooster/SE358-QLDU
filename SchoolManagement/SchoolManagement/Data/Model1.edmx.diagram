@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b1d466e5da9648fb8eaa24b6914dcead" Name="Diagram1">
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Class" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Document" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Exam" Width="1.5" PointX="10.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Information" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Role" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Score" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Student" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Subject" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.Tuition" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SE358_SchoolManagementModel.User" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Classes_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Exams_Classes" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Students_Classes_ClassID" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Exams_Documents" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Exams_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Scores_Exams" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Students_Classes_InfoID" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Users_Information" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Users_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Scores_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Tuitions_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SE358_SchoolManagementModel.FK_Subjects_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
