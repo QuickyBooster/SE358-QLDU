@@ -60,7 +60,7 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(443, 12);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(446, 12);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(34, 24);
@@ -76,7 +76,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(481, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(491, 12);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);

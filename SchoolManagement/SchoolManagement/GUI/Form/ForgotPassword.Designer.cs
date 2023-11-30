@@ -105,7 +105,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(132, 173);
+            this.label2.Location = new System.Drawing.Point(139, 173);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 15);
@@ -125,7 +125,7 @@
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(135, 195);
+            this.txtUsername.Location = new System.Drawing.Point(140, 195);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
