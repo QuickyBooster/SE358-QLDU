@@ -110,24 +110,33 @@
     <Compile Include="Data\User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\HomePrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Form\HomePrincipal.Designer.cs">
       <DependentUpon>HomePrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="GUI\Form\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="GUI\Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\HomePrincipal.resx">
       <DependentUpon>HomePrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="GUI\Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
