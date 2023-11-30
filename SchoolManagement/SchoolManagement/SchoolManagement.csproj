@@ -110,10 +110,16 @@
     <Compile Include="Data\User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ForgotPassword.cs">
+    <Compile Include="GUI\Form\GetEmailCode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgotPassword.Designer.cs">
+    <Compile Include="GUI\Form\GetEmailCode.Designer.cs">
+      <DependentUpon>GetEmailCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form\ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Form\HomePrincipal.cs">
@@ -130,7 +136,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ForgotPassword.resx">
+    <EmbeddedResource Include="GUI\Form\GetEmailCode.resx">
+      <DependentUpon>GetEmailCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\HomePrincipal.resx">

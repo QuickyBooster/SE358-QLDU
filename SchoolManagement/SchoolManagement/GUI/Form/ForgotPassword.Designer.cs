@@ -46,7 +46,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(176, 95);
+            this.label1.Location = new System.Drawing.Point(165, 95);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 36);
@@ -69,7 +69,7 @@
             this.link_Back.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.link_Back.ForeColor = System.Drawing.Color.White;
             this.link_Back.LinkColor = System.Drawing.Color.White;
-            this.link_Back.Location = new System.Drawing.Point(229, 371);
+            this.link_Back.Location = new System.Drawing.Point(218, 371);
             this.link_Back.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.link_Back.Name = "link_Back";
             this.link_Back.Size = new System.Drawing.Size(123, 25);
@@ -92,10 +92,10 @@
             this.btn_sendcode.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.btn_sendcode.ForeColor = System.Drawing.Color.White;
             this.btn_sendcode.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_sendcode.Location = new System.Drawing.Point(214, 310);
+            this.btn_sendcode.Location = new System.Drawing.Point(202, 310);
             this.btn_sendcode.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sendcode.Name = "btn_sendcode";
-            this.btn_sendcode.Size = new System.Drawing.Size(148, 41);
+            this.btn_sendcode.Size = new System.Drawing.Size(150, 40);
             this.btn_sendcode.TabIndex = 32;
             this.btn_sendcode.Text = "Send code";
             // 
@@ -105,7 +105,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(143, 173);
+            this.label2.Location = new System.Drawing.Point(132, 173);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 15);
@@ -125,7 +125,7 @@
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(146, 195);
+            this.txtUsername.Location = new System.Drawing.Point(135, 195);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
@@ -146,7 +146,7 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(441, 12);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(446, 12);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(34, 24);
@@ -162,7 +162,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(488, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(491, 12);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
@@ -173,7 +173,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.debateui;
-            this.ClientSize = new System.Drawing.Size(547, 439);
+            this.ClientSize = new System.Drawing.Size(550, 440);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.link_Back);
             this.Controls.Add(this.btn_sendcode);
