@@ -16,5 +16,31 @@ namespace SchoolManagement
         {
             InitializeComponent();
         }
+
+        bool menuExpand = false;
+        private void MouseDetect_Tick(object sender, EventArgs e)
+        {
+            if (!guna2Transition1.IsCompleted) return;
+            if (Sidebar.ClientRectangle.Contains(PointToClient(Control.MousePosition)))
+            {
+                if (!menuExpand)
+                {
+                    menuExpand = true;
+                    Sidebar.Visible = false;
+                    Sidebar.Width = 220;
+                    guna2Transition1.Show(Sidebar);
+                }
+            }
+            else
+            {
+                if (menuExpand)
+                {
+                    menuExpand = false;
+                    Sidebar.Visible = false;
+                    Sidebar.Width = 77;
+                    guna2Transition1.Show(Sidebar);
+                }
+            }
+        }
     }
 }
