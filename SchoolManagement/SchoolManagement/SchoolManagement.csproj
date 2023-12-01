@@ -140,6 +140,12 @@
     <Compile Include="GUI\Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeTeacher.Designer.cs">
+      <DependentUpon>HomeTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Form\ChangePassword.resx">
