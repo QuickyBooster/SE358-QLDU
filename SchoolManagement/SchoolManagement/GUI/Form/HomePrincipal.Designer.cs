@@ -62,9 +62,10 @@
             this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(112, 869);
+            this.label1.Location = new System.Drawing.Point(84, 706);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 32);
+            this.label1.Size = new System.Drawing.Size(90, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Principal";
             // 
@@ -90,10 +91,10 @@
             this.Log_out.HoverState.FillColor = System.Drawing.Color.White;
             this.Log_out.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Log_out.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
-            this.Log_out.Location = new System.Drawing.Point(3, 922);
-            this.Log_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Log_out.Location = new System.Drawing.Point(2, 749);
+            this.Log_out.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Log_out.Name = "Log_out";
-            this.Log_out.Size = new System.Drawing.Size(292, 47);
+            this.Log_out.Size = new System.Drawing.Size(219, 38);
             this.Log_out.TabIndex = 9;
             this.Log_out.Text = "Log out";
             this.Log_out.TextOffset = new System.Drawing.Point(27, 0);
@@ -121,10 +122,10 @@
             this.Settings.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Settings.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Settings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Settings.Location = new System.Drawing.Point(0, 432);
-            this.Settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Settings.Location = new System.Drawing.Point(0, 351);
+            this.Settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(295, 52);
+            this.Settings.Size = new System.Drawing.Size(221, 42);
             this.Settings.TabIndex = 7;
             this.Settings.Text = "Settings";
             this.Settings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -153,10 +154,10 @@
             this.Subjects.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Subjects.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Subjects.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Subjects.Location = new System.Drawing.Point(0, 366);
-            this.Subjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Subjects.Location = new System.Drawing.Point(0, 297);
+            this.Subjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Subjects.Name = "Subjects";
-            this.Subjects.Size = new System.Drawing.Size(295, 52);
+            this.Subjects.Size = new System.Drawing.Size(221, 42);
             this.Subjects.TabIndex = 6;
             this.Subjects.Text = "Subjects";
             this.Subjects.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -185,10 +186,10 @@
             this.Classes.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Classes.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Classes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Classes.Location = new System.Drawing.Point(0, 234);
-            this.Classes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Classes.Location = new System.Drawing.Point(0, 190);
+            this.Classes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Classes.Name = "Classes";
-            this.Classes.Size = new System.Drawing.Size(295, 52);
+            this.Classes.Size = new System.Drawing.Size(221, 42);
             this.Classes.TabIndex = 5;
             this.Classes.Text = "Classes";
             this.Classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -203,10 +204,10 @@
             this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1487, 10);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1115, 8);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(47, 27);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(35, 22);
             this.guna2ControlBox2.TabIndex = 8;
             // 
             // guna2BorderlessForm1
@@ -243,10 +244,10 @@
             this.Employees.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Employees.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Employees.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Employees.Location = new System.Drawing.Point(0, 300);
-            this.Employees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Employees.Location = new System.Drawing.Point(0, 244);
+            this.Employees.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(295, 52);
+            this.Employees.Size = new System.Drawing.Size(221, 42);
             this.Employees.TabIndex = 4;
             this.Employees.Text = "Employees";
             this.Employees.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -275,10 +276,10 @@
             this.Students.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Students.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Students.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Students.Location = new System.Drawing.Point(0, 169);
-            this.Students.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Students.Location = new System.Drawing.Point(0, 137);
+            this.Students.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Students.Name = "Students";
-            this.Students.Size = new System.Drawing.Size(295, 52);
+            this.Students.Size = new System.Drawing.Size(221, 42);
             this.Students.TabIndex = 3;
             this.Students.Text = "Students";
             this.Students.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -304,9 +305,9 @@
             this.Sidebar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(97)))), ((int)(((byte)(255)))));
             this.Sidebar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(95, 985);
+            this.Sidebar.Size = new System.Drawing.Size(71, 800);
             this.Sidebar.TabIndex = 6;
             // 
             // pictureBox2
@@ -314,10 +315,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox2.Image = global::SchoolManagement.Properties.Resources.libraryn;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 22);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 18);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(34, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -328,11 +329,11 @@
             this.guna2Transition1.SetDecoration(this.guna2CirclePictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CirclePictureBox2.Image = global::SchoolManagement.Properties.Resources.Engman;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(23, 854);
-            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(17, 694);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(53, 50);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(40, 41);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox2.TabIndex = 8;
             this.guna2CirclePictureBox2.TabStop = false;
@@ -360,10 +361,10 @@
             this.Home.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Home.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Home.Location = new System.Drawing.Point(0, 103);
-            this.Home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Home.Location = new System.Drawing.Point(0, 84);
+            this.Home.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(295, 52);
+            this.Home.Size = new System.Drawing.Size(221, 42);
             this.Home.TabIndex = 2;
             this.Home.Text = "Home";
             this.Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -375,10 +376,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = global::SchoolManagement.Properties.Resources.Myschool;
-            this.pictureBox1.Location = new System.Drawing.Point(111, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 25);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(97, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -391,10 +392,10 @@
             this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1536, 10);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1152, 8);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(47, 27);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(35, 22);
             this.guna2ControlBox1.TabIndex = 5;
             // 
             // guna2Transition1
@@ -425,11 +426,11 @@
             this.HomePanel.BorderRadius = 20;
             this.guna2Transition1.SetDecoration(this.HomePanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.HomePanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.HomePanel.Location = new System.Drawing.Point(101, 0);
-            this.HomePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HomePanel.Location = new System.Drawing.Point(76, 0);
+            this.HomePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.HomePanel.Size = new System.Drawing.Size(1499, 985);
+            this.HomePanel.Size = new System.Drawing.Size(1124, 800);
             this.HomePanel.TabIndex = 7;
             // 
             // MouseDetect
@@ -439,9 +440,9 @@
             // 
             // HomePrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 985);
+            this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
@@ -449,7 +450,7 @@
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HomePrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

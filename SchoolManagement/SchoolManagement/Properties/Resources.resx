@@ -136,6 +136,9 @@
   <data name="blue_icon _user bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue_icon _user bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="students" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Myschool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Myschool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="icon _home simple door_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon _home simple door_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon _menu scale_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon _menu scale_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,17 +178,20 @@
   <data name="user (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="raucu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raucu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="blue_icon _group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue_icon _group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blue_home simple door_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue_home simple door_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gRADIENT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gRADIENT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="debateui" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\debateui.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gRADIENT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gRADIENT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blue_icon _book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blue_icon _book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,10 +205,16 @@
   <data name="library (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\library (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="teaching" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teaching.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon _menu scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon _menu scale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Engman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Engman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

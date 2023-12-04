@@ -148,6 +148,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMiniEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMiniEvent.Designer.cs">
+      <DependentUpon>UCMiniEvent.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +188,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMiniEvent.resx">
+      <DependentUpon>UCMiniEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -277,6 +295,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Engman1.png" />
+    <None Include="Resources\raucu.png" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\teaching.png" />
+    <None Include="Resources\students.png" />
     <None Include="Resources\password %281%29.png" />
     <None Include="Resources\password.png" />
     <None Include="Resources\lock.png" />
