@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\AddNewEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\AddNewEvent.Designer.cs">
+      <DependentUpon>AddNewEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,18 +154,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UCHome.cs">
+    <Compile Include="GUI\User Control\UCHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCHome.Designer.cs">
+    <Compile Include="GUI\User Control\UCHome.Designer.cs">
       <DependentUpon>UCHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCMiniEvent.cs">
+    <Compile Include="GUI\User Control\UCMiniEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCMiniEvent.Designer.cs">
+    <Compile Include="GUI\User Control\UCMiniEvent.Designer.cs">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\Form\AddNewEvent.resx">
+      <DependentUpon>AddNewEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,10 +197,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UCHome.resx">
+    <EmbeddedResource Include="GUI\User Control\UCHome.resx">
       <DependentUpon>UCHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCMiniEvent.resx">
+    <EmbeddedResource Include="GUI\User Control\UCMiniEvent.resx">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
@@ -230,9 +239,7 @@
   <ItemGroup>
     <None Include="Resources\icon _menu scale_2.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\User Control\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\home simple door.png" />
   </ItemGroup>
@@ -295,6 +302,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Rectangle 60.png" />
+    <None Include="Resources\Rectangle 59.png" />
     <None Include="Resources\Engman1.png" />
     <None Include="Resources\raucu.png" />
     <None Include="Resources\people.png" />
