@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\EventDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\EventDetails.Designer.cs">
+      <DependentUpon>EventDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\AddNewEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     <Compile Include="GUI\User Control\UCMiniEvent.Designer.cs">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\Form\EventDetails.resx">
+      <DependentUpon>EventDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\AddNewEvent.resx">
       <DependentUpon>AddNewEvent.cs</DependentUpon>
     </EmbeddedResource>
