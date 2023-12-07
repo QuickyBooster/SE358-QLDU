@@ -172,6 +172,12 @@
     <Compile Include="GUI\User Control\UCMiniEvent.Designer.cs">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\UCStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\UCStudents.Designer.cs">
+      <DependentUpon>UCStudents.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\EventDetails.resx">
       <DependentUpon>EventDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\UCMiniEvent.resx">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\UCStudents.resx">
+      <DependentUpon>UCStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -311,6 +320,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search.png" />
     <None Include="Resources\Rectangle 60.png" />
     <None Include="Resources\Rectangle 59.png" />
     <None Include="Resources\Engman1.png" />

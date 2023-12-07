@@ -78,7 +78,26 @@ namespace SchoolManagement
 
         private void Home_Click(object sender, EventArgs e)
         {
+            ucHome = new UCHome();
+            ucHome.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(ucHome);
+        }
 
+        private void Students_Click(object sender, EventArgs e)
+        {
+            ucStudents= new UCStudents();
+            ucStudents.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(ucStudents);
+        }
+
+        private void HomePrincipal_Load(object sender, EventArgs e)
+        {
+            ucHome = new UCHome();
+            ucHome.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(ucHome);
         }
     }
 }
