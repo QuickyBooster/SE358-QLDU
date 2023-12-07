@@ -178,6 +178,12 @@
     <Compile Include="GUI\User Control\UCStudents.Designer.cs">
       <DependentUpon>UCStudents.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInformation.Designer.cs">
+      <DependentUpon>StudentInformation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\EventDetails.resx">
       <DependentUpon>EventDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\UCStudents.resx">
       <DependentUpon>UCStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInformation.resx">
+      <DependentUpon>StudentInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -320,6 +329,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\3d.png" />
+    <None Include="Resources\file %281%29.png" />
+    <None Include="Resources\family.png" />
+    <None Include="Resources\iconuser.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\Rectangle 60.png" />
     <None Include="Resources\Rectangle 59.png" />
