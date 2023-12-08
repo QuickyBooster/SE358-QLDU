@@ -190,6 +190,12 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.Designer.cs">
       <DependentUpon>UCHome_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCClasses-Principal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCClasses-Principal.Designer.cs">
+      <DependentUpon>UCClasses-Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCStudent_Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentInformation.resx">
       <DependentUpon>StudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCClasses-Principal.resx">
+      <DependentUpon>UCClasses-Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCStudent_Teacher.resx">
       <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
@@ -347,6 +356,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\virtual-event.png" />
     <None Include="Resources\3d.png" />
     <None Include="Resources\file %281%29.png" />
     <None Include="Resources\family.png" />
