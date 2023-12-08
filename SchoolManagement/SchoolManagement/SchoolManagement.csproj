@@ -184,6 +184,12 @@
     <Compile Include="StudentInformation.Designer.cs">
       <DependentUpon>StudentInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.Designer.cs">
+      <DependentUpon>UCHome_Teacher.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\EventDetails.resx">
       <DependentUpon>EventDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.resx">
+      <DependentUpon>UCHome_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeTeacher.resx">
       <DependentUpon>HomeTeacher.cs</DependentUpon>
