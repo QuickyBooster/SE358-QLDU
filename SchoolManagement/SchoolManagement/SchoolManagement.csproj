@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\AddNewClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\AddNewClass.Designer.cs">
+      <DependentUpon>AddNewClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\EventDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,36 +158,36 @@
     <Compile Include="GUI\Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeTeacher.cs">
+    <Compile Include="GUI\Form\HomeTeacher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeTeacher.Designer.cs">
+    <Compile Include="GUI\Form\HomeTeacher.Designer.cs">
       <DependentUpon>HomeTeacher.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GUI\User Control\UCHome.cs">
+    <Compile Include="GUI\User Control\Principal role\UCHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Control\UCHome.Designer.cs">
+    <Compile Include="GUI\User Control\Principal role\UCHome.Designer.cs">
       <DependentUpon>UCHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Control\UCMiniEvent.cs">
+    <Compile Include="GUI\User Control\Principal role\UCMiniEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Control\UCMiniEvent.Designer.cs">
+    <Compile Include="GUI\User Control\Principal role\UCMiniEvent.Designer.cs">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Control\UCStudents.cs">
+    <Compile Include="GUI\User Control\Principal role\UCStudents.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Control\UCStudents.Designer.cs">
+    <Compile Include="GUI\User Control\Principal role\UCStudents.Designer.cs">
       <DependentUpon>UCStudents.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentInformation.cs">
+    <Compile Include="GUI\Form\Student CRUD\StudentInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentInformation.Designer.cs">
+    <Compile Include="GUI\Form\Student CRUD\StudentInformation.Designer.cs">
       <DependentUpon>StudentInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.cs">
@@ -190,18 +196,21 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.Designer.cs">
       <DependentUpon>UCHome_Teacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCClasses-Principal.cs">
+    <Compile Include="GUI\User Control\Principal role\UCClasses-Principal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCClasses-Principal.Designer.cs">
+    <Compile Include="GUI\User Control\Principal role\UCClasses-Principal.Designer.cs">
       <DependentUpon>UCClasses-Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCStudent_Teacher.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCStudent_Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCStudent_Teacher.Designer.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCStudent_Teacher.Designer.cs">
       <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\Form\AddNewClass.resx">
+      <DependentUpon>AddNewClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\EventDetails.resx">
       <DependentUpon>EventDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,7 +235,7 @@
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.resx">
       <DependentUpon>UCHome_Teacher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeTeacher.resx">
+    <EmbeddedResource Include="GUI\Form\HomeTeacher.resx">
       <DependentUpon>HomeTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -239,22 +248,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="GUI\User Control\UCHome.resx">
+    <EmbeddedResource Include="GUI\User Control\Principal role\UCHome.resx">
       <DependentUpon>UCHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Control\UCMiniEvent.resx">
+    <EmbeddedResource Include="GUI\User Control\Principal role\UCMiniEvent.resx">
       <DependentUpon>UCMiniEvent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Control\UCStudents.resx">
+    <EmbeddedResource Include="GUI\User Control\Principal role\UCStudents.resx">
       <DependentUpon>UCStudents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentInformation.resx">
+    <EmbeddedResource Include="GUI\Form\Student CRUD\StudentInformation.resx">
       <DependentUpon>StudentInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCClasses-Principal.resx">
+    <EmbeddedResource Include="GUI\User Control\Principal role\UCClasses-Principal.resx">
       <DependentUpon>UCClasses-Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCStudent_Teacher.resx">
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCStudent_Teacher.resx">
       <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
