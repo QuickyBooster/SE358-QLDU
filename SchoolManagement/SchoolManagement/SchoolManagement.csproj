@@ -190,6 +190,12 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Teacher.Designer.cs">
       <DependentUpon>UCHome_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCStudent_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStudent_Teacher.Designer.cs">
+      <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\EventDetails.resx">
       <DependentUpon>EventDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentInformation.resx">
       <DependentUpon>StudentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStudent_Teacher.resx">
+      <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

@@ -50,5 +50,13 @@ namespace SchoolManagement
             this.HomePanel.Controls.Clear();
             this.HomePanel.Controls.Add(uCHome_Teacher);
         }
+
+        private void Students_Click(object sender, EventArgs e)
+        {
+            uCStudent_Teacher = new UCStudent_Teacher();
+            uCStudent_Teacher.Dock = DockStyle.Fill;
+            this.HomePanel.Controls.Clear();
+            this.HomePanel.Controls.Add(uCStudent_Teacher);
+        }
     }
 }
