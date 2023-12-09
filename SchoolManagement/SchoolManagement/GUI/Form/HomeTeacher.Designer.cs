@@ -164,6 +164,7 @@
             this.Classes.Text = "Classes";
             this.Classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Classes.TextOffset = new System.Drawing.Point(77, 0);
+            this.Classes.Click += new System.EventHandler(this.Classes_Click);
             // 
             // Sidebar
             // 
@@ -423,5 +424,6 @@
 
         private UCHome_Teacher uCHome_Teacher;
         private UCStudent_Teacher uCStudent_Teacher;
+        private UCClasses_Teacher uCClasses_Teacher;
     }
 }

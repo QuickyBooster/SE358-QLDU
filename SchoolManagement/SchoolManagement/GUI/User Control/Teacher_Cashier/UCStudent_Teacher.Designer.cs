@@ -42,14 +42,14 @@
             this.btnAddStudent = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.Avatar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Full_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Birthdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Score = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -93,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 11);
+            this.label1.Location = new System.Drawing.Point(49, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 35);
             this.label1.TabIndex = 1;
@@ -115,7 +115,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Image = global::SchoolManagement.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(54, 128);
+            this.btnSearch.Location = new System.Drawing.Point(68, 128);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(63, 58);
@@ -138,7 +138,7 @@
             this.txtSearchStudent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchStudent.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtSearchStudent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStudent.Location = new System.Drawing.Point(142, 128);
+            this.txtSearchStudent.Location = new System.Drawing.Point(156, 128);
             this.txtSearchStudent.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSearchStudent.Name = "txtSearchStudent";
             this.txtSearchStudent.PasswordChar = '\0';
@@ -164,7 +164,7 @@
             this.btnAddStudent.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnAddStudent.ForeColor = System.Drawing.Color.White;
             this.btnAddStudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnAddStudent.Location = new System.Drawing.Point(845, 128);
+            this.btnAddStudent.Location = new System.Drawing.Point(859, 128);
             this.btnAddStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(227, 58);
@@ -184,7 +184,7 @@
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(54, 219);
+            this.guna2Panel1.Location = new System.Drawing.Point(68, 219);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1018, 529);
@@ -264,30 +264,6 @@
             this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(32, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(531, 28);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "These are list of all students classes teacher undertake";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(32, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 30);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Students information";
-            // 
             // Avatar
             // 
             this.Avatar.FillWeight = 150F;
@@ -328,6 +304,30 @@
             this.Score.HeaderText = "Score";
             this.Score.MinimumWidth = 6;
             this.Score.Name = "Score";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(32, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(531, 28);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "These are list of all students classes teacher undertake";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(32, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(232, 30);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "Students information";
             // 
             // UCStudent_Teacher
             // 
