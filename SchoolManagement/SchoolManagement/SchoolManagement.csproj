@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View_All_Exams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_All_Exams.Designer.cs">
+      <DependentUpon>View_All_Exams.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\AddNewClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,12 +214,21 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCStudent_Teacher.Designer.cs">
       <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCClasses_Teacher.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCClasses_Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCClasses_Teacher.Designer.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCClasses_Teacher.Designer.cs">
       <DependentUpon>UCClasses_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCExams_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCExams_Teacher.Designer.cs">
+      <DependentUpon>UCExams_Teacher.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View_All_Exams.resx">
+      <DependentUpon>View_All_Exams.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\AddNewClass.resx">
       <DependentUpon>AddNewClass.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,8 +287,11 @@
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCStudent_Teacher.resx">
       <DependentUpon>UCStudent_Teacher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCClasses_Teacher.resx">
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCClasses_Teacher.resx">
       <DependentUpon>UCClasses_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExams_Teacher.resx">
+      <DependentUpon>UCExams_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

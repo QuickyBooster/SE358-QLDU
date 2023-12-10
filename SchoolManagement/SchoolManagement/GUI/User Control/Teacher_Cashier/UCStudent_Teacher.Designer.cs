@@ -74,7 +74,7 @@
             this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 10, 10);
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1018, 60);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1028, 60);
             this.guna2CustomGradientPanel1.TabIndex = 12;
             // 
             // lbTotalStudents
@@ -103,7 +103,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::SchoolManagement.Properties.Resources.students;
-            this.pictureBox1.Location = new System.Drawing.Point(896, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(906, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 55);

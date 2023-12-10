@@ -59,7 +59,7 @@ namespace SchoolManagement
             this.HomePanel.Controls.Add(uCStudent_Teacher);
         }
 
-        private void Classes_Click(object sender, EventArgs e)
+        private void Classes_Click_1(object sender, EventArgs e)
         {
             uCClasses_Teacher = new UCClasses_Teacher();
             uCClasses_Teacher.Dock = DockStyle.Fill;
