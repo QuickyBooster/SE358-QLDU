@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SchoolManagement
 {
-    public partial class UCExams_Teacher : UserControl
+    public partial class UCHome_Cashier : UserControl
     {
-        public UCExams_Teacher()
+        public UCHome_Cashier()
         {
             InitializeComponent();
         }
