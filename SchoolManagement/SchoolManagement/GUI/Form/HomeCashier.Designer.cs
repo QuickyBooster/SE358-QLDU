@@ -247,6 +247,7 @@
             this.Tuition.Text = "Tuition";
             this.Tuition.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Tuition.TextOffset = new System.Drawing.Point(77, 0);
+            this.Tuition.Click += new System.EventHandler(this.Tuition_Click);
             // 
             // Home
             // 
@@ -419,5 +420,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
 
         private UCHome_Cashier uCHome_Cashier;
+        private UCTuition_Cashier uCHome_Tuition;
     }
 }

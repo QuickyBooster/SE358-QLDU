@@ -64,22 +64,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomeCashier.cs">
+    <Compile Include="GUI\Form\HomeCashier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeCashier.Designer.cs">
+    <Compile Include="GUI\Form\HomeCashier.Designer.cs">
       <DependentUpon>HomeCashier.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCHome_Cashier.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCHome_Cashier.Designer.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCHome_Cashier.Designer.cs">
       <DependentUpon>UCHome_Cashier.cs</DependentUpon>
     </Compile>
-    <Compile Include="View_All_Exams.cs">
+    <Compile Include="GUI\Form\View_All_Exams.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View_All_Exams.Designer.cs">
+    <Compile Include="GUI\Form\View_All_Exams.Designer.cs">
       <DependentUpon>View_All_Exams.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Form\AddNewClass.cs">
@@ -232,13 +232,19 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCClasses_Teacher.Designer.cs">
       <DependentUpon>UCClasses_Teacher.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="HomeCashier.resx">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCTuition_Cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCTuition_Cashier.Designer.cs">
+      <DependentUpon>UCTuition_Cashier.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Form\HomeCashier.resx">
       <DependentUpon>HomeCashier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCHome_Cashier.resx">
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCHome_Cashier.resx">
       <DependentUpon>UCHome_Cashier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View_All_Exams.resx">
+    <EmbeddedResource Include="GUI\Form\View_All_Exams.resx">
       <DependentUpon>View_All_Exams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\AddNewClass.resx">
@@ -301,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCClasses_Teacher.resx">
       <DependentUpon>UCClasses_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCTuition_Cashier.resx">
+      <DependentUpon>UCTuition_Cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

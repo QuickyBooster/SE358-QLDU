@@ -50,5 +50,13 @@ namespace SchoolManagement
             this.HomePanel.Controls.Clear();
             this.HomePanel.Controls.Add(uCHome_Cashier);
         }
+
+        private void Tuition_Click(object sender, EventArgs e)
+        {
+            uCHome_Tuition = new UCTuition_Cashier();
+            uCHome_Tuition.Dock = DockStyle.Fill;
+            this.HomePanel.Controls.Clear();
+            this.HomePanel.Controls.Add(uCHome_Tuition);
+        }
     }
 }
