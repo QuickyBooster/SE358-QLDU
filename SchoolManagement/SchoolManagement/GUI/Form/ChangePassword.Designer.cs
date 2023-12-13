@@ -59,7 +59,7 @@
             this.link_Back.DisabledLinkColor = System.Drawing.Color.Transparent;
             this.link_Back.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.link_Back.LinkColor = System.Drawing.Color.White;
-            this.link_Back.Location = new System.Drawing.Point(219, 387);
+            this.link_Back.Location = new System.Drawing.Point(226, 366);
             this.link_Back.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.link_Back.Name = "link_Back";
             this.link_Back.Size = new System.Drawing.Size(123, 25);
@@ -82,7 +82,7 @@
             this.btn_SaveChange.Font = new System.Drawing.Font("Segoe UI", 12.5F, System.Drawing.FontStyle.Bold);
             this.btn_SaveChange.ForeColor = System.Drawing.Color.White;
             this.btn_SaveChange.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_SaveChange.Location = new System.Drawing.Point(204, 319);
+            this.btn_SaveChange.Location = new System.Drawing.Point(211, 298);
             this.btn_SaveChange.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SaveChange.Name = "btn_SaveChange";
             this.btn_SaveChange.Size = new System.Drawing.Size(150, 40);
@@ -103,7 +103,7 @@
             this.txtRetypePass.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtRetypePass.ForeColor = System.Drawing.Color.Gray;
             this.txtRetypePass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRetypePass.Location = new System.Drawing.Point(154, 238);
+            this.txtRetypePass.Location = new System.Drawing.Point(161, 217);
             this.txtRetypePass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtRetypePass.Name = "txtRetypePass";
             this.txtRetypePass.PasswordChar = '\0';
@@ -118,7 +118,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(148, 69);
+            this.label1.Location = new System.Drawing.Point(155, 48);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(257, 32);
@@ -139,7 +139,7 @@
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtPass.ForeColor = System.Drawing.Color.Gray;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Location = new System.Drawing.Point(154, 159);
+            this.txtPass.Location = new System.Drawing.Point(161, 138);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '\0';
@@ -185,7 +185,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SchoolManagement.Properties.Resources.password__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(95, 238);
+            this.pictureBox1.Location = new System.Drawing.Point(102, 217);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
@@ -197,7 +197,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SchoolManagement.Properties.Resources.password;
-            this.pictureBox3.Location = new System.Drawing.Point(95, 159);
+            this.pictureBox3.Location = new System.Drawing.Point(102, 138);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);

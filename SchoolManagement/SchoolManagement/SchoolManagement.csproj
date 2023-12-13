@@ -238,6 +238,12 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCTuition_Cashier.Designer.cs">
       <DependentUpon>UCTuition_Cashier.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\Principal role\UCSettings-Principal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\Principal role\UCSettings-Principal.Designer.cs">
+      <DependentUpon>UCSettings-Principal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\HomeCashier.resx">
       <DependentUpon>HomeCashier.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCTuition_Cashier.resx">
       <DependentUpon>UCTuition_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\Principal role\UCSettings-Principal.resx">
+      <DependentUpon>UCSettings-Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
