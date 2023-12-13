@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEmployee.Designer.cs">
+      <DependentUpon>AddNewEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\HomeCashier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     <Compile Include="GUI\User Control\Principal role\UCSettings-Principal.Designer.cs">
       <DependentUpon>UCSettings-Principal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNewEmployee.resx">
+      <DependentUpon>AddNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\HomeCashier.resx">
       <DependentUpon>HomeCashier.cs</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +428,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Avatar.png" />
     <None Include="Resources\icon_expenses.png" />
     <None Include="Resources\blue_icon_expenses.png" />
     <None Include="Resources\icon_coin1.png" />
