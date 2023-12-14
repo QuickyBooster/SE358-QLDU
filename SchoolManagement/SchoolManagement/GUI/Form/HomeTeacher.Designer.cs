@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeTeacher));
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -65,9 +65,9 @@
             this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(105, 671);
+            this.label1.Location = new System.Drawing.Point(118, 839);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 32);
+            this.label1.Size = new System.Drawing.Size(116, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "Teacher";
             // 
@@ -93,10 +93,10 @@
             this.Log_out.HoverState.FillColor = System.Drawing.Color.White;
             this.Log_out.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Log_out.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
-            this.Log_out.Location = new System.Drawing.Point(0, 725);
+            this.Log_out.Location = new System.Drawing.Point(0, 906);
             this.Log_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Log_out.Name = "Log_out";
-            this.Log_out.Size = new System.Drawing.Size(292, 47);
+            this.Log_out.Size = new System.Drawing.Size(328, 59);
             this.Log_out.TabIndex = 9;
             this.Log_out.Text = "Log out";
             this.Log_out.TextOffset = new System.Drawing.Point(8, 0);
@@ -124,14 +124,15 @@
             this.Settings.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Settings.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Settings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Settings.Location = new System.Drawing.Point(0, 299);
+            this.Settings.Location = new System.Drawing.Point(0, 374);
             this.Settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(295, 52);
+            this.Settings.Size = new System.Drawing.Size(332, 65);
             this.Settings.TabIndex = 7;
             this.Settings.Text = "Settings";
             this.Settings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Settings.TextOffset = new System.Drawing.Point(77, 0);
+            this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // Classes
             // 
@@ -156,10 +157,10 @@
             this.Classes.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Classes.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Classes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Classes.Location = new System.Drawing.Point(0, 234);
+            this.Classes.Location = new System.Drawing.Point(0, 292);
             this.Classes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Classes.Name = "Classes";
-            this.Classes.Size = new System.Drawing.Size(295, 52);
+            this.Classes.Size = new System.Drawing.Size(332, 65);
             this.Classes.TabIndex = 5;
             this.Classes.Text = "Classes";
             this.Classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -186,7 +187,7 @@
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
             this.Sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(77, 800);
+            this.Sidebar.Size = new System.Drawing.Size(87, 1000);
             this.Sidebar.TabIndex = 10;
             // 
             // pictureBox2
@@ -194,10 +195,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox2.Image = global::SchoolManagement.Properties.Resources.libraryn;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 22);
+            this.pictureBox2.Location = new System.Drawing.Point(30, 28);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -208,11 +209,11 @@
             this.guna2Transition1.SetDecoration(this.guna2CirclePictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CirclePictureBox2.Image = global::SchoolManagement.Properties.Resources.Engman;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(16, 656);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(18, 820);
             this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(53, 50);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(60, 62);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox2.TabIndex = 8;
             this.guna2CirclePictureBox2.TabStop = false;
@@ -240,10 +241,10 @@
             this.Students.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Students.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Students.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Students.Location = new System.Drawing.Point(0, 169);
+            this.Students.Location = new System.Drawing.Point(0, 211);
             this.Students.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Students.Name = "Students";
-            this.Students.Size = new System.Drawing.Size(295, 52);
+            this.Students.Size = new System.Drawing.Size(332, 65);
             this.Students.TabIndex = 3;
             this.Students.Text = "Students";
             this.Students.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -273,10 +274,10 @@
             this.Home.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Home.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Home.Location = new System.Drawing.Point(0, 103);
+            this.Home.Location = new System.Drawing.Point(0, 129);
             this.Home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(295, 52);
+            this.Home.Size = new System.Drawing.Size(332, 65);
             this.Home.TabIndex = 2;
             this.Home.Text = "Home";
             this.Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -288,10 +289,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = global::SchoolManagement.Properties.Resources.Myschool;
-            this.pictureBox1.Location = new System.Drawing.Point(108, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(122, 39);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(145, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -300,22 +301,22 @@
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             this.guna2Transition1.Interval = 5;
             this.guna2Transition1.MaxAnimationTime = 1000;
             // 
@@ -330,11 +331,11 @@
             this.HomePanel.FillColor2 = System.Drawing.Color.Transparent;
             this.HomePanel.FillColor3 = System.Drawing.Color.Transparent;
             this.HomePanel.FillColor4 = System.Drawing.Color.Transparent;
-            this.HomePanel.Location = new System.Drawing.Point(76, 0);
+            this.HomePanel.Location = new System.Drawing.Point(86, 0);
             this.HomePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.HomePanel.Size = new System.Drawing.Size(1124, 800);
+            this.HomePanel.Size = new System.Drawing.Size(1264, 1000);
             this.HomePanel.TabIndex = 11;
             // 
             // guna2ControlBox2
@@ -346,10 +347,10 @@
             this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1091, 9);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1227, 11);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(47, 27);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(53, 34);
             this.guna2ControlBox2.TabIndex = 11;
             // 
             // guna2ControlBox1
@@ -360,10 +361,10 @@
             this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1140, 9);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1282, 11);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(47, 27);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(53, 34);
             this.guna2ControlBox1.TabIndex = 10;
             // 
             // guna2BorderlessForm1
@@ -379,11 +380,11 @@
             // 
             // HomeTeacher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.ClientSize = new System.Drawing.Size(1350, 1000);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.guna2ControlBox1);
@@ -392,6 +393,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "HomeTeacher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomeTeacher";
@@ -426,5 +428,6 @@
         private UCHome_Teacher uCHome_Teacher;
         private UCStudent_Teacher uCStudent_Teacher;
         private UCClasses_Teacher uCClasses_Teacher;
+        private UCSettings_Teacher uCSettings_Teacher;
     }
 }

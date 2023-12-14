@@ -256,6 +256,12 @@
     <Compile Include="GUI\User Control\Principal role\UCEmployees.Designer.cs">
       <DependentUpon>UCEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCSettings_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSettings_Teacher.Designer.cs">
+      <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\AddNewEmployee.resx">
       <DependentUpon>AddNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Principal role\UCSettings-Principal.resx">
       <DependentUpon>UCSettings-Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSettings_Teacher.resx">
+      <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
