@@ -124,7 +124,7 @@
             this.Settings.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Settings.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
             this.Settings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Settings.Location = new System.Drawing.Point(0, 299);
+            this.Settings.Location = new System.Drawing.Point(2, 299);
             this.Settings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(295, 52);
@@ -164,6 +164,7 @@
             this.Expenses.Text = "Expenses";
             this.Expenses.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Expenses.TextOffset = new System.Drawing.Point(77, 0);
+            this.Expenses.Click += new System.EventHandler(this.Expenses_Click);
             // 
             // Sidebar
             // 
@@ -421,5 +422,6 @@
 
         private UCHome_Cashier uCHome_Cashier;
         private UCTuition_Cashier uCHome_Tuition;
+        private UCExpenses_Cashier uCExpenses_Tuition;
     }
 }
