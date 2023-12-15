@@ -256,17 +256,23 @@
     <Compile Include="GUI\User Control\Principal role\UCEmployees.Designer.cs">
       <DependentUpon>UCEmployees.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCExpenses_Cashier.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCExpenses_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCExpenses_Cashier.Designer.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCExpenses_Cashier.Designer.cs">
       <DependentUpon>UCExpenses_Cashier.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCSettings_Teacher.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCSettings_Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCSettings_Teacher.Designer.cs">
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCSettings_Teacher.Designer.cs">
       <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSettings_Cashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSettings_Cashier.Designer.cs">
+      <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GUI\Form\AddNewEmployee.resx">
       <DependentUpon>AddNewEmployee.cs</DependentUpon>
@@ -350,11 +356,14 @@
     <EmbeddedResource Include="GUI\User Control\Principal role\UCSettings-Principal.resx">
       <DependentUpon>UCSettings-Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCExpenses_Cashier.resx">
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCExpenses_Cashier.resx">
       <DependentUpon>UCExpenses_Cashier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCSettings_Teacher.resx">
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCSettings_Teacher.resx">
       <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSettings_Cashier.resx">
+      <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

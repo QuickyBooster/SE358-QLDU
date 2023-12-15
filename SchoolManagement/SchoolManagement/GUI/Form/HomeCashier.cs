@@ -53,18 +53,26 @@ namespace SchoolManagement
 
         private void Tuition_Click(object sender, EventArgs e)
         {
-            uCHome_Tuition = new UCTuition_Cashier();
-            uCHome_Tuition.Dock = DockStyle.Fill;
+            uCTuition_Cashier = new UCTuition_Cashier();
+            uCTuition_Cashier.Dock = DockStyle.Fill;
             this.HomePanel.Controls.Clear();
-            this.HomePanel.Controls.Add(uCHome_Tuition);
+            this.HomePanel.Controls.Add(uCTuition_Cashier);
         }
 
         private void Expenses_Click(object sender, EventArgs e)
         {
-            uCExpenses_Tuition = new UCExpenses_Cashier();
-            uCExpenses_Tuition.Dock = DockStyle.Fill;
+            uCExpenses_Cashier = new UCExpenses_Cashier();
+            uCExpenses_Cashier.Dock = DockStyle.Fill;
             this.HomePanel.Controls.Clear();
-            this.HomePanel.Controls.Add(uCExpenses_Tuition);
+            this.HomePanel.Controls.Add(uCExpenses_Cashier);
+        }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            uCSettings_Cashier = new UCSettings_Cashier();
+            uCSettings_Cashier.Dock = DockStyle.Fill;
+            this.HomePanel.Controls.Clear();
+            this.HomePanel.Controls.Add(uCSettings_Cashier);
         }
     }
 }

@@ -132,6 +132,7 @@
             this.Settings.Text = "Settings";
             this.Settings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Settings.TextOffset = new System.Drawing.Point(77, 0);
+            this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // Expenses
             // 
@@ -421,7 +422,8 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
 
         private UCHome_Cashier uCHome_Cashier;
-        private UCTuition_Cashier uCHome_Tuition;
-        private UCExpenses_Cashier uCExpenses_Tuition;
+        private UCTuition_Cashier uCTuition_Cashier;
+        private UCExpenses_Cashier uCExpenses_Cashier;
+        private UCSettings_Cashier uCSettings_Cashier;
     }
 }
