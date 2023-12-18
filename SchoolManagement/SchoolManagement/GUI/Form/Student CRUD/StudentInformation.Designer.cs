@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentInformation));
             this.Sidebar = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.Scores = new Guna.UI2.WinForms.Guna2Button();
             this.btnTuiitionfee = new Guna.UI2.WinForms.Guna2Button();
             this.btnParents = new Guna.UI2.WinForms.Guna2Button();
@@ -42,7 +43,6 @@
             this.picAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Sidebar.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -68,6 +68,19 @@
             this.Sidebar.Size = new System.Drawing.Size(226, 605);
             this.Sidebar.TabIndex = 7;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(17, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Menu";
+            // 
             // Scores
             // 
             this.Scores.Animated = true;
@@ -85,7 +98,7 @@
             this.Scores.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Scores.FillColor = System.Drawing.Color.Transparent;
             this.Scores.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.Scores.ForeColor = System.Drawing.Color.Black;
+            this.Scores.ForeColor = System.Drawing.Color.DimGray;
             this.Scores.HoverState.FillColor = System.Drawing.Color.White;
             this.Scores.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Scores.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
@@ -116,7 +129,7 @@
             this.btnTuiitionfee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnTuiitionfee.FillColor = System.Drawing.Color.Transparent;
             this.btnTuiitionfee.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.btnTuiitionfee.ForeColor = System.Drawing.Color.Black;
+            this.btnTuiitionfee.ForeColor = System.Drawing.Color.DimGray;
             this.btnTuiitionfee.HoverState.FillColor = System.Drawing.Color.White;
             this.btnTuiitionfee.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnTuiitionfee.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
@@ -147,7 +160,7 @@
             this.btnParents.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnParents.FillColor = System.Drawing.Color.Transparent;
             this.btnParents.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.btnParents.ForeColor = System.Drawing.Color.Black;
+            this.btnParents.ForeColor = System.Drawing.Color.DimGray;
             this.btnParents.HoverState.FillColor = System.Drawing.Color.White;
             this.btnParents.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnParents.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
@@ -178,7 +191,7 @@
             this.btnPersonal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnPersonal.FillColor = System.Drawing.Color.Transparent;
             this.btnPersonal.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.btnPersonal.ForeColor = System.Drawing.Color.Black;
+            this.btnPersonal.ForeColor = System.Drawing.Color.DimGray;
             this.btnPersonal.HoverState.FillColor = System.Drawing.Color.White;
             this.btnPersonal.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnPersonal.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
@@ -279,19 +292,6 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 31);
             this.guna2ControlBox1.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(17, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Menu";
             // 
             // panel1
             // 

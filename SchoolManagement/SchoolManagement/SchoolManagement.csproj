@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\AddNewEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +274,12 @@
     <Compile Include="GUI\User Control\Teacher_Cashier\UCSettings_Teacher.Designer.cs">
       <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Form\SubjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\SubjectDetails.Designer.cs">
+      <DependentUpon>SubjectDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCSettings_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -280,11 +292,17 @@
     <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.Designer.cs">
       <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\Form\AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\AddNewEmployee.resx">
       <DependentUpon>AddNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\HomeCashier.resx">
       <DependentUpon>HomeCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\SubjectDetails.resx">
+      <DependentUpon>SubjectDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Principal role\UCEmployees.resx">
       <DependentUpon>UCEmployees.cs</DependentUpon>
@@ -473,6 +491,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\hoa.png" />
     <None Include="Resources\trash.png" />
     <None Include="Resources\edit.png" />
     <None Include="Resources\book %281%29.png" />
