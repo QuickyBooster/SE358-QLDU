@@ -274,6 +274,12 @@
     <Compile Include="UCSettings_Cashier.Designer.cs">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.Designer.cs">
+      <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\AddNewEmployee.resx">
       <DependentUpon>AddNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Principal role\UCEmployees.resx">
       <DependentUpon>UCEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\Principal role\UCSubjects-Principal.resx">
+      <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCHome_Cashier.resx">
       <DependentUpon>UCHome_Cashier.cs</DependentUpon>
@@ -464,6 +473,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\book %281%29.png" />
     <None Include="Resources\division.png" />
     <None Include="Resources\Avatar.png" />
     <None Include="Resources\icon_expenses.png" />

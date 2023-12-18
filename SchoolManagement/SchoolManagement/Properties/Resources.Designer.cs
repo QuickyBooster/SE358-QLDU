@@ -173,6 +173,16 @@ namespace SchoolManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book__1_ {
+            get {
+                object obj = ResourceManager.GetObject("book (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap debateui {
             get {
                 object obj = ResourceManager.GetObject("debateui", resourceCulture);
@@ -186,6 +196,16 @@ namespace SchoolManagement.Properties {
         internal static System.Drawing.Bitmap division {
             get {
                 object obj = ResourceManager.GetObject("division", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit {
+            get {
+                object obj = ResourceManager.GetObject("edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +536,16 @@ namespace SchoolManagement.Properties {
         internal static System.Drawing.Bitmap teaching {
             get {
                 object obj = ResourceManager.GetObject("teaching", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash {
+            get {
+                object obj = ResourceManager.GetObject("trash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
