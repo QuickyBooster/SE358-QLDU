@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.Designer.cs">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\AddSubject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,6 +298,9 @@
     <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.Designer.cs">
       <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\AddSubject.resx">
       <DependentUpon>AddSubject.cs</DependentUpon>
     </EmbeddedResource>
