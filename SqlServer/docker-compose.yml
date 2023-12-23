@@ -1,0 +1,14 @@
+version: '3'
+volumes:
+  mssql-data:
+    driver: local
+services:
+  sql-server-be:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 1433:1433
+    volumes:
+      - mssql-data:/var/opt/mssql
+    # command: ["/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'yourStrong(!)Password' -i \"SchoolManagement.sql\""]

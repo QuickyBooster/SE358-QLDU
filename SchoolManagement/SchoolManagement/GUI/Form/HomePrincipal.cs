@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace SchoolManagement
 {
     public partial class HomePrincipal : Form
     {
-        public HomePrincipal()
-        {
+        private User user;
+        public HomePrincipal(User user)
+		{
             InitializeComponent();
+            this.user = user;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
