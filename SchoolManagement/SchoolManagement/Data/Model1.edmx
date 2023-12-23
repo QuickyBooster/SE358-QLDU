@@ -104,150 +104,6 @@
           <Property Name="RoleID" Type="int" />
           <Property Name="InfoID" Type="int" />
         </EntityType>
-        <Association Name="FK_Classes_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
-          <End Role="Classes" Type="Self.Classes" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Username" />
-            </Principal>
-            <Dependent Role="Classes">
-              <PropertyRef Name="TeacherID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Exams_Classes">
-          <End Role="Classes" Type="Self.Classes" Multiplicity="0..1" />
-          <End Role="Exams" Type="Self.Exams" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Classes">
-              <PropertyRef Name="ClassID" />
-            </Principal>
-            <Dependent Role="Exams">
-              <PropertyRef Name="ClassID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Exams_Documents">
-          <End Role="Documents" Type="Self.Documents" Multiplicity="0..1" />
-          <End Role="Exams" Type="Self.Exams" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Documents">
-              <PropertyRef Name="DocumentID" />
-            </Principal>
-            <Dependent Role="Exams">
-              <PropertyRef Name="DocumentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Exams_Subjects">
-          <End Role="Subjects" Type="Self.Subjects" Multiplicity="0..1" />
-          <End Role="Exams" Type="Self.Exams" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Subjects">
-              <PropertyRef Name="SubjectID" />
-            </Principal>
-            <Dependent Role="Exams">
-              <PropertyRef Name="SubjectID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Scores_Exams">
-          <End Role="Exams" Type="Self.Exams" Multiplicity="0..1" />
-          <End Role="Scores" Type="Self.Scores" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Exams">
-              <PropertyRef Name="ExamID" />
-            </Principal>
-            <Dependent Role="Scores">
-              <PropertyRef Name="ExamID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Scores_Students">
-          <End Role="Students" Type="Self.Students" Multiplicity="0..1" />
-          <End Role="Scores" Type="Self.Scores" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Students">
-              <PropertyRef Name="StudentID" />
-            </Principal>
-            <Dependent Role="Scores">
-              <PropertyRef Name="StudentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Students_Classes_ClassID">
-          <End Role="Classes" Type="Self.Classes" Multiplicity="0..1" />
-          <End Role="Students" Type="Self.Students" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Classes">
-              <PropertyRef Name="ClassID" />
-            </Principal>
-            <Dependent Role="Students">
-              <PropertyRef Name="ClassID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Students_Classes_InfoID">
-          <End Role="Information" Type="Self.Information" Multiplicity="0..1" />
-          <End Role="Students" Type="Self.Students" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Information">
-              <PropertyRef Name="InfoID" />
-            </Principal>
-            <Dependent Role="Students">
-              <PropertyRef Name="InfoID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Subjects_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
-          <End Role="Subjects" Type="Self.Subjects" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Username" />
-            </Principal>
-            <Dependent Role="Subjects">
-              <PropertyRef Name="Leader" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Tuitions_Students">
-          <End Role="Students" Type="Self.Students" Multiplicity="0..1" />
-          <End Role="Tuitions" Type="Self.Tuitions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Students">
-              <PropertyRef Name="StudentID" />
-            </Principal>
-            <Dependent Role="Tuitions">
-              <PropertyRef Name="StudentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Users_Information">
-          <End Role="Information" Type="Self.Information" Multiplicity="0..1" />
-          <End Role="Users" Type="Self.Users" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Information">
-              <PropertyRef Name="InfoID" />
-            </Principal>
-            <Dependent Role="Users">
-              <PropertyRef Name="InfoID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Users_Role">
-          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
-          <End Role="Users" Type="Self.Users" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Roles">
-              <PropertyRef Name="RoleID" />
-            </Principal>
-            <Dependent Role="Users">
-              <PropertyRef Name="RoleID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="SE358_SchoolManagementModelStoreContainer">
           <EntitySet Name="Classes" EntityType="Self.Classes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Documents" EntityType="Self.Documents" Schema="dbo" store:Type="Tables" />
@@ -259,54 +115,6 @@
           <EntitySet Name="Subjects" EntityType="Self.Subjects" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tuitions" EntityType="Self.Tuitions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Classes_Users" Association="Self.FK_Classes_Users">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Classes" EntitySet="Classes" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Exams_Classes" Association="Self.FK_Exams_Classes">
-            <End Role="Classes" EntitySet="Classes" />
-            <End Role="Exams" EntitySet="Exams" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Exams_Documents" Association="Self.FK_Exams_Documents">
-            <End Role="Documents" EntitySet="Documents" />
-            <End Role="Exams" EntitySet="Exams" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Exams_Subjects" Association="Self.FK_Exams_Subjects">
-            <End Role="Subjects" EntitySet="Subjects" />
-            <End Role="Exams" EntitySet="Exams" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Scores_Exams" Association="Self.FK_Scores_Exams">
-            <End Role="Exams" EntitySet="Exams" />
-            <End Role="Scores" EntitySet="Scores" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Scores_Students" Association="Self.FK_Scores_Students">
-            <End Role="Students" EntitySet="Students" />
-            <End Role="Scores" EntitySet="Scores" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Students_Classes_ClassID" Association="Self.FK_Students_Classes_ClassID">
-            <End Role="Classes" EntitySet="Classes" />
-            <End Role="Students" EntitySet="Students" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Students_Classes_InfoID" Association="Self.FK_Students_Classes_InfoID">
-            <End Role="Information" EntitySet="Information" />
-            <End Role="Students" EntitySet="Students" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Subjects_Users" Association="Self.FK_Subjects_Users">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Subjects" EntitySet="Subjects" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tuitions_Students" Association="Self.FK_Tuitions_Students">
-            <End Role="Students" EntitySet="Students" />
-            <End Role="Tuitions" EntitySet="Tuitions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Users_Information" Association="Self.FK_Users_Information">
-            <End Role="Information" EntitySet="Information" />
-            <End Role="Users" EntitySet="Users" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Users_Role" Association="Self.FK_Users_Role">
-            <End Role="Roles" EntitySet="Roles" />
-            <End Role="Users" EntitySet="Users" />
-          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -323,9 +131,6 @@
           <Property Name="SchoolYear" Type="Int32" />
           <Property Name="StatusClass" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
           <Property Name="TeacherID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="User" Relationship="Self.FK_Classes_Users" FromRole="Classes" ToRole="Users" />
-          <NavigationProperty Name="Exams" Relationship="Self.FK_Exams_Classes" FromRole="Classes" ToRole="Exams" />
-          <NavigationProperty Name="Students" Relationship="Self.FK_Students_Classes_ClassID" FromRole="Classes" ToRole="Students" />
         </EntityType>
         <EntityType Name="Document">
           <Key>
@@ -334,7 +139,6 @@
           <Property Name="DocumentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="UploadDate" Type="DateTime" Precision="0" />
-          <NavigationProperty Name="Exams" Relationship="Self.FK_Exams_Documents" FromRole="Documents" ToRole="Exams" />
         </EntityType>
         <EntityType Name="Exam">
           <Key>
@@ -346,10 +150,6 @@
           <Property Name="DocumentID" Type="Int32" />
           <Property Name="ClassID" Type="Int32" />
           <Property Name="SubjectID" Type="Int32" />
-          <NavigationProperty Name="Class" Relationship="Self.FK_Exams_Classes" FromRole="Exams" ToRole="Classes" />
-          <NavigationProperty Name="Document" Relationship="Self.FK_Exams_Documents" FromRole="Exams" ToRole="Documents" />
-          <NavigationProperty Name="Subject" Relationship="Self.FK_Exams_Subjects" FromRole="Exams" ToRole="Subjects" />
-          <NavigationProperty Name="Scores" Relationship="Self.FK_Scores_Exams" FromRole="Exams" ToRole="Scores" />
         </EntityType>
         <EntityType Name="Information">
           <Key>
@@ -365,8 +165,6 @@
           <Property Name="MotherName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="MotherOccupation" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="MotherPhoneNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Students" Relationship="Self.FK_Students_Classes_InfoID" FromRole="Information" ToRole="Students" />
-          <NavigationProperty Name="Users" Relationship="Self.FK_Users_Information" FromRole="Information" ToRole="Users" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -374,7 +172,6 @@
           </Key>
           <Property Name="RoleID" Type="Int32" Nullable="false" />
           <Property Name="RoleName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Users" Relationship="Self.FK_Users_Role" FromRole="Roles" ToRole="Users" />
         </EntityType>
         <EntityType Name="Score">
           <Key>
@@ -384,8 +181,6 @@
           <Property Name="Score1" Type="Int32" />
           <Property Name="ExamID" Type="Int32" />
           <Property Name="StudentID" Type="Int32" />
-          <NavigationProperty Name="Exam" Relationship="Self.FK_Scores_Exams" FromRole="Scores" ToRole="Exams" />
-          <NavigationProperty Name="Student" Relationship="Self.FK_Scores_Students" FromRole="Scores" ToRole="Students" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
@@ -395,10 +190,6 @@
           <Property Name="FulName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="InfoID" Type="Int32" />
           <Property Name="ClassID" Type="Int32" />
-          <NavigationProperty Name="Class" Relationship="Self.FK_Students_Classes_ClassID" FromRole="Students" ToRole="Classes" />
-          <NavigationProperty Name="Information" Relationship="Self.FK_Students_Classes_InfoID" FromRole="Students" ToRole="Information" />
-          <NavigationProperty Name="Scores" Relationship="Self.FK_Scores_Students" FromRole="Students" ToRole="Scores" />
-          <NavigationProperty Name="Tuitions" Relationship="Self.FK_Tuitions_Students" FromRole="Students" ToRole="Tuitions" />
         </EntityType>
         <EntityType Name="Subject">
           <Key>
@@ -407,8 +198,6 @@
           <Property Name="SubjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SubjectName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Leader" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Exams" Relationship="Self.FK_Exams_Subjects" FromRole="Subjects" ToRole="Exams" />
-          <NavigationProperty Name="User" Relationship="Self.FK_Subjects_Users" FromRole="Subjects" ToRole="Users" />
         </EntityType>
         <EntityType Name="Tuition">
           <Key>
@@ -419,7 +208,6 @@
           <Property Name="StatusTuition" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="TuitionOfMonth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="StudentID" Type="Int32" />
-          <NavigationProperty Name="Student" Relationship="Self.FK_Tuitions_Students" FromRole="Tuitions" ToRole="Students" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -431,155 +219,7 @@
           <Property Name="FulName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="RoleID" Type="Int32" />
           <Property Name="InfoID" Type="Int32" />
-          <NavigationProperty Name="Classes" Relationship="Self.FK_Classes_Users" FromRole="Users" ToRole="Classes" />
-          <NavigationProperty Name="Information" Relationship="Self.FK_Users_Information" FromRole="Users" ToRole="Information" />
-          <NavigationProperty Name="Role" Relationship="Self.FK_Users_Role" FromRole="Users" ToRole="Roles" />
-          <NavigationProperty Name="Subjects" Relationship="Self.FK_Subjects_Users" FromRole="Users" ToRole="Subjects" />
         </EntityType>
-        <Association Name="FK_Classes_Users">
-          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
-          <End Role="Classes" Type="Self.Class" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Username" />
-            </Principal>
-            <Dependent Role="Classes">
-              <PropertyRef Name="TeacherID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Exams_Classes">
-          <End Role="Classes" Type="Self.Class" Multiplicity="0..1" />
-          <End Role="Exams" Type="Self.Exam" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Classes">
-              <PropertyRef Name="ClassID" />
-            </Principal>
-            <Dependent Role="Exams">
-              <PropertyRef Name="ClassID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Students_Classes_ClassID">
-          <End Role="Classes" Type="Self.Class" Multiplicity="0..1" />
-          <End Role="Students" Type="Self.Student" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Classes">
-              <PropertyRef Name="ClassID" />
-            </Principal>
-            <Dependent Role="Students">
-              <PropertyRef Name="ClassID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Exams_Documents">
-          <End Role="Documents" Type="Self.Document" Multiplicity="0..1" />
-          <End Role="Exams" Type="Self.Exam" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Documents">
-              <PropertyRef Name="DocumentID" />
-            </Principal>
-            <Dependent Role="Exams">
-              <PropertyRef Name="DocumentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Exams_Subjects">
-          <End Role="Subjects" Type="Self.Subject" Multiplicity="0..1" />
-          <End Role="Exams" Type="Self.Exam" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Subjects">
-              <PropertyRef Name="SubjectID" />
-            </Principal>
-            <Dependent Role="Exams">
-              <PropertyRef Name="SubjectID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Scores_Exams">
-          <End Role="Exams" Type="Self.Exam" Multiplicity="0..1" />
-          <End Role="Scores" Type="Self.Score" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Exams">
-              <PropertyRef Name="ExamID" />
-            </Principal>
-            <Dependent Role="Scores">
-              <PropertyRef Name="ExamID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Students_Classes_InfoID">
-          <End Role="Information" Type="Self.Information" Multiplicity="0..1" />
-          <End Role="Students" Type="Self.Student" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Information">
-              <PropertyRef Name="InfoID" />
-            </Principal>
-            <Dependent Role="Students">
-              <PropertyRef Name="InfoID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Users_Information">
-          <End Role="Information" Type="Self.Information" Multiplicity="0..1" />
-          <End Role="Users" Type="Self.User" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Information">
-              <PropertyRef Name="InfoID" />
-            </Principal>
-            <Dependent Role="Users">
-              <PropertyRef Name="InfoID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Users_Role">
-          <End Role="Roles" Type="Self.Role" Multiplicity="0..1" />
-          <End Role="Users" Type="Self.User" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Roles">
-              <PropertyRef Name="RoleID" />
-            </Principal>
-            <Dependent Role="Users">
-              <PropertyRef Name="RoleID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Scores_Students">
-          <End Role="Students" Type="Self.Student" Multiplicity="0..1" />
-          <End Role="Scores" Type="Self.Score" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Students">
-              <PropertyRef Name="StudentID" />
-            </Principal>
-            <Dependent Role="Scores">
-              <PropertyRef Name="StudentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Tuitions_Students">
-          <End Role="Students" Type="Self.Student" Multiplicity="0..1" />
-          <End Role="Tuitions" Type="Self.Tuition" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Students">
-              <PropertyRef Name="StudentID" />
-            </Principal>
-            <Dependent Role="Tuitions">
-              <PropertyRef Name="StudentID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Subjects_Users">
-          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
-          <End Role="Subjects" Type="Self.Subject" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Username" />
-            </Principal>
-            <Dependent Role="Subjects">
-              <PropertyRef Name="Leader" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="SchoolManagement" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Classes" EntityType="Self.Class" />
           <EntitySet Name="Documents" EntityType="Self.Document" />
@@ -591,54 +231,6 @@
           <EntitySet Name="Subjects" EntityType="Self.Subject" />
           <EntitySet Name="Tuitions" EntityType="Self.Tuition" />
           <EntitySet Name="Users" EntityType="Self.User" />
-          <AssociationSet Name="FK_Classes_Users" Association="Self.FK_Classes_Users">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Classes" EntitySet="Classes" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Exams_Classes" Association="Self.FK_Exams_Classes">
-            <End Role="Classes" EntitySet="Classes" />
-            <End Role="Exams" EntitySet="Exams" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Students_Classes_ClassID" Association="Self.FK_Students_Classes_ClassID">
-            <End Role="Classes" EntitySet="Classes" />
-            <End Role="Students" EntitySet="Students" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Exams_Documents" Association="Self.FK_Exams_Documents">
-            <End Role="Documents" EntitySet="Documents" />
-            <End Role="Exams" EntitySet="Exams" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Exams_Subjects" Association="Self.FK_Exams_Subjects">
-            <End Role="Subjects" EntitySet="Subjects" />
-            <End Role="Exams" EntitySet="Exams" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Scores_Exams" Association="Self.FK_Scores_Exams">
-            <End Role="Exams" EntitySet="Exams" />
-            <End Role="Scores" EntitySet="Scores" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Students_Classes_InfoID" Association="Self.FK_Students_Classes_InfoID">
-            <End Role="Information" EntitySet="Information" />
-            <End Role="Students" EntitySet="Students" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Users_Information" Association="Self.FK_Users_Information">
-            <End Role="Information" EntitySet="Information" />
-            <End Role="Users" EntitySet="Users" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Users_Role" Association="Self.FK_Users_Role">
-            <End Role="Roles" EntitySet="Roles" />
-            <End Role="Users" EntitySet="Users" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Scores_Students" Association="Self.FK_Scores_Students">
-            <End Role="Students" EntitySet="Students" />
-            <End Role="Scores" EntitySet="Scores" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tuitions_Students" Association="Self.FK_Tuitions_Students">
-            <End Role="Students" EntitySet="Students" />
-            <End Role="Tuitions" EntitySet="Tuitions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Subjects_Users" Association="Self.FK_Subjects_Users">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Subjects" EntitySet="Subjects" />
-          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>

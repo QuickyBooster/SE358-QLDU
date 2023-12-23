@@ -14,17 +14,8 @@ namespace SchoolManagement.Data
     
     public partial class Document
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Document()
-        {
-            this.Exams = new HashSet<Exam>();
-        }
-    
         public int DocumentID { get; set; }
         public string FilePath { get; set; }
         public Nullable<System.DateTime> UploadDate { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Exam> Exams { get; set; }
     }
 }

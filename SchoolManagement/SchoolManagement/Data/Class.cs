@@ -14,24 +14,11 @@ namespace SchoolManagement.Data
     
     public partial class Class
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Class()
-        {
-            this.Exams = new HashSet<Exam>();
-            this.Students = new HashSet<Student>();
-        }
-    
         public int ClassID { get; set; }
         public string ClassName { get; set; }
         public string Grade { get; set; }
         public Nullable<int> SchoolYear { get; set; }
         public string StatusClass { get; set; }
         public string TeacherID { get; set; }
-    
-        public virtual User User { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Exam> Exams { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Student> Students { get; set; }
     }
 }

@@ -14,18 +14,8 @@ namespace SchoolManagement.Data
     
     public partial class Subject
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Subject()
-        {
-            this.Exams = new HashSet<Exam>();
-        }
-    
         public int SubjectID { get; set; }
         public string SubjectName { get; set; }
         public string Leader { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Exam> Exams { get; set; }
-        public virtual User User { get; set; }
     }
 }

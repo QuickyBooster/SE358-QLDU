@@ -18,8 +18,5 @@ namespace SchoolManagement.Data
         public Nullable<int> Score1 { get; set; }
         public Nullable<int> ExamID { get; set; }
         public Nullable<int> StudentID { get; set; }
-    
-        public virtual Exam Exam { get; set; }
-        public virtual Student Student { get; set; }
     }
 }

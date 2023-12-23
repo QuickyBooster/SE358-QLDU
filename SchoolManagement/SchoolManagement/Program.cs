@@ -15,9 +15,14 @@ namespace SchoolManagement
         [STAThread]
         static void Main()
         {
+            MessageBox.Show(DataProvider.SchoolManagement.Users.AsNoTracking().ToList().Count.ToString());
+            //DataProvider.SchoolManagement.Users.AsNoTracking().ToList().ForEach(user => { })
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new HomePrincipal());
+            //MessageBox.Show(DataProvider.SchoolManagement.Users);
+
         }
     }
 }

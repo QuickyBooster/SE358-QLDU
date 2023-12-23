@@ -14,13 +14,6 @@ namespace SchoolManagement.Data
     
     public partial class Information
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Information()
-        {
-            this.Students = new HashSet<Student>();
-            this.Users = new HashSet<User>();
-        }
-    
         public int InfoID { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
@@ -31,10 +24,5 @@ namespace SchoolManagement.Data
         public string MotherName { get; set; }
         public string MotherOccupation { get; set; }
         public string MotherPhoneNumber { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Student> Students { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> Users { get; set; }
     }
 }

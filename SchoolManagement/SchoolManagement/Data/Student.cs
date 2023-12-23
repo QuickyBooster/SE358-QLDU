@@ -14,23 +14,9 @@ namespace SchoolManagement.Data
     
     public partial class Student
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Student()
-        {
-            this.Scores = new HashSet<Score>();
-            this.Tuitions = new HashSet<Tuition>();
-        }
-    
         public int StudentID { get; set; }
         public string FulName { get; set; }
         public Nullable<int> InfoID { get; set; }
         public Nullable<int> ClassID { get; set; }
-    
-        public virtual Class Class { get; set; }
-        public virtual Information Information { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Score> Scores { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tuition> Tuitions { get; set; }
     }
 }
