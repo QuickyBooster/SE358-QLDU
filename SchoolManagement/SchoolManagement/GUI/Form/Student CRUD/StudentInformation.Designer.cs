@@ -59,8 +59,8 @@
             this.Sidebar.Controls.Add(this.btnTuiitionfee);
             this.Sidebar.Controls.Add(this.btnParents);
             this.Sidebar.Controls.Add(this.btnPersonal);
-            this.Sidebar.FillColor = System.Drawing.Color.Gainsboro;
-            this.Sidebar.FillColor2 = System.Drawing.Color.Gainsboro;
+            this.Sidebar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(240)))));
+            this.Sidebar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(240)))));
             this.Sidebar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.Sidebar.Location = new System.Drawing.Point(1, 96);
             this.Sidebar.Margin = new System.Windows.Forms.Padding(2);

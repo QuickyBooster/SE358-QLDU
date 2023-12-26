@@ -286,6 +286,18 @@
     <Compile Include="GUI\Form\SubjectDetails.Designer.cs">
       <DependentUpon>SubjectDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCAddParentsInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAddParentsInfo.Designer.cs">
+      <DependentUpon>UCAddParentsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAddStudentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAddStudentInfo.Designer.cs">
+      <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCSettings_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -397,6 +409,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCSettings_Teacher.resx">
       <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAddParentsInfo.resx">
+      <DependentUpon>UCAddParentsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAddStudentInfo.resx">
+      <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
