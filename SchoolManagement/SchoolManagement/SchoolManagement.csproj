@@ -298,6 +298,12 @@
     <Compile Include="UCAddStudentInfo.Designer.cs">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.Designer.cs">
+      <DependentUpon>UCPersonalInfo_Teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCSettings_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -415,6 +421,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCAddStudentInfo.resx">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.resx">
+      <DependentUpon>UCPersonalInfo_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
