@@ -322,6 +322,12 @@
     <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.Designer.cs">
       <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Class_Info_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Class_Info_Detail.Designer.cs">
+      <DependentUpon>View_Class_Info_Detail.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EmployeeDetails.resx">
       <DependentUpon>EmployeeDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -436,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Class_Info_Detail.resx">
+      <DependentUpon>View_Class_Info_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
