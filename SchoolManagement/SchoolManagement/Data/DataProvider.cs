@@ -8,21 +8,23 @@ namespace SchoolManagement.Data
 {
     public class DataProvider
     {
-        private static SchoolManagement schoolManagement;
+        private static SE358_SchoolManagementEntities schoolManagement;
 
-        public static SchoolManagement SchoolManagement
+        public static SE358_SchoolManagementEntities SchoolManagement
         {
             get 
             { 
                 if (schoolManagement == null)
                 {
-                    schoolManagement = new SchoolManagement();
+                    schoolManagement = new SE358_SchoolManagementEntities();
                 }
 
                 return schoolManagement; 
             }
             set { schoolManagement = value; }
         }
+
+       
 
     }
 }

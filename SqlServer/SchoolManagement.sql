@@ -1,4 +1,6 @@
-﻿Create database SE358_SchoolManagement
+﻿drop database SE358_SchoolManagement
+
+Create database SE358_SchoolManagement
 Go
 
 Use SE358_SchoolManagement
@@ -25,6 +27,7 @@ Go
 Create Table Information
 (
 	InfoID int IDENTITY(1,1) primary key,
+	Image nvarchar(max),
 	PhoneNumber varchar(10),
 	Address varchar(30),
 	Gender varchar(7) check (Gender in ('Male', 'Female')),

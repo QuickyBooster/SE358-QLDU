@@ -20,6 +20,11 @@ namespace SchoolManagement
             this.user = user;
         }
 
+        public HomePrincipal()
+        {
+            InitializeComponent();
+        }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
@@ -81,7 +86,7 @@ namespace SchoolManagement
 
         private void Home_Click(object sender, EventArgs e)
         {
-            ucHome = new UCHome();
+            ucHome = new UCHome(user);
             ucHome.Dock = DockStyle.Fill;
             this.TabUC.Controls.Clear();
             this.TabUC.Controls.Add(ucHome);
@@ -97,7 +102,7 @@ namespace SchoolManagement
 
         private void HomePrincipal_Load(object sender, EventArgs e)
         {
-            ucHome = new UCHome();
+            ucHome = new UCHome(user);
             ucHome.Dock = DockStyle.Fill;
             this.TabUC.Controls.Clear();
             this.TabUC.Controls.Add(ucHome);
