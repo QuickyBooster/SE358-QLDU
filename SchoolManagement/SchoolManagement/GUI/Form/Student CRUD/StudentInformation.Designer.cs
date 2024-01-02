@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentInformation));
             this.Sidebar = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Scores = new Guna.UI2.WinForms.Guna2Button();
+            this.btnScores = new Guna.UI2.WinForms.Guna2Button();
             this.btnTuiitionfee = new Guna.UI2.WinForms.Guna2Button();
             this.btnParents = new Guna.UI2.WinForms.Guna2Button();
             this.btnPersonal = new Guna.UI2.WinForms.Guna2Button();
@@ -43,7 +43,8 @@
             this.picAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelDisplay = new System.Windows.Forms.Panel();
+            this.btn_AddAvatar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Sidebar.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -55,7 +56,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Sidebar.BorderRadius = 18;
             this.Sidebar.Controls.Add(this.label1);
-            this.Sidebar.Controls.Add(this.Scores);
+            this.Sidebar.Controls.Add(this.btnScores);
             this.Sidebar.Controls.Add(this.btnTuiitionfee);
             this.Sidebar.Controls.Add(this.btnParents);
             this.Sidebar.Controls.Add(this.btnPersonal);
@@ -71,7 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(17, 10);
@@ -81,36 +82,36 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Menu";
             // 
-            // Scores
+            // btnScores
             // 
-            this.Scores.Animated = true;
-            this.Scores.AnimatedGIF = true;
-            this.Scores.BackColor = System.Drawing.Color.Transparent;
-            this.Scores.BorderRadius = 15;
-            this.Scores.CustomImages.HoveredImage = global::SchoolManagement.Properties.Resources.file__1_;
-            this.Scores.CustomImages.Image = global::SchoolManagement.Properties.Resources.file__1_;
-            this.Scores.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Scores.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
-            this.Scores.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.Scores.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Scores.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Scores.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Scores.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Scores.FillColor = System.Drawing.Color.Transparent;
-            this.Scores.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.Scores.ForeColor = System.Drawing.Color.DimGray;
-            this.Scores.HoverState.FillColor = System.Drawing.Color.White;
-            this.Scores.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.Scores.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
-            this.Scores.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Scores.Location = new System.Drawing.Point(0, 155);
-            this.Scores.Margin = new System.Windows.Forms.Padding(2);
-            this.Scores.Name = "Scores";
-            this.Scores.Size = new System.Drawing.Size(221, 42);
-            this.Scores.TabIndex = 5;
-            this.Scores.Text = "Scores";
-            this.Scores.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Scores.TextOffset = new System.Drawing.Point(77, 0);
+            this.btnScores.Animated = true;
+            this.btnScores.AnimatedGIF = true;
+            this.btnScores.BackColor = System.Drawing.Color.Transparent;
+            this.btnScores.BorderRadius = 15;
+            this.btnScores.CustomImages.HoveredImage = global::SchoolManagement.Properties.Resources.file__1_;
+            this.btnScores.CustomImages.Image = global::SchoolManagement.Properties.Resources.file__1_;
+            this.btnScores.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnScores.CustomImages.ImageOffset = new System.Drawing.Point(15, 0);
+            this.btnScores.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnScores.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnScores.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnScores.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnScores.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnScores.FillColor = System.Drawing.Color.Transparent;
+            this.btnScores.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnScores.ForeColor = System.Drawing.Color.DimGray;
+            this.btnScores.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnScores.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.btnScores.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
+            this.btnScores.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnScores.Location = new System.Drawing.Point(0, 155);
+            this.btnScores.Margin = new System.Windows.Forms.Padding(2);
+            this.btnScores.Name = "btnScores";
+            this.btnScores.Size = new System.Drawing.Size(221, 42);
+            this.btnScores.TabIndex = 5;
+            this.btnScores.Text = "Scores";
+            this.btnScores.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnScores.TextOffset = new System.Drawing.Point(77, 0);
             // 
             // btnTuiitionfee
             // 
@@ -139,7 +140,7 @@
             this.btnTuiitionfee.Name = "btnTuiitionfee";
             this.btnTuiitionfee.Size = new System.Drawing.Size(221, 42);
             this.btnTuiitionfee.TabIndex = 4;
-            this.btnTuiitionfee.Text = "Employees";
+            this.btnTuiitionfee.Text = "Tuiition fee";
             this.btnTuiitionfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTuiitionfee.TextOffset = new System.Drawing.Point(77, 0);
             // 
@@ -170,9 +171,10 @@
             this.btnParents.Name = "btnParents";
             this.btnParents.Size = new System.Drawing.Size(221, 42);
             this.btnParents.TabIndex = 3;
-            this.btnParents.Text = "Students";
+            this.btnParents.Text = "Parents";
             this.btnParents.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnParents.TextOffset = new System.Drawing.Point(77, 0);
+            this.btnParents.Click += new System.EventHandler(this.btnParents_Click);
             // 
             // btnPersonal
             // 
@@ -218,6 +220,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.btn_AddAvatar);
             this.guna2Panel1.Controls.Add(this.lbStudentID);
             this.guna2Panel1.Controls.Add(this.lbEventName);
             this.guna2Panel1.Controls.Add(this.picAvatar);
@@ -233,7 +236,7 @@
             this.lbStudentID.BackColor = System.Drawing.Color.White;
             this.lbStudentID.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.lbStudentID.ForeColor = System.Drawing.Color.DimGray;
-            this.lbStudentID.Location = new System.Drawing.Point(124, 50);
+            this.lbStudentID.Location = new System.Drawing.Point(124, 53);
             this.lbStudentID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbStudentID.Name = "lbStudentID";
             this.lbStudentID.Size = new System.Drawing.Size(108, 28);
@@ -294,14 +297,35 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 31);
             this.guna2ControlBox1.TabIndex = 10;
             // 
-            // panel1
+            // panelDisplay
             // 
-            this.panel1.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(227, 106);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(773, 592);
-            this.panel1.TabIndex = 12;
+            this.panelDisplay.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
+            this.panelDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDisplay.Location = new System.Drawing.Point(227, 106);
+            this.panelDisplay.Name = "panelDisplay";
+            this.panelDisplay.Size = new System.Drawing.Size(773, 592);
+            this.panelDisplay.TabIndex = 12;
+            // 
+            // btn_AddAvatar
+            // 
+            this.btn_AddAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AddAvatar.BorderRadius = 15;
+            this.btn_AddAvatar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_AddAvatar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_AddAvatar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_AddAvatar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_AddAvatar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_AddAvatar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_AddAvatar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_AddAvatar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddAvatar.ForeColor = System.Drawing.Color.White;
+            this.btn_AddAvatar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_AddAvatar.Location = new System.Drawing.Point(236, 52);
+            this.btn_AddAvatar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_AddAvatar.Name = "btn_AddAvatar";
+            this.btn_AddAvatar.Size = new System.Drawing.Size(122, 40);
+            this.btn_AddAvatar.TabIndex = 198;
+            this.btn_AddAvatar.Text = "Add Avatar";
             // 
             // StudentInformation
             // 
@@ -310,7 +334,7 @@
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 700);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelDisplay);
             this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel1);
@@ -333,7 +357,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel Sidebar;
-        private Guna.UI2.WinForms.Guna2Button Scores;
+        private Guna.UI2.WinForms.Guna2Button btnScores;
         private Guna.UI2.WinForms.Guna2Button btnTuiitionfee;
         private Guna.UI2.WinForms.Guna2Button btnParents;
         private Guna.UI2.WinForms.Guna2Button btnPersonal;
@@ -345,6 +369,9 @@
         private System.Windows.Forms.Label lbStudentID;
         private System.Windows.Forms.Label lbEventName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelDisplay;
+        private UCAddParentsInfo ucAddParentsInfo;
+        private UCAddStudentInfo ucAddStudentInfo;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_AddAvatar;
     }
 }

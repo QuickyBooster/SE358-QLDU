@@ -19,7 +19,18 @@ namespace SchoolManagement
 
         private void btnPersonal_Click(object sender, EventArgs e)
         {
-            
+            ucAddStudentInfo = new UCAddStudentInfo();
+            ucAddStudentInfo.Dock = DockStyle.Fill;
+            this.panelDisplay.Controls.Clear();
+            this.panelDisplay.Controls.Add(ucAddStudentInfo);
+        }
+
+        private void btnParents_Click(object sender, EventArgs e)
+        {
+            ucAddParentsInfo = new UCAddParentsInfo();
+            ucAddParentsInfo.Dock = DockStyle.Fill;
+            this.panelDisplay.Controls.Clear();
+            this.panelDisplay.Controls.Add(ucAddParentsInfo);
         }
     }
 }
