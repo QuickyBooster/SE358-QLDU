@@ -31,7 +31,9 @@ namespace SchoolManagement
             }   
             else
             {
-                guna2CirclePictureBox1.Image = new System.Drawing.Bitmap(user.Information.Image);
+                string path = Application.StartupPath;
+                path = path.Replace("\\bin\\Debug", "");
+                guna2CirclePictureBox1.Image = new System.Drawing.Bitmap(path + user.Information.Image);
             }    
         }
     }

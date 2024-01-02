@@ -64,7 +64,7 @@ namespace SchoolManagement
             var list = new List<Class>();
             foreach (var p in DataProvider.SchoolManagement.Classes.ToList())
             {
-                if (p.ClassName.Contains(txtSearchClass.Text))
+                if (p.ClassName.ToLower().Contains(txtSearchClass.Text.ToLower()))
                 {
                     list.Add(p);
                 }
