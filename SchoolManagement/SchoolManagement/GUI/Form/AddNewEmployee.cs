@@ -63,9 +63,53 @@ namespace SchoolManagement
                 guna2CustomCheckBox1.Checked = true;
             }
 
-            string path = Application.StartupPath;
-            path = path.Replace("\\bin\\Debug", "");
-            picture_product.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+            if (user.Information.Image != null)
+            {
+                string path = Application.StartupPath;
+                path = path.Replace("\\bin\\Debug", "");
+                picture_product.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+            }
+
+        }
+
+        public AddNewEmployee(string username, int i    )
+        {
+            InitializeComponent();
+            this.user = DataProvider.SchoolManagement.Users.Find(username);
+            btn_Add.Visible = false;
+            btn_Delete.Visible = false;
+
+            combobox_usergroup.Items.Clear();
+            foreach (var p in DataProvider.SchoolManagement.Roles)
+            {
+                if (p.RoleName.Equals("Principal")) continue;
+                combobox_usergroup.Items.Add(p.RoleName);
+            }
+
+            lbEmployeeID.Text = user.InfoID.ToString();
+
+            guna2Panel1.Visible = false;
+
+            txtAddress.Text = user.Information.Address;
+            txtEmail.Text = user.Email;
+            txtEmployeeName.Text = user.FulName;
+            txtPhone.Text = user.Information.PhoneNumber;
+
+            if (user.Information.Gender == "Male")
+            {
+                checkbox_male.Checked = true;
+            }
+            else
+            {
+                guna2CustomCheckBox1.Checked = true;
+            }
+
+            if (user.Information.Image != null)
+            {
+                string path = Application.StartupPath;
+                path = path.Replace("\\bin\\Debug", "");
+                picture_product.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+            }
 
         }
 

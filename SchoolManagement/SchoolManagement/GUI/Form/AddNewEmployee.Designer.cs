@@ -678,7 +678,7 @@
             this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
             this.btn_Delete.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Delete.Location = new System.Drawing.Point(292, 612);
+            this.btn_Delete.Location = new System.Drawing.Point(295, 612);
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(100, 35);

@@ -40,8 +40,11 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -88,6 +91,7 @@
             this.btn_SaveChange.Size = new System.Drawing.Size(150, 40);
             this.btn_SaveChange.TabIndex = 31;
             this.btn_SaveChange.Text = "Save change";
+            this.btn_SaveChange.Click += new System.EventHandler(this.btn_SaveChange_Click);
             // 
             // txtRetypePass
             // 
@@ -103,7 +107,7 @@
             this.txtRetypePass.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtRetypePass.ForeColor = System.Drawing.Color.Gray;
             this.txtRetypePass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRetypePass.Location = new System.Drawing.Point(161, 217);
+            this.txtRetypePass.Location = new System.Drawing.Point(162, 234);
             this.txtRetypePass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtRetypePass.Name = "txtRetypePass";
             this.txtRetypePass.PasswordChar = '\0';
@@ -139,14 +143,15 @@
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtPass.ForeColor = System.Drawing.Color.Gray;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Location = new System.Drawing.Point(161, 138);
+            this.txtPass.Location = new System.Drawing.Point(161, 170);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '\0';
-            this.txtPass.PlaceholderText = "Password";
+            this.txtPass.PlaceholderText = "New password";
             this.txtPass.SelectedText = "";
             this.txtPass.Size = new System.Drawing.Size(250, 40);
             this.txtPass.TabIndex = 28;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // guna2ControlBox3
             // 
@@ -185,7 +190,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SchoolManagement.Properties.Resources.password__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(102, 217);
+            this.pictureBox1.Location = new System.Drawing.Point(103, 234);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
@@ -197,13 +202,49 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SchoolManagement.Properties.Resources.password;
-            this.pictureBox3.Location = new System.Drawing.Point(102, 138);
+            this.pictureBox3.Location = new System.Drawing.Point(102, 170);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::SchoolManagement.Properties.Resources._lock;
+            this.pictureBox2.Location = new System.Drawing.Point(103, 107);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.BorderRadius = 15;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(162, 107);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "Password";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(250, 40);
+            this.guna2TextBox1.TabIndex = 35;
             // 
             // ChangePassword
             // 
@@ -211,6 +252,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.debateui;
             this.ClientSize = new System.Drawing.Size(550, 440);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.link_Back);
@@ -227,6 +270,7 @@
             this.Text = "ChangePassword";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +288,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPass;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

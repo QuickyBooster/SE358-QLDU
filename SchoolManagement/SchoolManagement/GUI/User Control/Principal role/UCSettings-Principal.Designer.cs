@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnChangeAvatar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbRole = new System.Windows.Forms.Label();
             this.btnChangePass = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -40,10 +39,7 @@
             this.lbPhone = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbDateOfBirth = new System.Windows.Forms.Label();
             this.AvatarPic = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbUserName2 = new System.Windows.Forms.Label();
             this.lb_Name = new System.Windows.Forms.Label();
@@ -61,7 +57,6 @@
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
-            this.guna2Panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPic)).BeginInit();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -69,28 +64,6 @@
             this.panel_productname.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnChangeAvatar
-            // 
-            this.btnChangeAvatar.BackColor = System.Drawing.Color.Transparent;
-            this.btnChangeAvatar.BorderRadius = 15;
-            this.btnChangeAvatar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnChangeAvatar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnChangeAvatar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChangeAvatar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChangeAvatar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChangeAvatar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-            this.btnChangeAvatar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-            this.btnChangeAvatar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnChangeAvatar.ForeColor = System.Drawing.Color.White;
-            this.btnChangeAvatar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnChangeAvatar.Location = new System.Drawing.Point(69, 202);
-            this.btnChangeAvatar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnChangeAvatar.Name = "btnChangeAvatar";
-            this.btnChangeAvatar.Size = new System.Drawing.Size(149, 35);
-            this.btnChangeAvatar.TabIndex = 55;
-            this.btnChangeAvatar.Text = "Change avatar";
-            this.btnChangeAvatar.UseTransparentBackground = true;
             // 
             // guna2Panel2
             // 
@@ -114,9 +87,9 @@
             this.lbRole.Location = new System.Drawing.Point(19, 4);
             this.lbRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbRole.Name = "lbRole";
-            this.lbRole.Size = new System.Drawing.Size(116, 32);
+            this.lbRole.Size = new System.Drawing.Size(115, 32);
             this.lbRole.TabIndex = 53;
-            this.lbRole.Text = "Manager";
+            this.lbRole.Text = "Principal";
             // 
             // btnChangePass
             // 
@@ -139,6 +112,7 @@
             this.btnChangePass.TabIndex = 63;
             this.btnChangePass.Text = "Change password";
             this.btnChangePass.UseTransparentBackground = true;
+            this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
             // 
             // guna2Panel8
             // 
@@ -201,7 +175,7 @@
             this.guna2Panel7.BorderThickness = 2;
             this.guna2Panel7.Controls.Add(this.lbPhone);
             this.guna2Panel7.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Panel7.Location = new System.Drawing.Point(611, 211);
+            this.guna2Panel7.Location = new System.Drawing.Point(69, 216);
             this.guna2Panel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(300, 38);
@@ -228,7 +202,7 @@
             this.lbUserName.Location = new System.Drawing.Point(231, 66);
             this.lbUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(147, 46);
+            this.lbUserName.Size = new System.Drawing.Size(430, 46);
             this.lbUserName.TabIndex = 57;
             this.lbUserName.Text = "Principal";
             // 
@@ -238,39 +212,12 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(609, 185);
+            this.label7.Location = new System.Drawing.Point(67, 190);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 20);
             this.label7.TabIndex = 59;
             this.label7.Text = "Phone";
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel6.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel6.BorderRadius = 15;
-            this.guna2Panel6.BorderThickness = 2;
-            this.guna2Panel6.Controls.Add(this.lbDateOfBirth);
-            this.guna2Panel6.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Panel6.Location = new System.Drawing.Point(71, 211);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(300, 38);
-            this.guna2Panel6.TabIndex = 58;
-            // 
-            // lbDateOfBirth
-            // 
-            this.lbDateOfBirth.AutoSize = true;
-            this.lbDateOfBirth.BackColor = System.Drawing.Color.Transparent;
-            this.lbDateOfBirth.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDateOfBirth.ForeColor = System.Drawing.Color.Gray;
-            this.lbDateOfBirth.Location = new System.Drawing.Point(12, 8);
-            this.lbDateOfBirth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbDateOfBirth.Name = "lbDateOfBirth";
-            this.lbDateOfBirth.Size = new System.Drawing.Size(96, 21);
-            this.lbDateOfBirth.TabIndex = 49;
-            this.lbDateOfBirth.Text = "03/05/2003";
             // 
             // AvatarPic
             // 
@@ -284,19 +231,6 @@
             this.AvatarPic.TabIndex = 56;
             this.AvatarPic.TabStop = false;
             this.AvatarPic.UseTransparentBackground = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(69, 185);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "Date of birth";
             // 
             // guna2Panel5
             // 
@@ -479,6 +413,7 @@
             this.btnChangeProfile.TabIndex = 48;
             this.btnChangeProfile.Text = "Change profile";
             this.btnChangeProfile.UseTransparentBackground = true;
+            this.btnChangeProfile.Click += new System.EventHandler(this.btnChangeProfile_Click);
             // 
             // guna2Panel1
             // 
@@ -491,8 +426,6 @@
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.guna2Panel7);
             this.guna2Panel1.Controls.Add(this.label7);
-            this.guna2Panel1.Controls.Add(this.guna2Panel6);
-            this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.guna2Panel5);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
@@ -515,7 +448,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.btnChangeAvatar);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbUserName);
@@ -530,8 +462,6 @@
             this.guna2Panel8.PerformLayout();
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
-            this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPic)).EndInit();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
@@ -549,8 +479,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2GradientButton btnChangeAvatar;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label lbRole;
         private Guna.UI2.WinForms.Guna2GradientButton btnChangePass;
@@ -562,10 +490,7 @@
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.Label lbUserName;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private System.Windows.Forms.Label lbDateOfBirth;
         private Guna.UI2.WinForms.Guna2CirclePictureBox AvatarPic;
-        private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private System.Windows.Forms.Label lbUserName2;
         private System.Windows.Forms.Label lb_Name;
