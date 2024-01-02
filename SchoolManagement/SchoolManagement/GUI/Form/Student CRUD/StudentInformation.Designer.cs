@@ -204,6 +204,7 @@
             this.btnPersonal.Text = "Personal";
             this.btnPersonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPersonal.TextOffset = new System.Drawing.Point(77, 0);
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // guna2BorderlessForm1
             // 

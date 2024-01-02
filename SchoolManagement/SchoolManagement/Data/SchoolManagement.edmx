@@ -40,6 +40,7 @@
             <PropertyRef Name="InfoID" />
           </Key>
           <Property Name="InfoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Image" Type="nvarchar(max)" />
           <Property Name="PhoneNumber" Type="varchar" MaxLength="10" />
           <Property Name="Address" Type="varchar" MaxLength="30" />
           <Property Name="Gender" Type="varchar" MaxLength="7" />
@@ -356,6 +357,7 @@
             <PropertyRef Name="InfoID" />
           </Key>
           <Property Name="InfoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Gender" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
@@ -580,7 +582,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SchoolManagement" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SE358_SchoolManagementEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Classes" EntityType="Self.Class" />
           <EntitySet Name="Documents" EntityType="Self.Document" />
           <EntitySet Name="Exams" EntityType="Self.Exam" />
@@ -645,7 +647,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SE358_SchoolManagementModelStoreContainer" CdmEntityContainer="SchoolManagement">
+        <EntityContainerMapping StorageEntityContainer="SE358_SchoolManagementModelStoreContainer" CdmEntityContainer="SE358_SchoolManagementEntities">
           <EntitySetMapping Name="Classes">
             <EntityTypeMapping TypeName="SE358_SchoolManagementModel.Class">
               <MappingFragment StoreEntitySet="Classes">
@@ -683,6 +685,7 @@
             <EntityTypeMapping TypeName="SE358_SchoolManagementModel.Information">
               <MappingFragment StoreEntitySet="Information">
                 <ScalarProperty Name="InfoID" ColumnName="InfoID" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
                 <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="Gender" ColumnName="Gender" />

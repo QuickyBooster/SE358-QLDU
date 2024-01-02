@@ -64,7 +64,7 @@
             this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(84, 706);
+            this.label1.Location = new System.Drawing.Point(84, 694);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 25);
@@ -94,13 +94,14 @@
             this.Log_out.HoverState.FillColor = System.Drawing.Color.White;
             this.Log_out.HoverState.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Log_out.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(130)))), ((int)(((byte)(254)))));
-            this.Log_out.Location = new System.Drawing.Point(2, 749);
+            this.Log_out.Location = new System.Drawing.Point(2, 737);
             this.Log_out.Margin = new System.Windows.Forms.Padding(2);
             this.Log_out.Name = "Log_out";
             this.Log_out.Size = new System.Drawing.Size(219, 38);
             this.Log_out.TabIndex = 9;
             this.Log_out.Text = "Log out";
             this.Log_out.TextOffset = new System.Drawing.Point(27, 0);
+            this.Log_out.Click += new System.EventHandler(this.Log_out_Click);
             // 
             // Settings
             // 
@@ -133,6 +134,7 @@
             this.Settings.Text = "Settings";
             this.Settings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Settings.TextOffset = new System.Drawing.Point(77, 0);
+            this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // Subjects
             // 
@@ -165,6 +167,7 @@
             this.Subjects.Text = "Subjects";
             this.Subjects.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Subjects.TextOffset = new System.Drawing.Point(77, 0);
+            this.Subjects.Click += new System.EventHandler(this.Subjects_Click);
             // 
             // Classes
             // 
@@ -197,6 +200,7 @@
             this.Classes.Text = "Classes";
             this.Classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Classes.TextOffset = new System.Drawing.Point(77, 0);
+            this.Classes.Click += new System.EventHandler(this.Classes_Click);
             // 
             // guna2ControlBox2
             // 
@@ -255,6 +259,7 @@
             this.Employees.Text = "Employees";
             this.Employees.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Employees.TextOffset = new System.Drawing.Point(77, 0);
+            this.Employees.Click += new System.EventHandler(this.Employees_Click);
             // 
             // Students
             // 
@@ -311,7 +316,7 @@
             this.Sidebar.Location = new System.Drawing.Point(0, 0);
             this.Sidebar.Margin = new System.Windows.Forms.Padding(2);
             this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(72, 800);
+            this.Sidebar.Size = new System.Drawing.Size(72, 788);
             this.Sidebar.TabIndex = 6;
             // 
             // pictureBox2
@@ -334,7 +339,7 @@
             this.guna2Transition1.SetDecoration(this.guna2CirclePictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CirclePictureBox2.Image = global::SchoolManagement.Properties.Resources.Engman;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(17, 694);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(17, 682);
             this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -472,7 +477,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.ClientSize = new System.Drawing.Size(1200, 788);
             this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.guna2ControlBox2);

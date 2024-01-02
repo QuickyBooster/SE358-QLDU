@@ -18,6 +18,18 @@ namespace SchoolManagement
 		{
             InitializeComponent();
             this.user = user;
+            label1.Text = user.FulName;
+            if (user.Information.Image != null)
+            {
+                string path = Application.StartupPath;
+                path = path.Replace("\\bin\\Debug", "");
+                guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+            }    
+        }
+
+        public HomePrincipal()
+        {
+            InitializeComponent();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -81,7 +93,7 @@ namespace SchoolManagement
 
         private void Home_Click(object sender, EventArgs e)
         {
-            ucHome = new UCHome();
+            ucHome = new UCHome(user);
             ucHome.Dock = DockStyle.Fill;
             this.TabUC.Controls.Clear();
             this.TabUC.Controls.Add(ucHome);
@@ -97,10 +109,49 @@ namespace SchoolManagement
 
         private void HomePrincipal_Load(object sender, EventArgs e)
         {
-            ucHome = new UCHome();
+            ucHome = new UCHome(user);
             ucHome.Dock = DockStyle.Fill;
             this.TabUC.Controls.Clear();
             this.TabUC.Controls.Add(ucHome);
+        }
+
+        private void Classes_Click(object sender, EventArgs e)
+        {
+            UCClasses_Principal uc = new UCClasses_Principal(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
+
+        private void Employees_Click(object sender, EventArgs e)
+        {
+            UCEmployees uc = new UCEmployees(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
+
+        private void Subjects_Click(object sender, EventArgs e)
+        {
+            UCSubjects_Principal uc = new UCSubjects_Principal(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            Settings_Principal uc = new Settings_Principal(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
+
+        private void Log_out_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }

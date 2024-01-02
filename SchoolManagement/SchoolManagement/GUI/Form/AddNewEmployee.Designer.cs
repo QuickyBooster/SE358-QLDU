@@ -48,8 +48,6 @@
             this.btnAddAvatar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_Cancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -66,6 +64,8 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.picture_product = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btn_Delete = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_Update = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             this.panel_areacode.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_product)).BeginInit();
@@ -85,12 +85,13 @@
             this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.ForeColor = System.Drawing.Color.White;
             this.btn_Add.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Add.Location = new System.Drawing.Point(382, 612);
+            this.btn_Add.Location = new System.Drawing.Point(420, 612);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(100, 35);
             this.btn_Add.TabIndex = 126;
             this.btn_Add.Text = "Add";
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // guna2Panel1
             // 
@@ -282,7 +283,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(595, 414);
+            this.label10.Location = new System.Drawing.Point(595, 383);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 19);
@@ -296,7 +297,7 @@
             this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
             this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
             this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(127)))), ((int)(((byte)(76)))));
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(574, 414);
+            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(574, 383);
             this.guna2CustomCheckBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
             this.guna2CustomCheckBox1.Size = new System.Drawing.Size(17, 19);
@@ -313,7 +314,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(478, 414);
+            this.label9.Location = new System.Drawing.Point(478, 383);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(42, 19);
@@ -327,7 +328,7 @@
             this.checkbox_male.CheckedState.BorderRadius = 2;
             this.checkbox_male.CheckedState.BorderThickness = 0;
             this.checkbox_male.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(127)))), ((int)(((byte)(76)))));
-            this.checkbox_male.Location = new System.Drawing.Point(458, 414);
+            this.checkbox_male.Location = new System.Drawing.Point(458, 383);
             this.checkbox_male.Margin = new System.Windows.Forms.Padding(2);
             this.checkbox_male.Name = "checkbox_male";
             this.checkbox_male.Size = new System.Drawing.Size(17, 19);
@@ -358,6 +359,7 @@
             this.btnAddAvatar.Size = new System.Drawing.Size(111, 35);
             this.btnAddAvatar.TabIndex = 128;
             this.btnAddAvatar.Text = "Add avatar";
+            this.btnAddAvatar.Click += new System.EventHandler(this.btnAddAvatar_Click);
             // 
             // btn_Cancel
             // 
@@ -373,12 +375,13 @@
             this.btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.White;
             this.btn_Cancel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Cancel.Location = new System.Drawing.Point(215, 612);
+            this.btn_Cancel.Location = new System.Drawing.Point(167, 612);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(100, 35);
             this.btn_Cancel.TabIndex = 127;
             this.btn_Cancel.Text = "Cancel";
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // label8
             // 
@@ -386,42 +389,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(379, 416);
+            this.label8.Location = new System.Drawing.Point(379, 385);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 15);
             this.label8.TabIndex = 120;
             this.label8.Text = "Gender";
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BorderRadius = 15;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(381, 367);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(268, 32);
-            this.guna2DateTimePicker1.TabIndex = 119;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 11, 27, 20, 59, 54, 317);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(379, 352);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 12);
-            this.label7.TabIndex = 118;
-            this.label7.Text = "Birthday";
             // 
             // txtAddress
             // 
@@ -576,9 +549,9 @@
             this.label3.Location = new System.Drawing.Point(379, 78);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 110;
-            this.label3.Text = "Employee ID";
+            this.label3.Text = "Info ID";
             // 
             // guna2ControlBox3
             // 
@@ -691,6 +664,50 @@
             this.picture_product.TabStop = false;
             this.picture_product.UseTransparentBackground = true;
             // 
+            // btn_Delete
+            // 
+            this.btn_Delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Delete.BorderRadius = 15;
+            this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Delete.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Delete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.ForeColor = System.Drawing.Color.White;
+            this.btn_Delete.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_Delete.Location = new System.Drawing.Point(295, 612);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(100, 35);
+            this.btn_Delete.TabIndex = 129;
+            this.btn_Delete.Text = "Delete";
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Update.BorderRadius = 15;
+            this.btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Update.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Update.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Update.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.ForeColor = System.Drawing.Color.White;
+            this.btn_Update.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_Update.Location = new System.Drawing.Point(420, 612);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(100, 35);
+            this.btn_Update.TabIndex = 130;
+            this.btn_Update.Text = "Update";
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
             // AddNewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -698,6 +715,8 @@
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(700, 672);
+            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label10);
@@ -707,8 +726,6 @@
             this.Controls.Add(this.btnAddAvatar);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtEmail);
@@ -759,8 +776,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAddAvatar;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Cancel;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
@@ -777,5 +792,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox picture_product;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Delete;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Update;
     }
 }

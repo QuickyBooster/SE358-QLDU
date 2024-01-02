@@ -28,20 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.gridviewClass = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Avatar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumStudents = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Form_teacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAddClass = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -51,6 +44,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumStudents = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Form_teacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewClass)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -73,52 +71,50 @@
             // 
             // gridviewClass
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridviewClass.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.gridviewClass.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.gridviewClass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewClass.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewClass.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.gridviewClass.ColumnHeadersHeight = 38;
             this.gridviewClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gridviewClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Avatar,
+            this.ClassID,
             this.Grade,
             this.Class_name,
             this.NumStudents,
-            this.Form_teacher,
-            this.Edit,
-            this.Delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridviewClass.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Form_teacher});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridviewClass.DefaultCellStyle = dataGridViewCellStyle8;
             this.gridviewClass.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridviewClass.Location = new System.Drawing.Point(3, 75);
             this.gridviewClass.Name = "gridviewClass";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewClass.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewClass.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridviewClass.RowHeadersVisible = false;
             this.gridviewClass.RowHeadersWidth = 50;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewClass.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewClass.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridviewClass.RowTemplate.Height = 40;
             this.gridviewClass.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.gridviewClass.Size = new System.Drawing.Size(1011, 423);
@@ -144,48 +140,7 @@
             this.gridviewClass.ThemeStyle.RowsStyle.Height = 40;
             this.gridviewClass.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridviewClass.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // Avatar
-            // 
-            this.Avatar.FillWeight = 150F;
-            this.Avatar.HeaderText = "Avatar";
-            this.Avatar.Name = "Avatar";
-            this.Avatar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Avatar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Grade
-            // 
-            this.Grade.HeaderText = "Grade";
-            this.Grade.Name = "Grade";
-            // 
-            // Class_name
-            // 
-            this.Class_name.FillWeight = 150F;
-            this.Class_name.HeaderText = "Class name";
-            this.Class_name.Name = "Class_name";
-            // 
-            // NumStudents
-            // 
-            this.NumStudents.HeaderText = "Num of students";
-            this.NumStudents.Name = "NumStudents";
-            // 
-            // Form_teacher
-            // 
-            this.Form_teacher.FillWeight = 150F;
-            this.Form_teacher.HeaderText = "Form teacher";
-            this.Form_teacher.Name = "Form_teacher";
-            // 
-            // Edit
-            // 
-            this.Edit.FillWeight = 50F;
-            this.Edit.HeaderText = "Edit";
-            this.Edit.Name = "Edit";
-            // 
-            // Delete
-            // 
-            this.Delete.FillWeight = 50F;
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Name = "Delete";
+            this.gridviewClass.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewClass_CellDoubleClick);
             // 
             // guna2Panel1
             // 
@@ -240,6 +195,7 @@
             this.btnAddClass.Size = new System.Drawing.Size(170, 47);
             this.btnAddClass.TabIndex = 64;
             this.btnAddClass.Text = "Add new class";
+            this.btnAddClass.Click += new System.EventHandler(this.btnAddClass_Click);
             // 
             // btnSearch
             // 
@@ -277,6 +233,7 @@
             this.txtSearchClass.SelectedText = "";
             this.txtSearchClass.Size = new System.Drawing.Size(390, 47);
             this.txtSearchClass.TabIndex = 62;
+            this.txtSearchClass.TextChanged += new System.EventHandler(this.txtSearchClass_TextChanged);
             // 
             // lbTotaClasses
             // 
@@ -334,6 +291,33 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1018, 49);
             this.guna2CustomGradientPanel1.TabIndex = 61;
             // 
+            // ClassID
+            // 
+            this.ClassID.HeaderText = "Class ID";
+            this.ClassID.Name = "ClassID";
+            // 
+            // Grade
+            // 
+            this.Grade.HeaderText = "Grade";
+            this.Grade.Name = "Grade";
+            // 
+            // Class_name
+            // 
+            this.Class_name.FillWeight = 150F;
+            this.Class_name.HeaderText = "Class name";
+            this.Class_name.Name = "Class_name";
+            // 
+            // NumStudents
+            // 
+            this.NumStudents.HeaderText = "Num of students";
+            this.NumStudents.Name = "NumStudents";
+            // 
+            // Form_teacher
+            // 
+            this.Form_teacher.FillWeight = 150F;
+            this.Form_teacher.HeaderText = "Form teacher";
+            this.Form_teacher.Name = "Form_teacher";
+            // 
             // UCClasses_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,12 +356,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private System.Windows.Forms.DataGridViewImageColumn Avatar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClassID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumStudents;
         private System.Windows.Forms.DataGridViewTextBoxColumn Form_teacher;
-        private System.Windows.Forms.DataGridViewButtonColumn Edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

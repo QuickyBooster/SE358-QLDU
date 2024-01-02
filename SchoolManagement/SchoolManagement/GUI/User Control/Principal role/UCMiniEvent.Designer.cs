@@ -33,8 +33,8 @@
             this.lbTime = new System.Windows.Forms.Label();
             this.lbEventName = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.lbNumOfAttendances = new System.Windows.Forms.Label();
             this.lbStartTime = new System.Windows.Forms.Label();
+            this.lbNumOfAttendances = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -54,9 +54,9 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(119, 7);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(18, 7);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(324, 79);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(389, 79);
             this.guna2CustomGradientPanel1.TabIndex = 3;
             // 
             // guna2NumericUpDown1
@@ -111,19 +111,6 @@
             this.guna2CirclePictureBox1.TabIndex = 1;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // lbNumOfAttendances
-            // 
-            this.lbNumOfAttendances.AutoSize = true;
-            this.lbNumOfAttendances.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
-            this.lbNumOfAttendances.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lbNumOfAttendances.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(86)))), ((int)(((byte)(162)))));
-            this.lbNumOfAttendances.Location = new System.Drawing.Point(273, 20);
-            this.lbNumOfAttendances.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbNumOfAttendances.Name = "lbNumOfAttendances";
-            this.lbNumOfAttendances.Size = new System.Drawing.Size(36, 20);
-            this.lbNumOfAttendances.TabIndex = 5;
-            this.lbNumOfAttendances.Text = "254";
-            // 
             // lbStartTime
             // 
             this.lbStartTime.AutoSize = true;
@@ -136,6 +123,19 @@
             this.lbStartTime.Size = new System.Drawing.Size(47, 25);
             this.lbStartTime.TabIndex = 6;
             this.lbStartTime.Text = "7:00";
+            // 
+            // lbNumOfAttendances
+            // 
+            this.lbNumOfAttendances.AutoSize = true;
+            this.lbNumOfAttendances.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
+            this.lbNumOfAttendances.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lbNumOfAttendances.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(86)))), ((int)(((byte)(162)))));
+            this.lbNumOfAttendances.Location = new System.Drawing.Point(273, 20);
+            this.lbNumOfAttendances.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNumOfAttendances.Name = "lbNumOfAttendances";
+            this.lbNumOfAttendances.Size = new System.Drawing.Size(36, 20);
+            this.lbNumOfAttendances.TabIndex = 5;
+            this.lbNumOfAttendances.Text = "254";
             // 
             // UCMiniEvent
             // 
@@ -162,7 +162,7 @@
         private System.Windows.Forms.Label lbTime;
         private System.Windows.Forms.Label lbEventName;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private System.Windows.Forms.Label lbNumOfAttendances;
         private System.Windows.Forms.Label lbStartTime;
+        private System.Windows.Forms.Label lbNumOfAttendances;
     }
 }

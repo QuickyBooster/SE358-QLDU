@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace SchoolManagement
         public UCStudents()
         {
             InitializeComponent();
+
+            loadData();
+        }
+
+        private void loadData()
+        {
+            int total = 0;
+            DataProvider.SchoolManagement.Students.ToList().ForEach(p => total++);
+            lbTotalStudents.Text = total.ToString();
+
+        }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            UCAddStudentInfo studentInformation = new UCAddStudentInfo();
+            studentInformation.Show();
         }
     }
 }

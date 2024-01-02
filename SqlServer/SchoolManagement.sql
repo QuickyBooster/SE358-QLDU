@@ -25,6 +25,7 @@ Go
 Create Table Information
 (
 	InfoID int IDENTITY(1,1) primary key,
+	Image nvarchar(max),
 	PhoneNumber varchar(10),
 	Address varchar(30),
 	Gender varchar(7) check (Gender in ('Male', 'Female')),
