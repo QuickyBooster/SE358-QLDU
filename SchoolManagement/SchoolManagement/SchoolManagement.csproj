@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\Student CRUD\AddNewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\AddNewStudent.Designer.cs">
+      <DependentUpon>AddNewStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Class.cs">
       <DependentUpon>SchoolManagement.tt</DependentUpon>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\HomeCashier.resx">
       <DependentUpon>HomeCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Student CRUD\AddNewStudent.resx">
+      <DependentUpon>AddNewStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\SubjectDetails.resx">
       <DependentUpon>SubjectDetails.cs</DependentUpon>
