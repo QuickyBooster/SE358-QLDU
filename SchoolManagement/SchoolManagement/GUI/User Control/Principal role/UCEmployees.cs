@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace SchoolManagement
 {
     public partial class UCEmployees : UserControl
     {
-        public UCEmployees()
+        private User user;
+        public UCEmployees(User user)
         {
             InitializeComponent();
+            this.user = user;
         }
     }
 }

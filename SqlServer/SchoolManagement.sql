@@ -1,6 +1,4 @@
-﻿drop database SE358_SchoolManagement
-
-Create database SE358_SchoolManagement
+﻿Create database SE358_SchoolManagement
 Go
 
 Use SE358_SchoolManagement

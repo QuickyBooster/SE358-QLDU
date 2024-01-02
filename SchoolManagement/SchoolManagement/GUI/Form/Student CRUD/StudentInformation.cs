@@ -16,5 +16,10 @@ namespace SchoolManagement
         {
             InitializeComponent();
         }
+
+        private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

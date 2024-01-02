@@ -107,5 +107,21 @@ namespace SchoolManagement
             this.TabUC.Controls.Clear();
             this.TabUC.Controls.Add(ucHome);
         }
+
+        private void Classes_Click(object sender, EventArgs e)
+        {
+            UCClasses_Principal uc = new UCClasses_Principal(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
+
+        private void Employees_Click(object sender, EventArgs e)
+        {
+            UCEmployees uc = new UCEmployees(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
     }
 }
