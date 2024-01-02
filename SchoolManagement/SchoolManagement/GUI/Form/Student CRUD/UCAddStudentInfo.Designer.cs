@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_Edit = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_Add = new Guna.UI2.WinForms.Guna2GradientButton();
             this.comboClass = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.comboGrade = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -54,26 +54,26 @@
             this.panel_areacode.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_Edit
+            // btn_Add
             // 
-            this.btn_Edit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Edit.BorderRadius = 15;
-            this.btn_Edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Edit.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Edit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-            this.btn_Edit.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-            this.btn_Edit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Edit.Location = new System.Drawing.Point(285, 520);
-            this.btn_Edit.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(170, 35);
-            this.btn_Edit.TabIndex = 197;
-            this.btn_Edit.Text = "Edit";
+            this.btn_Add.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Add.BorderRadius = 15;
+            this.btn_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Add.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Add.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add.ForeColor = System.Drawing.Color.White;
+            this.btn_Add.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_Add.Location = new System.Drawing.Point(285, 520);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(170, 41);
+            this.btn_Add.TabIndex = 197;
+            this.btn_Add.Text = "Add information";
             // 
             // comboClass
             // 
@@ -451,7 +451,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.btn_Edit);
+            this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.comboClass);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.comboGrade);
@@ -485,7 +485,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientButton btn_Edit;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Add;
         private Guna.UI2.WinForms.Guna2ComboBox comboClass;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2ComboBox comboGrade;
