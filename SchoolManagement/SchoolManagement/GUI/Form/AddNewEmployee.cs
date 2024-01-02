@@ -22,7 +22,7 @@ namespace SchoolManagement
         {
             InitializeComponent();
             btn_Delete.Visible = false;
-            btn_Add.Visible = false;
+            btn_Update.Visible = false;
             combobox_usergroup.Items.Clear();
             foreach (var p in DataProvider.SchoolManagement.Roles)
             {
@@ -36,6 +36,7 @@ namespace SchoolManagement
         public AddNewEmployee(string username)
         {
             InitializeComponent();
+            label1.Text = "Employee information";
             this.user = DataProvider.SchoolManagement.Users.Find(username);
             btn_Add.Visible = false;
             combobox_usergroup.Items.Clear();
@@ -118,6 +119,19 @@ namespace SchoolManagement
             this.Hide();
         }
 
+        public bool IsAllDigits(string input)
+        {
+            foreach (char c in input)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         private void btn_Add_Click(object sender, EventArgs e)
         {
             // Check data input
@@ -173,9 +187,24 @@ namespace SchoolManagement
             }
             if (!txtRetypePass.Text.Equals(txtPass.Text))
             {
-                MessageBox.Show("Fill all information", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Password and retype password are not same", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (!IsAllDigits(txtPhone.Text))
+            {
+                MessageBox.Show("Phone number can not have characters", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtPhone.Text.Length <= 9)
+            {
+                MessageBox.Show("Phone number must be at least 9 digits", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!txtEmail.Text.EndsWith("@gmail.com"))
+            {
+                MessageBox.Show("Email is invalid", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
             var us = DataProvider.SchoolManagement.Users.Find(txtUsername.Text);
             if (us != null)
             {
@@ -330,6 +359,21 @@ namespace SchoolManagement
             if (checkbox_male.Checked == false && guna2CustomCheckBox1.Checked == false)
             {
                 MessageBox.Show("Fill all information", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!IsAllDigits(txtPhone.Text))
+            {
+                MessageBox.Show("Phone number can not have characters", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtPhone.Text.Length <= 9)
+            {
+                MessageBox.Show("Phone number must be at least 9 digits", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
+            if (!txtEmail.Text.EndsWith("@gmail.com"))
+            {
+                MessageBox.Show("Email is invalid", "Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
