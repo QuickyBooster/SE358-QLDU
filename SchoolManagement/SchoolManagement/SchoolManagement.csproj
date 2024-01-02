@@ -334,6 +334,12 @@
     <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.Designer.cs">
       <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCStudentScoreInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCStudentScoreInfo.Designer.cs">
+      <DependentUpon>UCStudentScoreInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Class_Info_Detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -360,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\Student CRUD\AddNewStudent.resx">
       <DependentUpon>AddNewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCStudentScoreInfo.resx">
+      <DependentUpon>UCStudentScoreInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\SubjectDetails.resx">
       <DependentUpon>SubjectDetails.cs</DependentUpon>
@@ -604,6 +613,7 @@
       <DependentUpon>SchoolManagement.edmx</DependentUpon>
       <LastGenOutput>SchoolManagement.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

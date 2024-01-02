@@ -111,6 +111,7 @@
             this.btnScores.Text = "Scores";
             this.btnScores.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnScores.TextOffset = new System.Drawing.Point(77, 0);
+            this.btnScores.Click += new System.EventHandler(this.btnScores_Click);
             // 
             // btnTuiitionfee
             // 
@@ -347,5 +348,7 @@
         private System.Windows.Forms.Label lbEventName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDisplay;
+        private UCParentsInfo ucParentsInfo;
+        private UCStudentScoreInfo uCStudentScoreInfo;
     }
 }

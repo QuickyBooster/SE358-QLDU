@@ -24,7 +24,18 @@ namespace SchoolManagement
 
         private void btnParents_Click(object sender, EventArgs e)
         {
-            
+            ucParentsInfo = new UCParentsInfo();
+            ucParentsInfo.Dock = DockStyle.Fill;
+            this.panelDisplay.Controls.Clear();
+            this.panelDisplay.Controls.Add(ucParentsInfo);
+        }
+
+        private void btnScores_Click(object sender, EventArgs e)
+        {
+            uCStudentScoreInfo = new UCStudentScoreInfo();
+            uCStudentScoreInfo.Dock = DockStyle.Fill;
+            this.panelDisplay.Controls.Clear();
+            this.panelDisplay.Controls.Add(uCStudentScoreInfo);
         }
     }
 }
