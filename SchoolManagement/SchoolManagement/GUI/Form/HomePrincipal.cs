@@ -123,5 +123,13 @@ namespace SchoolManagement
             this.TabUC.Controls.Clear();
             this.TabUC.Controls.Add(uc);
         }
+
+        private void Subjects_Click(object sender, EventArgs e)
+        {
+            UCSubjects_Principal uc = new UCSubjects_Principal(user);
+            uc.Dock = DockStyle.Fill;
+            this.TabUC.Controls.Clear();
+            this.TabUC.Controls.Add(uc);
+        }
     }
 }

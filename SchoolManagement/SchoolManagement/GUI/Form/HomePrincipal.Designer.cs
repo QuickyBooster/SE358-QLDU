@@ -165,6 +165,7 @@
             this.Subjects.Text = "Subjects";
             this.Subjects.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Subjects.TextOffset = new System.Drawing.Point(77, 0);
+            this.Subjects.Click += new System.EventHandler(this.Subjects_Click);
             // 
             // Classes
             // 
