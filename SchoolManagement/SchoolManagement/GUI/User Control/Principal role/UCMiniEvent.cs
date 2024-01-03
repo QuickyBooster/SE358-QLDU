@@ -20,6 +20,7 @@ namespace SchoolManagement
             this.user = user;
 
             lbEventName.Text = user.FulName.ToUpper().ToString();
+            if (user.Information.Gender != null)
             lbTime.Text = user.Information.Gender.ToUpper().ToString();
             //lbStartTime.Text = user.Information.PhoneNumber.ToString();
             lbStartTime.Visible = false;

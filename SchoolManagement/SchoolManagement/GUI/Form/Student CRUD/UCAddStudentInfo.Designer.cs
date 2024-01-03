@@ -51,6 +51,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_areacode = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Update = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel_areacode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,12 +69,13 @@
             this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.ForeColor = System.Drawing.Color.White;
             this.btn_Add.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Add.Location = new System.Drawing.Point(285, 520);
+            this.btn_Add.Location = new System.Drawing.Point(270, 520);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(170, 41);
+            this.btn_Add.Size = new System.Drawing.Size(208, 41);
             this.btn_Add.TabIndex = 197;
-            this.btn_Add.Text = "Add information";
+            this.btn_Add.Text = "-> Fill parents information";
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // comboClass
             // 
@@ -125,6 +127,7 @@
             this.comboGrade.Name = "comboGrade";
             this.comboGrade.Size = new System.Drawing.Size(300, 36);
             this.comboGrade.TabIndex = 194;
+            this.comboGrade.SelectedValueChanged += new System.EventHandler(this.comboGrade_SelectedValueChanged);
             // 
             // label8
             // 
@@ -445,12 +448,35 @@
             this.panel_areacode.Size = new System.Drawing.Size(300, 40);
             this.panel_areacode.TabIndex = 178;
             // 
+            // btn_Update
+            // 
+            this.btn_Update.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Update.BorderRadius = 15;
+            this.btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Update.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Update.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_Update.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.ForeColor = System.Drawing.Color.White;
+            this.btn_Update.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_Update.Location = new System.Drawing.Point(318, 520);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(111, 41);
+            this.btn_Update.TabIndex = 198;
+            this.btn_Update.Text = "Update";
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
             // UCAddStudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.comboClass);
             this.Controls.Add(this.label11);
@@ -508,5 +534,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel panel_areacode;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Update;
     }
 }

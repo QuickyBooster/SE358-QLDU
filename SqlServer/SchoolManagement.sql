@@ -35,6 +35,7 @@ Create Table Information
 	MotherName varchar(25),
 	MotherOccupation varchar(25),
 	MotherPhoneNumber varchar(25),
+	DateOfBirth Date,
 
 )
 
@@ -96,7 +97,7 @@ Go
 Create Table Scores
 (
 	ScoreID int IDENTITY(1,1) primary key,
-	Score int,
+	Score float,
 	ExamID int,
 	StudentID int 
 )

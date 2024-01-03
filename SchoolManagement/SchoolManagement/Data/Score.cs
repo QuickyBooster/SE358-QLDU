@@ -15,7 +15,7 @@ namespace SchoolManagement.Data
     public partial class Score
     {
         public int ScoreID { get; set; }
-        public Nullable<int> Score1 { get; set; }
+        public Nullable<double> ScoreOfExam { get; set; }
         public Nullable<int> ExamID { get; set; }
         public Nullable<int> StudentID { get; set; }
     

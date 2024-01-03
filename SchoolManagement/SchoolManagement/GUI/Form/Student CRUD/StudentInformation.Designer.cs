@@ -44,6 +44,8 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panelDisplay = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.Sidebar.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -143,6 +145,7 @@
             this.btnTuiitionfee.Text = "Tuiition fee";
             this.btnTuiitionfee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTuiitionfee.TextOffset = new System.Drawing.Point(77, 0);
+            this.btnTuiitionfee.Click += new System.EventHandler(this.btnTuiitionfee_Click);
             // 
             // btnParents
             // 
@@ -220,6 +223,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.button2);
+            this.guna2Panel1.Controls.Add(this.button1);
             this.guna2Panel1.Controls.Add(this.lbStudentID);
             this.guna2Panel1.Controls.Add(this.lbEventName);
             this.guna2Panel1.Controls.Add(this.picAvatar);
@@ -305,6 +310,26 @@
             this.panelDisplay.Size = new System.Drawing.Size(773, 592);
             this.panelDisplay.TabIndex = 12;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(267, 58);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 27);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Delete Student";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(418, 23);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 27);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Change Avatar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // StudentInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,5 +375,7 @@
         private System.Windows.Forms.Panel panelDisplay;
         private UCParentsInfo ucParentsInfo;
         private UCStudentScoreInfo uCStudentScoreInfo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

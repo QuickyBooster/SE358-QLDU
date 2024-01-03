@@ -17,21 +17,55 @@ namespace SchoolManagement
         {
             InitializeComponent();
 
-            loadData();
+            loadData(DataProvider.SchoolManagement.Students.ToList());
         }
 
-        private void loadData()
+        private void loadData(List<Student> students)
         {
-            int total = 0;
-            DataProvider.SchoolManagement.Students.ToList().ForEach(p => total++);
-            lbTotalStudents.Text = total.ToString();
+            lbTotalStudents.Text = students.Count.ToString();
 
+            gridviewSupplier.Rows.Clear();
+
+            foreach(var p in students)
+            {
+                var part = p.Information.DateOfBirth.ToString().Split(' ');
+                gridviewSupplier.Rows.Add(p.StudentID, p.FulName, p.Information.Gender, part[0], p.Class.ClassName, p.Class.User.FulName);
+            }    
         }
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            UCAddStudentInfo studentInformation = new UCAddStudentInfo();
-            studentInformation.Show();
+            AddNewStudent studentInformation = new AddNewStudent();
+            studentInformation.ShowDialog();
+            loadData(DataProvider.SchoolManagement.Students.ToList());
+
+        }
+
+        private void gridviewSupplier_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int idx = e.RowIndex;
+            if (idx < 0) return;
+            else
+            {
+                var editStudent = new StudentInformation(int.Parse(gridviewSupplier.Rows[idx].Cells["Student_ID"].Value.ToString()));
+                editStudent.ShowDialog();
+                loadData(DataProvider.SchoolManagement.Students.ToList());
+            }
+        }
+
+        private void txtSearchStudent_TextChanged(object sender, EventArgs e)
+        {
+            var list = new List<Student>();
+
+            foreach(var p in DataProvider.SchoolManagement.Students.ToList())
+            {
+                if (p.FulName.Contains(txtSearchStudent.Text))
+                {
+                    list.Add(p);    
+                }    
+            }
+
+            loadData(list);
         }
     }
 }
