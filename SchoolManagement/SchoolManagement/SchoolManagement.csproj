@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\Student CRUD\AddNewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\AddNewStudent.Designer.cs">
+      <DependentUpon>AddNewStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Class.cs">
       <DependentUpon>SchoolManagement.tt</DependentUpon>
     </Compile>
@@ -109,10 +115,10 @@
     <Compile Include="Data\User.cs">
       <DependentUpon>SchoolManagement.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeDetails.cs">
+    <Compile Include="GUI\Form\EmployeeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeDetails.Designer.cs">
+    <Compile Include="GUI\Form\EmployeeDetails.Designer.cs">
       <DependentUpon>EmployeeDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Form\AddSubject.cs">
@@ -286,16 +292,16 @@
     <Compile Include="GUI\Form\SubjectDetails.Designer.cs">
       <DependentUpon>SubjectDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCAddParentsInfo.cs">
+    <Compile Include="GUI\Form\Student CRUD\UCAddParentsInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCAddParentsInfo.Designer.cs">
+    <Compile Include="GUI\Form\Student CRUD\UCAddParentsInfo.Designer.cs">
       <DependentUpon>UCAddParentsInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCAddStudentInfo.cs">
+    <Compile Include="GUI\Form\Student CRUD\UCAddStudentInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCAddStudentInfo.Designer.cs">
+    <Compile Include="GUI\Form\Student CRUD\UCAddStudentInfo.Designer.cs">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.cs">
@@ -303,6 +309,12 @@
     </Compile>
     <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.Designer.cs">
       <DependentUpon>UCPersonalInfo_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCParentsInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCParentsInfo.Designer.cs">
+      <DependentUpon>UCParentsInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="UCParentsInfo_Teacher.cs">
       <SubType>UserControl</SubType>
@@ -322,6 +334,12 @@
     <Compile Include="GUI\User Control\Principal role\UCSubjects-Principal.Designer.cs">
       <DependentUpon>UCSubjects-Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCStudentScoreInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCStudentScoreInfo.Designer.cs">
+      <DependentUpon>UCStudentScoreInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Class_Info_Detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,7 +352,7 @@
     <Compile Include="View_Score_Screen.Designer.cs">
       <DependentUpon>View_Score_Screen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="EmployeeDetails.resx">
+    <EmbeddedResource Include="GUI\Form\EmployeeDetails.resx">
       <DependentUpon>EmployeeDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\AddSubject.resx">
@@ -345,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\HomeCashier.resx">
       <DependentUpon>HomeCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Student CRUD\AddNewStudent.resx">
+      <DependentUpon>AddNewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCStudentScoreInfo.resx">
+      <DependentUpon>UCStudentScoreInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\SubjectDetails.resx">
       <DependentUpon>SubjectDetails.cs</DependentUpon>
@@ -434,14 +458,17 @@
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCSettings_Teacher.resx">
       <DependentUpon>UCSettings_Teacher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCAddParentsInfo.resx">
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCAddParentsInfo.resx">
       <DependentUpon>UCAddParentsInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCAddStudentInfo.resx">
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCAddStudentInfo.resx">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.resx">
       <DependentUpon>UCPersonalInfo_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCParentsInfo.resx">
+      <DependentUpon>UCParentsInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCParentsInfo_Teacher.resx">
       <DependentUpon>UCParentsInfo_Teacher.cs</DependentUpon>
@@ -586,6 +613,7 @@
       <DependentUpon>SchoolManagement.edmx</DependentUpon>
       <LastGenOutput>SchoolManagement.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
