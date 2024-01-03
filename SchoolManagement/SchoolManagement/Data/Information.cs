@@ -32,6 +32,7 @@ namespace SchoolManagement.Data
         public string MotherName { get; set; }
         public string MotherOccupation { get; set; }
         public string MotherPhoneNumber { get; set; }
+        public Nullable<System.DateTime> DateOfBirth { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Student> Students { get; set; }

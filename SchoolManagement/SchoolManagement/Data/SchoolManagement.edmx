@@ -41,7 +41,7 @@
           </Key>
           <Property Name="InfoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Image" Type="nvarchar(max)" />
-          <Property Name="PhoneNumber" Type="varchar" MaxLength="10" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="12" />
           <Property Name="Address" Type="varchar" MaxLength="30" />
           <Property Name="Gender" Type="varchar" MaxLength="7" />
           <Property Name="FatherName" Type="varchar" MaxLength="25" />
@@ -50,6 +50,7 @@
           <Property Name="MotherName" Type="varchar" MaxLength="25" />
           <Property Name="MotherOccupation" Type="varchar" MaxLength="25" />
           <Property Name="MotherPhoneNumber" Type="varchar" MaxLength="25" />
+          <Property Name="DateOfBirth" Type="date" />
         </EntityType>
         <EntityType Name="Roles">
           <Key>
@@ -63,7 +64,7 @@
             <PropertyRef Name="ScoreID" />
           </Key>
           <Property Name="ScoreID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Score" Type="int" />
+          <Property Name="ScoreOfExam" Type="float" />
           <Property Name="ExamID" Type="int" />
           <Property Name="StudentID" Type="int" />
         </EntityType>
@@ -358,7 +359,7 @@
           </Key>
           <Property Name="InfoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
           <Property Name="Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Gender" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
           <Property Name="FatherName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
@@ -367,6 +368,7 @@
           <Property Name="MotherName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="MotherOccupation" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="MotherPhoneNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
           <NavigationProperty Name="Students" Relationship="Self.FK_Students_Classes_InfoID" FromRole="Information" ToRole="Students" />
           <NavigationProperty Name="Users" Relationship="Self.FK_Users_Information" FromRole="Information" ToRole="Users" />
         </EntityType>
@@ -383,7 +385,7 @@
             <PropertyRef Name="ScoreID" />
           </Key>
           <Property Name="ScoreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Score1" Type="Int32" />
+          <Property Name="ScoreOfExam" Type="Double" />
           <Property Name="ExamID" Type="Int32" />
           <Property Name="StudentID" Type="Int32" />
           <NavigationProperty Name="Exam" Relationship="Self.FK_Scores_Exams" FromRole="Scores" ToRole="Exams" />
@@ -695,6 +697,7 @@
                 <ScalarProperty Name="MotherName" ColumnName="MotherName" />
                 <ScalarProperty Name="MotherOccupation" ColumnName="MotherOccupation" />
                 <ScalarProperty Name="MotherPhoneNumber" ColumnName="MotherPhoneNumber" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -710,7 +713,7 @@
             <EntityTypeMapping TypeName="SE358_SchoolManagementModel.Score">
               <MappingFragment StoreEntitySet="Scores">
                 <ScalarProperty Name="ScoreID" ColumnName="ScoreID" />
-                <ScalarProperty Name="Score1" ColumnName="Score" />
+                <ScalarProperty Name="ScoreOfExam" ColumnName="ScoreOfExam" />
                 <ScalarProperty Name="ExamID" ColumnName="ExamID" />
                 <ScalarProperty Name="StudentID" ColumnName="StudentID" />
               </MappingFragment>

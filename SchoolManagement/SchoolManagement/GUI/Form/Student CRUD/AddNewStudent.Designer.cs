@@ -36,13 +36,14 @@
             this.btnPersonal = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox4 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btn_AddAvatar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelDisplay = new System.Windows.Forms.Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox4 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Sidebar.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -154,6 +155,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox4);
             this.guna2Panel1.Controls.Add(this.btn_AddAvatar);
@@ -163,6 +165,33 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1000, 102);
             this.guna2Panel1.TabIndex = 14;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.BorderRadius = 10;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.RoyalBlue;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(911, 13);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(35, 31);
+            this.guna2ControlBox2.TabIndex = 200;
+            // 
+            // guna2ControlBox4
+            // 
+            this.guna2ControlBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox4.BorderRadius = 10;
+            this.guna2ControlBox4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox4.IconColor = System.Drawing.Color.RoyalBlue;
+            this.guna2ControlBox4.Location = new System.Drawing.Point(954, 13);
+            this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ControlBox4.Name = "guna2ControlBox4";
+            this.guna2ControlBox4.Size = new System.Drawing.Size(35, 31);
+            this.guna2ControlBox4.TabIndex = 199;
             // 
             // btn_AddAvatar
             // 
@@ -184,6 +213,7 @@
             this.btn_AddAvatar.Size = new System.Drawing.Size(138, 40);
             this.btn_AddAvatar.TabIndex = 198;
             this.btn_AddAvatar.Text = "Add Avatar";
+            this.btn_AddAvatar.Click += new System.EventHandler(this.btn_AddAvatar_Click);
             // 
             // picAvatar
             // 
@@ -235,32 +265,14 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 31);
             this.guna2ControlBox1.TabIndex = 15;
             // 
-            // guna2ControlBox2
+            // label2
             // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.BorderRadius = 10;
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(911, 13);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(35, 31);
-            this.guna2ControlBox2.TabIndex = 200;
-            // 
-            // guna2ControlBox4
-            // 
-            this.guna2ControlBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox4.BorderRadius = 10;
-            this.guna2ControlBox4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox4.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox4.Location = new System.Drawing.Point(954, 13);
-            this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox4.Name = "guna2ControlBox4";
-            this.guna2ControlBox4.Size = new System.Drawing.Size(35, 31);
-            this.guna2ControlBox4.TabIndex = 199;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(555, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.TabIndex = 201;
+            this.label2.Text = "Personal information";
             // 
             // AddNewStudent
             // 
@@ -283,6 +295,7 @@
             this.Sidebar.ResumeLayout(false);
             this.Sidebar.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
 
@@ -305,5 +318,6 @@
         private UCAddStudentInfo ucAddStudentInfo;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox4;
+        private System.Windows.Forms.Label label2;
     }
 }
