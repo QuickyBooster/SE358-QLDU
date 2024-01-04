@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,19 @@ namespace SchoolManagement
 {
     public partial class HomeTeacher : Form
     {
+		private User user;
+		public HomeTeacher(User user)
+        {
+			InitializeComponent();
+			this.user = user;
+			label1.Text = user.FulName;
+			if (user.Information.Image != null)
+			{
+				string path = Application.StartupPath;
+				path = path.Replace("\\bin\\Debug", "");
+				guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+			}
+		}
         public HomeTeacher()
         {
             InitializeComponent();

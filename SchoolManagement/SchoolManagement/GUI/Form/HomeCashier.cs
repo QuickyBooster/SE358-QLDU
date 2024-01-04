@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,24 @@ namespace SchoolManagement
 {
     public partial class HomeCashier : Form
     {
+        private User user;
         public HomeCashier()
         {
             InitializeComponent();
         }
-
-        bool menuExpand = false;
+		public HomeCashier(User user)
+		{
+			InitializeComponent();
+			this.user = user;
+			label1.Text = user.FulName;
+			if (user.Information.Image != null)
+			{
+				string path = Application.StartupPath;
+				path = path.Replace("\\bin\\Debug", "");
+				guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+			}
+		}
+		bool menuExpand = false;
         private void MouseDetect_Tick(object sender, EventArgs e)
         {
             if (!guna2Transition1.IsCompleted) return;
