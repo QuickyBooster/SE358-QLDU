@@ -1,6 +1,6 @@
 ﻿namespace SchoolManagement
 {
-    partial class UCStudentScoreInfo
+    partial class UCStudentTuitionFees
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,56 +33,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.comboSemester = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.gridviewClass = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbStudentName = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboSemester = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbAVGPoint = new System.Windows.Forms.Label();
+            this.FeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CollectionDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cashier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewClass)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comboSemester
-            // 
-            this.comboSemester.BackColor = System.Drawing.Color.Transparent;
-            this.comboSemester.BorderColor = System.Drawing.Color.Gray;
-            this.comboSemester.BorderRadius = 12;
-            this.comboSemester.Cursor = System.Windows.Forms.Cursors.Default;
-            this.comboSemester.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboSemester.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboSemester.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(240)))));
-            this.comboSemester.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboSemester.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboSemester.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboSemester.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboSemester.ItemHeight = 30;
-            this.comboSemester.Location = new System.Drawing.Point(306, 19);
-            this.comboSemester.Name = "comboSemester";
-            this.comboSemester.Size = new System.Drawing.Size(165, 36);
-            this.comboSemester.TabIndex = 197;
-            this.comboSemester.SelectedValueChanged += new System.EventHandler(this.comboSemester_SelectedValueChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(173, 27);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(114, 20);
-            this.label12.TabIndex = 198;
-            this.label12.Text = "Choose subject";
             // 
             // guna2Panel1
             // 
@@ -97,10 +63,10 @@
             this.guna2Panel1.Controls.Add(this.gridviewClass);
             this.guna2Panel1.Controls.Add(this.lbStudentName);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(45, 77);
+            this.guna2Panel1.Location = new System.Drawing.Point(46, 88);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(681, 384);
-            this.guna2Panel1.TabIndex = 199;
+            this.guna2Panel1.Size = new System.Drawing.Size(681, 410);
+            this.guna2Panel1.TabIndex = 206;
             // 
             // btnSearch
             // 
@@ -113,7 +79,6 @@
             this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSearch.TabIndex = 64;
             this.btnSearch.TabStop = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // gridviewClass
             // 
@@ -130,13 +95,14 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridviewClass.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridviewClass.ColumnHeadersHeight = 36;
+            this.gridviewClass.ColumnHeadersHeight = 38;
             this.gridviewClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gridviewClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ExamID,
-            this.Subject,
-            this.FifteenMins,
-            this.OnePeriodScore});
+            this.FeeName,
+            this.Amount,
+            this.CollectionDate,
+            this.Cashier,
+            this.Status});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
@@ -146,7 +112,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridviewClass.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridviewClass.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridviewClass.Location = new System.Drawing.Point(3, 47);
+            this.gridviewClass.Location = new System.Drawing.Point(3, 48);
             this.gridviewClass.Name = "gridviewClass";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -162,7 +128,7 @@
             this.gridviewClass.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gridviewClass.RowTemplate.Height = 36;
             this.gridviewClass.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewClass.Size = new System.Drawing.Size(675, 314);
+            this.gridviewClass.Size = new System.Drawing.Size(675, 345);
             this.gridviewClass.TabIndex = 43;
             this.gridviewClass.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gridviewClass.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -176,7 +142,7 @@
             this.gridviewClass.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridviewClass.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.gridviewClass.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gridviewClass.ThemeStyle.HeaderStyle.Height = 36;
+            this.gridviewClass.ThemeStyle.HeaderStyle.Height = 38;
             this.gridviewClass.ThemeStyle.ReadOnly = false;
             this.gridviewClass.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gridviewClass.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -185,28 +151,6 @@
             this.gridviewClass.ThemeStyle.RowsStyle.Height = 36;
             this.gridviewClass.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridviewClass.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // ExamID
-            // 
-            this.ExamID.HeaderText = "Exam ID";
-            this.ExamID.Name = "ExamID";
-            // 
-            // Subject
-            // 
-            this.Subject.FillWeight = 200F;
-            this.Subject.HeaderText = "Subject";
-            this.Subject.Name = "Subject";
-            // 
-            // FifteenMins
-            // 
-            this.FifteenMins.HeaderText = "Type Exam";
-            this.FifteenMins.Name = "FifteenMins";
-            // 
-            // OnePeriodScore
-            // 
-            this.OnePeriodScore.FillWeight = 150F;
-            this.OnePeriodScore.HeaderText = "Score";
-            this.OnePeriodScore.Name = "OnePeriodScore";
             // 
             // lbStudentName
             // 
@@ -223,6 +167,37 @@
             this.lbStudentName.TabIndex = 41;
             this.lbStudentName.Text = "Student name";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label12.Location = new System.Drawing.Point(180, 28);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(128, 20);
+            this.label12.TabIndex = 205;
+            this.label12.Text = "Choose semester";
+            // 
+            // comboSemester
+            // 
+            this.comboSemester.BackColor = System.Drawing.Color.Transparent;
+            this.comboSemester.BorderColor = System.Drawing.Color.Gray;
+            this.comboSemester.BorderRadius = 12;
+            this.comboSemester.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboSemester.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboSemester.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboSemester.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboSemester.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboSemester.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboSemester.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboSemester.ItemHeight = 30;
+            this.comboSemester.Location = new System.Drawing.Point(313, 20);
+            this.comboSemester.Name = "comboSemester";
+            this.comboSemester.Size = new System.Drawing.Size(165, 36);
+            this.comboSemester.TabIndex = 204;
+            // 
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.Transparent;
@@ -237,53 +212,55 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnEdit.Location = new System.Drawing.Point(314, 535);
+            this.btnEdit.Location = new System.Drawing.Point(315, 529);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(130, 36);
-            this.btnEdit.TabIndex = 201;
+            this.btnEdit.TabIndex = 207;
             this.btnEdit.Text = "Edit";
             // 
-            // label1
+            // FeeName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(59, 496);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 20);
-            this.label1.TabIndex = 202;
-            this.label1.Text = "Average points:";
+            this.FeeName.FillWeight = 150F;
+            this.FeeName.HeaderText = "Fee name";
+            this.FeeName.Name = "FeeName";
             // 
-            // lbAVGPoint
+            // Amount
             // 
-            this.lbAVGPoint.AutoSize = true;
-            this.lbAVGPoint.BackColor = System.Drawing.Color.Transparent;
-            this.lbAVGPoint.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lbAVGPoint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbAVGPoint.Location = new System.Drawing.Point(182, 496);
-            this.lbAVGPoint.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbAVGPoint.Name = "lbAVGPoint";
-            this.lbAVGPoint.Size = new System.Drawing.Size(119, 20);
-            this.lbAVGPoint.TabIndex = 203;
-            this.lbAVGPoint.Text = "Average points:";
+            this.Amount.FillWeight = 150F;
+            this.Amount.HeaderText = "Amount (VNĐ)";
+            this.Amount.Name = "Amount";
             // 
-            // UCStudentScoreInfo
+            // CollectionDate
+            // 
+            this.CollectionDate.FillWeight = 150F;
+            this.CollectionDate.HeaderText = "Collection date";
+            this.CollectionDate.Name = "CollectionDate";
+            // 
+            // Cashier
+            // 
+            this.Cashier.FillWeight = 150F;
+            this.Cashier.HeaderText = "Cashier";
+            this.Cashier.Name = "Cashier";
+            // 
+            // Status
+            // 
+            this.Status.FillWeight = 50F;
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            // 
+            // UCStudentTuitionFees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.lbAVGPoint);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.comboSemester);
+            this.Controls.Add(this.btnEdit);
             this.DoubleBuffered = true;
-            this.Name = "UCStudentScoreInfo";
+            this.Name = "UCStudentTuitionFees";
             this.Size = new System.Drawing.Size(773, 592);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -296,18 +273,17 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ComboBox comboSemester;
-        private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.PictureBox btnSearch;
         private Guna.UI2.WinForms.Guna2DataGridView gridviewClass;
         private System.Windows.Forms.Label lbStudentName;
-        private System.Windows.Forms.PictureBox btnSearch;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2ComboBox comboSemester;
         private Guna.UI2.WinForms.Guna2GradientButton btnEdit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExamID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FifteenMins;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OnePeriodScore;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbAVGPoint;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FeeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CollectionDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cashier;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
     }
 }

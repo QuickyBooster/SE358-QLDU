@@ -340,6 +340,12 @@
     <Compile Include="GUI\Form\Student CRUD\UCStudentScoreInfo.Designer.cs">
       <DependentUpon>UCStudentScoreInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCStudentTuitionFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStudentTuitionFees.Designer.cs">
+      <DependentUpon>UCStudentTuitionFees.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_Class_Info_Detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -475,6 +481,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStudentTuitionFees.resx">
+      <DependentUpon>UCStudentTuitionFees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Class_Info_Detail.resx">
       <DependentUpon>View_Class_Info_Detail.cs</DependentUpon>
