@@ -11,55 +11,50 @@ using System.Windows.Forms;
 
 namespace SchoolManagement
 {
-	public partial class HomeCashier : Form
-	{
-		private User user;
-		public HomeCashier()
-		{
-			InitializeComponent();
-		}
+    public partial class HomeCashier : Form
+    {
+        private User user;
+        public HomeCashier()
+        {
+            InitializeComponent();
+        }
 		public HomeCashier(User user)
 		{
 			InitializeComponent();
-			try
+			this.user = user;
+			label1.Text = user.FulName;
+			if (user.Information.Image != null)
 			{
-				this.user = user;
-				label1.Text = user.FulName;
-				if (user.Information.Image != null)
-				{
-					string path = Application.StartupPath;
-					path = path.Replace("\\bin\\Debug", "");
-					guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + user.Information.Image);
-				}
-			} catch (Exception e)
-			{
-				Console.WriteLine(e.Message);
+				string path = Application.StartupPath;
+				path = path.Replace("\\bin\\Debug", "");
+				guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + user.Information.Image);
 			}
 		}
 		bool menuExpand = false;
-		private void MouseDetect_Tick(object sender, EventArgs e)
-		{
-			if (!guna2Transition1.IsCompleted) return;
-			if (Sidebar.ClientRectangle.Contains(PointToClient(Control.MousePosition)))
-			{
-				if (!menuExpand)
-				{
-					menuExpand = true;
-					Sidebar.Visible = false;
-					Sidebar.Width = 220;
-					guna2Transition1.Show(Sidebar);
-				}
-			} else
-			{
-				if (menuExpand)
-				{
-					menuExpand = false;
-					Sidebar.Visible = false;
-					Sidebar.Width = 77;
-					guna2Transition1.Show(Sidebar);
-				}
-			}
-		}
+        private void MouseDetect_Tick(object sender, EventArgs e)
+        {
+            if (!guna2Transition1.IsCompleted) return;
+            if (Sidebar.ClientRectangle.Contains(PointToClient(Control.MousePosition)))
+            {
+                if (!menuExpand)
+                {
+                    menuExpand = true;
+                    Sidebar.Visible = false;
+                    Sidebar.Width = 220;
+                    guna2Transition1.Show(Sidebar);
+                }
+            }
+            else
+            {
+                if (menuExpand)
+                {
+                    menuExpand = false;
+                    Sidebar.Visible = false;
+                    Sidebar.Width = 77;
+                    guna2Transition1.Show(Sidebar);
+                }
+            }
+        }
 
 		private void Home_Click(object sender, EventArgs e)
 		{
