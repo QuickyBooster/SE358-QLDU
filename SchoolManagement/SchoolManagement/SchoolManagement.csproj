@@ -340,11 +340,17 @@
     <Compile Include="GUI\Form\Student CRUD\UCStudentScoreInfo.Designer.cs">
       <DependentUpon>UCStudentScoreInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCStudentTuitionFees.cs">
+    <Compile Include="GUI\Form\Student CRUD\UCStudentTuitionFees.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCStudentTuitionFees.Designer.cs">
+    <Compile Include="GUI\Form\Student CRUD\UCStudentTuitionFees.Designer.cs">
       <DependentUpon>UCStudentTuitionFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCStudentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\Student CRUD\UCStudentInfo.Designer.cs">
+      <DependentUpon>UCStudentInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="View_Class_Info_Detail.cs">
       <SubType>Form</SubType>
@@ -482,8 +488,11 @@
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCStudentTuitionFees.resx">
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCStudentTuitionFees.resx">
       <DependentUpon>UCStudentTuitionFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\Student CRUD\UCStudentInfo.resx">
+      <DependentUpon>UCStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_Class_Info_Detail.resx">
       <DependentUpon>View_Class_Info_Detail.cs</DependentUpon>

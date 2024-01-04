@@ -44,8 +44,8 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panelDisplay = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDel = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_ChangeAvatar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Sidebar.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -223,8 +223,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.button2);
-            this.guna2Panel1.Controls.Add(this.button1);
+            this.guna2Panel1.Controls.Add(this.btn_ChangeAvatar);
+            this.guna2Panel1.Controls.Add(this.btnDel);
             this.guna2Panel1.Controls.Add(this.lbStudentID);
             this.guna2Panel1.Controls.Add(this.lbEventName);
             this.guna2Panel1.Controls.Add(this.picAvatar);
@@ -310,25 +310,49 @@
             this.panelDisplay.Size = new System.Drawing.Size(773, 592);
             this.panelDisplay.TabIndex = 12;
             // 
-            // button1
+            // btnDel
             // 
-            this.button1.Location = new System.Drawing.Point(267, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 27);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Delete Student";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDel.BackColor = System.Drawing.Color.Transparent;
+            this.btnDel.BorderRadius = 10;
+            this.btnDel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDel.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btnDel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btnDel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnDel.Location = new System.Drawing.Point(740, 49);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(131, 32);
+            this.btnDel.TabIndex = 199;
+            this.btnDel.Text = "Delete student";
+            this.btnDel.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_ChangeAvatar
             // 
-            this.button2.Location = new System.Drawing.Point(418, 23);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 27);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Change Avatar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_ChangeAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ChangeAvatar.BorderRadius = 10;
+            this.btn_ChangeAvatar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ChangeAvatar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ChangeAvatar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ChangeAvatar.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ChangeAvatar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ChangeAvatar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_ChangeAvatar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btn_ChangeAvatar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChangeAvatar.ForeColor = System.Drawing.Color.White;
+            this.btn_ChangeAvatar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btn_ChangeAvatar.Location = new System.Drawing.Point(236, 53);
+            this.btn_ChangeAvatar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ChangeAvatar.Name = "btn_ChangeAvatar";
+            this.btn_ChangeAvatar.Size = new System.Drawing.Size(131, 32);
+            this.btn_ChangeAvatar.TabIndex = 200;
+            this.btn_ChangeAvatar.Text = "Change avatar";
+            this.btn_ChangeAvatar.Click += new System.EventHandler(this.button2_Click);
             // 
             // StudentInformation
             // 
@@ -375,7 +399,7 @@
         private System.Windows.Forms.Panel panelDisplay;
         private UCParentsInfo ucParentsInfo;
         private UCStudentScoreInfo uCStudentScoreInfo;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_ChangeAvatar;
+        private Guna.UI2.WinForms.Guna2GradientButton btnDel;
     }
 }
