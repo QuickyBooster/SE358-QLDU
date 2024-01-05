@@ -374,6 +374,12 @@
     <Compile Include="UCParentsInfo_Teacher.Designer.cs">
       <DependentUpon>UCParentsInfo_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCScoreInfo_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCScoreInfo_Teacher.Designer.cs">
+      <DependentUpon>UCScoreInfo_Teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCSettings_Cashier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -539,6 +545,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCParentsInfo_Teacher.resx">
       <DependentUpon>UCParentsInfo_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCScoreInfo_Teacher.resx">
+      <DependentUpon>UCScoreInfo_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
