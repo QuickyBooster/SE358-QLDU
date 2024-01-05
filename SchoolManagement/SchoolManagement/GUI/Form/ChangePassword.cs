@@ -79,5 +79,12 @@ namespace SchoolManagement
                 MessageBox.Show("Changed password failed", "Setting", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }    
         }
-    }
+
+		private void link_Back_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+            var login = new Login();
+            login.Show();
+            this.Hide();
+		}
+	}
 }
