@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,12 @@ namespace SchoolManagement
 	public partial class GetEmailCode : Form
 	{
 		private int code;
+		private User user;
 		public GetEmailCode()
 		{
 			InitializeComponent();
 		}
-		public GetEmailCode(int code)
+		public GetEmailCode(User user, int code)
 		{
 			InitializeComponent();
 			this.code = code;
@@ -29,7 +31,13 @@ namespace SchoolManagement
 			{
 				if (txtEmailCode.Text.Equals(code.ToString()))
 				{
-
+					var changePass = new ChangePassword(user);
+					changePass.Show();
+					this.Hide();
+				} else
+				{
+					MessageBox.Show("Wrong Code", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return;
 				}
 			} catch (Exception ex)
 			{

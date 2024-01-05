@@ -48,7 +48,7 @@ namespace SchoolManagement
 
 								MessageBox.Show("Succesfull!\nEmail sent", "Congrats", MessageBoxButtons.OK, MessageBoxIcon.Information);
 								//chuyen qua man hinh email
-								var getEmail = new GetEmailCode();
+								var getEmail = new GetEmailCode(user,code);
 								getEmail.Show();
 								this.Hide();
 							} else
