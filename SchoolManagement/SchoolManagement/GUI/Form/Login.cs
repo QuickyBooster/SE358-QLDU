@@ -23,15 +23,18 @@ namespace SchoolManagement
 			try
 			{
 				var username = txtUsername.Text.Replace(" ", "");
-				if (txtUsername.Text!="" &&   txtPass.Text!="")
+				if (username!="" &&   txtPass.Text!="")
 				{
 
+					//var users = DataProvider.SchoolManagement.Users.ToList().FirstOrDefault();
 					var user = (from p in DataProvider.SchoolManagement.Users.AsNoTracking().ToList()
-								where p.Username.Equals(txtUsername.Text) && p.Password.Equals(txtPass.Text)
+								where p.Username.Equals(username) && p.Password.Equals(txtPass.Text)
 								select p)
 								.FirstOrDefault();
+					Console.WriteLine(user);
+					Console.WriteLine("=========================================");
 
-					if (user != null)
+					if (user!=null)
 					{
 						switch (user.RoleID)
 						{
@@ -53,11 +56,10 @@ namespace SchoolManagement
 								homeCashier.Show();
 								break;
 
-
-							default:
-								MessageBox.Show("Wrong username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-								break;
 						}
+					} else
+					{
+						MessageBox.Show("Wrong username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					}
 				} else
 				{
@@ -66,6 +68,7 @@ namespace SchoolManagement
 			} catch (Exception ex)
 			{
 				MessageBox.Show("Data connection error!\nTry again later!", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				Console.WriteLine(ex.ToString());
 			}
 		}
 		private void txtUsername_TextChanged(object sender, EventArgs e)

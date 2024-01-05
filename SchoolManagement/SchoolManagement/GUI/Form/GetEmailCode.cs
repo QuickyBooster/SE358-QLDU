@@ -16,5 +16,10 @@ namespace SchoolManagement
         {
             InitializeComponent();
         }
-    }
+
+		private void btn_confirm_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
