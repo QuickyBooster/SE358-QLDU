@@ -368,6 +368,12 @@
     <Compile Include="GUI\Form\Student CRUD\UCParentsInfo.Designer.cs">
       <DependentUpon>UCParentsInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCFeeInfo_Teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFeeInfo_Teacher.Designer.cs">
+      <DependentUpon>UCFeeInfo_Teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCParentsInfo_Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -542,6 +548,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\Student CRUD\UCParentsInfo.resx">
       <DependentUpon>UCParentsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFeeInfo_Teacher.resx">
+      <DependentUpon>UCFeeInfo_Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCParentsInfo_Teacher.resx">
       <DependentUpon>UCParentsInfo_Teacher.cs</DependentUpon>
