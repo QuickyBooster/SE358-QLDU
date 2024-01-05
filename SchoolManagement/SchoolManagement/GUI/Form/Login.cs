@@ -65,7 +65,7 @@ namespace SchoolManagement
 				}
 			} catch (Exception ex)
 			{
-				MessageBox.Show("Data connection error!\n Try again later!", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Data connection error!\nTry again later!", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 		private void txtUsername_TextChanged(object sender, EventArgs e)
