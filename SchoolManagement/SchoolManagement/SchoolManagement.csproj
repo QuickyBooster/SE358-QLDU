@@ -706,6 +706,9 @@
     <None Include="Resources\refresh.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\classroom.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Data\SchoolManagement.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolManagement.edmx</DependentUpon>
