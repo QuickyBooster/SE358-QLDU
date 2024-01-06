@@ -38,13 +38,21 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.gridviewClass = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbStudentName = new System.Windows.Forms.Label();
             this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lbAVGPoint = new System.Windows.Forms.Label();
-            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.lbStudentName = new System.Windows.Forms.Label();
+            //this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
+            //this.label1 = new System.Windows.Forms.Label();
+            //this.lbAVGPoint = new System.Windows.Forms.Label();
+            //this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewClass)).BeginInit();
@@ -184,6 +192,28 @@
             this.gridviewClass.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridviewClass.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // ExamID
+            // 
+            this.ExamID.HeaderText = "Exam ID";
+            this.ExamID.Name = "ExamID";
+            // 
+            // Subject
+            // 
+            this.Subject.FillWeight = 200F;
+            this.Subject.HeaderText = "Subject";
+            this.Subject.Name = "Subject";
+            // 
+            // FifteenMins
+            // 
+            this.FifteenMins.HeaderText = "Type Exam";
+            this.FifteenMins.Name = "FifteenMins";
+            // 
+            // OnePeriodScore
+            // 
+            this.OnePeriodScore.FillWeight = 150F;
+            this.OnePeriodScore.HeaderText = "Score";
+            this.OnePeriodScore.Name = "OnePeriodScore";
+            // 
             // lbStudentName
             // 
             this.lbStudentName.AutoEllipsis = true;
@@ -213,7 +243,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnEdit.Location = new System.Drawing.Point(314, 543);
+            this.btnEdit.Location = new System.Drawing.Point(314, 535);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(130, 36);
