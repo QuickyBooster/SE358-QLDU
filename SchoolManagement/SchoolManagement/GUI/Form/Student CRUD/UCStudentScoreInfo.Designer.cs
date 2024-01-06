@@ -45,15 +45,6 @@
             this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbAVGPoint = new System.Windows.Forms.Label();
-            //this.lbStudentName = new System.Windows.Forms.Label();
-            //this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
-            //this.label1 = new System.Windows.Forms.Label();
-            //this.lbAVGPoint = new System.Windows.Forms.Label();
-            //this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            //this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            //this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewClass)).BeginInit();
