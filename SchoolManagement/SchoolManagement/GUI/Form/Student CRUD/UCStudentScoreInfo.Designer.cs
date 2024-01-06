@@ -38,12 +38,13 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.gridviewClass = new Guna.UI2.WinForms.Guna2DataGridView();
-            //this.ExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbStudentName = new System.Windows.Forms.Label();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbAVGPoint = new System.Windows.Forms.Label();
             this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbStudentName = new System.Windows.Forms.Label();
-            this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lbAVGPoint = new System.Windows.Forms.Label();
             //this.lbStudentName = new System.Windows.Forms.Label();
