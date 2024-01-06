@@ -706,13 +706,9 @@
     <None Include="Resources\refresh.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
+    <None Include="Resources\classroom.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Data\SchoolManagement.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SchoolManagement.edmx</DependentUpon>
@@ -723,18 +719,6 @@
       <DependentUpon>SchoolManagement.edmx</DependentUpon>
       <LastGenOutput>SchoolManagement.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
