@@ -59,7 +59,7 @@ namespace SchoolManagement
 
             foreach(var p in DataProvider.SchoolManagement.Students.ToList())
             {
-                if (p.FulName.Contains(txtSearchStudent.Text))
+                if (p.FulName.ToLower().Contains(txtSearchStudent.Text.ToLower()))
                 {
                     list.Add(p);    
                 }    
