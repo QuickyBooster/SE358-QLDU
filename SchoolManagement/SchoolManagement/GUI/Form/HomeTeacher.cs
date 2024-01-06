@@ -80,7 +80,7 @@ namespace SchoolManagement
 
 		private void Classes_Click_1(object sender, EventArgs e)
 		{
-			uCClasses_Teacher = new UCClasses_Teacher();
+			uCClasses_Teacher = new UCClasses_Teacher(this.user);
 			uCClasses_Teacher.Dock = DockStyle.Fill;
 			this.HomePanel.Controls.Clear();
 			this.HomePanel.Controls.Add(uCClasses_Teacher);
