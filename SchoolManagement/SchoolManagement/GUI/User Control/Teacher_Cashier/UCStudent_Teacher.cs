@@ -1,12 +1,7 @@
 ﻿using SchoolManagement.Data;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolManagement
@@ -32,7 +27,7 @@ namespace SchoolManagement
 				foreach (var p in students)
 				{
 					var part = p.Information.DateOfBirth.ToString().Split(' ');
-					gridviewSupplier.Rows.Add(p.StudentID, p.FulName, p.Information.Gender, part[0], p.Class.ClassName, p.Class.User.FulName);
+					gridviewSupplier.Rows.Add(p.Information.Image, p.FulName, p.Information.DateOfBirth, p.Class.Grade, p.Class.ClassName, p.Scores);
 				}
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
@@ -41,36 +36,47 @@ namespace SchoolManagement
 
 		private void gridviewSupplier_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 		{
-			int idx = e.RowIndex;
-			if (idx < 0) return;
-			else
+			try
 			{
-				var editStudent = new StudentInformation(int.Parse(gridviewSupplier.Rows[idx].Cells["Student_ID"].Value.ToString()));
-				editStudent.ShowDialog();
-				loadData(DataProvider.SchoolManagement.Students.ToList());
-			}
+
+				int idx = e.RowIndex;
+				if (idx < 0) return;
+				else
+				{
+					var editStudent = new StudentInformation(int.Parse(gridviewSupplier.Rows[idx].Cells["Student_ID"].Value.ToString()));
+					editStudent.ShowDialog();
+					loadData(DataProvider.SchoolManagement.Students.ToList());
+				}
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 
 		private void txtSearchStudent_TextChanged(object sender, EventArgs e)
 		{
-			var list = new List<Student>();
-
-			foreach (var p in DataProvider.SchoolManagement.Students.ToList())
+			try
 			{
-				if (p.FulName.Contains(txtSearchStudent.Text))
-				{
-					list.Add(p);
-				}
-			}
 
-			loadData(list);
+				var list = new List<Student>();
+
+				foreach (var p in DataProvider.SchoolManagement.Students.ToList())
+				{
+					if (p.FulName.Contains(txtSearchStudent.Text))
+					{
+						list.Add(p);
+					}
+				}
+
+				loadData(list);
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 
 		private void btnAddStudent_Click_1(object sender, EventArgs e)
 		{
-			AddNewStudent studentInformation = new AddNewStudent();
-			studentInformation.ShowDialog();
-			loadData(DataProvider.SchoolManagement.Students.ToList());
+			try
+			{
+				AddNewStudent studentInformation = new AddNewStudent();
+				studentInformation.ShowDialog();
+				loadData(DataProvider.SchoolManagement.Students.ToList());
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 	}
 }
