@@ -142,7 +142,7 @@ namespace SchoolManagement
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Maybe teacher is entering points for this student, please go back later");
+                MessageBox.Show("Maybe teacher is entering points for this student, please go back later", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
