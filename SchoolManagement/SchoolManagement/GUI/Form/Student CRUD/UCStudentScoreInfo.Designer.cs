@@ -38,7 +38,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.gridviewClass = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            //this.ExamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FifteenMins = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OnePeriodScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -194,8 +194,8 @@
             // 
             // ExamID
             // 
-            this.ExamID.HeaderText = "Exam ID";
-            this.ExamID.Name = "ExamID";
+            //this.ExamID.HeaderText = "Exam ID";
+            //this.ExamID.Name = "ExamID";
             // 
             // Subject
             // 
