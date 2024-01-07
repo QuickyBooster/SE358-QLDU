@@ -47,7 +47,6 @@
 			this.btnAddClass = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.Avatar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.Class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -224,7 +223,6 @@
 			this.gridviewSupplier.ColumnHeadersHeight = 38;
 			this.gridviewSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gridviewSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Avatar,
             this.Class_name,
             this.Total,
             this.Detail,
@@ -281,14 +279,6 @@
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			this.gridviewSupplier.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewSupplier_CellDoubleClick);
 			// 
-			// Avatar
-			// 
-			this.Avatar.FillWeight = 150F;
-			this.Avatar.HeaderText = "Avatar";
-			this.Avatar.MinimumWidth = 6;
-			this.Avatar.Name = "Avatar";
-			this.Avatar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			this.Avatar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
 			// 
 			// Class_name
 			// 

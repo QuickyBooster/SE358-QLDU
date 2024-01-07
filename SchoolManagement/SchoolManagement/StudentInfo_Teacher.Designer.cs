@@ -1,6 +1,6 @@
 ﻿namespace SchoolManagement
 {
-    partial class StudentInformation
+    partial class StudentInfo_Teacher
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentInformation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentInfo_Teacher));
             this.Sidebar = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnScores = new Guna.UI2.WinForms.Guna2Button();
@@ -43,9 +43,9 @@
             this.lbStudentID = new System.Windows.Forms.Label();
             this.lbEventName = new System.Windows.Forms.Label();
             this.picAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panelDisplay = new System.Windows.Forms.Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.panelDisplay = new System.Windows.Forms.Panel();
             this.Sidebar.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -64,11 +64,11 @@
             this.Sidebar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(240)))));
             this.Sidebar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(240)))));
             this.Sidebar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.Sidebar.Location = new System.Drawing.Point(1, 118);
+            this.Sidebar.Location = new System.Drawing.Point(0, 118);
             this.Sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Size = new System.Drawing.Size(301, 745);
-            this.Sidebar.TabIndex = 7;
+            this.Sidebar.TabIndex = 13;
             // 
             // label1
             // 
@@ -229,10 +229,10 @@
             this.guna2Panel1.Controls.Add(this.picAvatar);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1333, 126);
-            this.guna2Panel1.TabIndex = 8;
+            this.guna2Panel1.TabIndex = 14;
             // 
             // btn_ChangeAvatar
             // 
@@ -254,7 +254,7 @@
             this.btn_ChangeAvatar.Size = new System.Drawing.Size(175, 39);
             this.btn_ChangeAvatar.TabIndex = 200;
             this.btn_ChangeAvatar.Text = "Change avatar";
-            this.btn_ChangeAvatar.Click += new System.EventHandler(this.button2_Click);
+            this.btn_ChangeAvatar.Click += new System.EventHandler(this.btn_ChangeAvatar_Click);
             // 
             // btnDel
             // 
@@ -276,7 +276,7 @@
             this.btnDel.Size = new System.Drawing.Size(175, 39);
             this.btnDel.TabIndex = 199;
             this.btnDel.Text = "Delete student";
-            this.btnDel.Click += new System.EventHandler(this.button1_Click);
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // lbStudentID
             // 
@@ -316,6 +316,16 @@
             this.picAvatar.TabIndex = 2;
             this.picAvatar.TabStop = false;
             // 
+            // panelDisplay
+            // 
+            this.panelDisplay.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
+            this.panelDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDisplay.Location = new System.Drawing.Point(302, 130);
+            this.panelDisplay.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDisplay.Name = "panelDisplay";
+            this.panelDisplay.Size = new System.Drawing.Size(1031, 729);
+            this.panelDisplay.TabIndex = 17;
+            // 
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -324,11 +334,11 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1208, 16);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1207, 16);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(47, 38);
-            this.guna2ControlBox3.TabIndex = 11;
+            this.guna2ControlBox3.TabIndex = 16;
             // 
             // guna2ControlBox1
             // 
@@ -337,41 +347,27 @@
             this.guna2ControlBox1.BorderRadius = 10;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1260, 16);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1259, 16);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(47, 38);
-            this.guna2ControlBox1.TabIndex = 10;
+            this.guna2ControlBox1.TabIndex = 15;
             // 
-            // panelDisplay
-            // 
-            this.panelDisplay.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
-            this.panelDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelDisplay.Location = new System.Drawing.Point(303, 130);
-            this.panelDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelDisplay.Name = "panelDisplay";
-            this.panelDisplay.Size = new System.Drawing.Size(1031, 729);
-            this.panelDisplay.TabIndex = 12;
-            // 
-            // StudentInformation
+            // StudentInfo_Teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1333, 862);
+            this.Controls.Add(this.Sidebar);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelDisplay);
             this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.Sidebar);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "StudentInformation";
+            this.Name = "StudentInfo_Teacher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StudentInformation";
+            this.Text = "StudentInfo_Teacher";
             this.Sidebar.ResumeLayout(false);
             this.Sidebar.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
@@ -384,22 +380,22 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel Sidebar;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnScores;
         private Guna.UI2.WinForms.Guna2Button btnTuiitionfee;
         private Guna.UI2.WinForms.Guna2Button btnParents;
         private Guna.UI2.WinForms.Guna2Button btnPersonal;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox picAvatar;
-        private System.Windows.Forms.Label lbStudentID;
-        private System.Windows.Forms.Label lbEventName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panelDisplay;
-        private UCParentsInfo ucParentsInfo;
-        private UCStudentScoreInfo uCStudentScoreInfo;
         private Guna.UI2.WinForms.Guna2GradientButton btn_ChangeAvatar;
         private Guna.UI2.WinForms.Guna2GradientButton btnDel;
+        private System.Windows.Forms.Label lbStudentID;
+        private System.Windows.Forms.Label lbEventName;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox picAvatar;
+        private System.Windows.Forms.Panel panelDisplay;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+
+
     }
 }
