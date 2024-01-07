@@ -19,7 +19,9 @@ namespace SchoolManagement.Data
         public string StatusTuition { get; set; }
         public string TuitionOfMonth { get; set; }
         public Nullable<int> StudentID { get; set; }
+        public string CashierID { get; set; }
     
         public virtual Student Student { get; set; }
+        public virtual User User { get; set; }
     }
 }

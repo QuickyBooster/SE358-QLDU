@@ -113,6 +113,7 @@
 			this.checkbox_male.UncheckedState.BorderRadius = 2;
 			this.checkbox_male.UncheckedState.BorderThickness = 1;
 			this.checkbox_male.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.checkbox_male.Click += new System.EventHandler(this.checkbox_male_Click);
 			// 
 			// txtPass
 			// 
@@ -136,6 +137,7 @@
 			this.txtPass.SelectedText = "";
 			this.txtPass.Size = new System.Drawing.Size(303, 43);
 			this.txtPass.TabIndex = 9;
+			this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
 			// 
 			// txtUsername
 			// 
@@ -159,6 +161,7 @@
 			this.txtUsername.SelectedText = "";
 			this.txtUsername.Size = new System.Drawing.Size(303, 43);
 			this.txtUsername.TabIndex = 8;
+			this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
 			// 
 			// btn_login
 			// 
@@ -194,6 +197,7 @@
 			this.link_forgot_pass.TabIndex = 6;
 			this.link_forgot_pass.TabStop = true;
 			this.link_forgot_pass.Text = "Forgot password";
+			this.link_forgot_pass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_forgot_pass_LinkClicked);
 			// 
 			// pictureBox3
 			// 
@@ -287,7 +291,7 @@
 			this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
 			this.guna2Button1.ForeColor = System.Drawing.Color.White;
 			this.guna2Button1.Location = new System.Drawing.Point(147, 249);
-			this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
 			this.guna2Button1.Name = "guna2Button1";
 			this.guna2Button1.Size = new System.Drawing.Size(269, 55);
 			this.guna2Button1.TabIndex = 10;
@@ -305,7 +309,7 @@
 			this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
 			this.guna2Button2.ForeColor = System.Drawing.Color.White;
 			this.guna2Button2.Location = new System.Drawing.Point(-1, 320);
-			this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
 			this.guna2Button2.Name = "guna2Button2";
 			this.guna2Button2.Size = new System.Drawing.Size(545, 55);
 			this.guna2Button2.TabIndex = 11;
@@ -326,7 +330,7 @@
 			this.Controls.Add(this.guna2ControlBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "Login";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Login";
