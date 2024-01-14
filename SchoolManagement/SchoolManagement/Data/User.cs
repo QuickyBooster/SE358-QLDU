@@ -19,7 +19,6 @@ namespace SchoolManagement.Data
         {
             this.Classes = new HashSet<Class>();
             this.Subjects = new HashSet<Subject>();
-            this.Tuitions = new HashSet<Tuition>();
         }
     
         public string Username { get; set; }
@@ -35,7 +34,5 @@ namespace SchoolManagement.Data
         public virtual Role Role { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Subject> Subjects { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tuition> Tuitions { get; set; }
     }
 }

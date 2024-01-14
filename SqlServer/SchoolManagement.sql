@@ -65,8 +65,7 @@ Create Table Tuitions
 	Fee int,
 	StatusTuition varchar(10) check (StatusTuition in ('Paid', 'Unpaid')),
 	TuitionOfMonth varchar(10),
-	StudentID int,
-	CashierID varchar(20),
+	StudentID int
 )
 
 Create Table Subjects
@@ -111,7 +110,6 @@ ALTER TABLE Classes ADD CONSTRAINT FK_Classes_Users FOREIGN KEY (TeacherID) REFE
 ALTER TABLE Students ADD CONSTRAINT FK_Students_Classes_ClassID FOREIGN KEY (ClassID) REFERENCES Classes(ClassID);
 ALTER TABLE Students ADD CONSTRAINT FK_Students_Classes_InfoID FOREIGN KEY (InfoID) REFERENCES Information(InfoID);
 ALTER TABLE Tuitions ADD CONSTRAINT FK_Tuitions_Students FOREIGN KEY (StudentID) REFERENCES Students(StudentID);
-ALTER TABLE Tuitions ADD CONSTRAINT FK_Tuitions_Users FOREIGN KEY (CashierID) REFERENCES Users(Username);
 ALTER TABLE Exams ADD CONSTRAINT FK_Exams_Classes FOREIGN KEY (ClassID) REFERENCES Classes(ClassID);
 ALTER TABLE Exams ADD CONSTRAINT FK_Exams_Documents FOREIGN KEY (DocumentID) REFERENCES Documents(DocumentID);
 ALTER TABLE Exams ADD CONSTRAINT FK_Exams_Subjects FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID);

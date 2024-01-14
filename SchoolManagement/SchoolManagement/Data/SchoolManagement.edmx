@@ -94,7 +94,6 @@
           <Property Name="StatusTuition" Type="varchar" MaxLength="10" />
           <Property Name="TuitionOfMonth" Type="varchar" MaxLength="10" />
           <Property Name="StudentID" Type="int" />
-          <Property Name="CashierID" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -227,18 +226,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Tuitions_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
-          <End Role="Tuitions" Type="Self.Tuitions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Username" />
-            </Principal>
-            <Dependent Role="Tuitions">
-              <PropertyRef Name="CashierID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Users_Information">
           <End Role="Information" Type="Self.Information" Multiplicity="0..1" />
           <End Role="Users" Type="Self.Users" Multiplicity="*" />
@@ -312,10 +299,6 @@
           </AssociationSet>
           <AssociationSet Name="FK_Tuitions_Students" Association="Self.FK_Tuitions_Students">
             <End Role="Students" EntitySet="Students" />
-            <End Role="Tuitions" EntitySet="Tuitions" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tuitions_Users" Association="Self.FK_Tuitions_Users">
-            <End Role="Users" EntitySet="Users" />
             <End Role="Tuitions" EntitySet="Tuitions" />
           </AssociationSet>
           <AssociationSet Name="FK_Users_Information" Association="Self.FK_Users_Information">
@@ -440,9 +423,7 @@
           <Property Name="StatusTuition" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="TuitionOfMonth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="StudentID" Type="Int32" />
-          <Property Name="CashierID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Student" Relationship="Self.FK_Tuitions_Students" FromRole="Tuitions" ToRole="Students" />
-          <NavigationProperty Name="User" Relationship="Self.FK_Tuitions_Users" FromRole="Tuitions" ToRole="Users" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -458,7 +439,6 @@
           <NavigationProperty Name="Information" Relationship="Self.FK_Users_Information" FromRole="Users" ToRole="Information" />
           <NavigationProperty Name="Role" Relationship="Self.FK_Users_Role" FromRole="Users" ToRole="Roles" />
           <NavigationProperty Name="Subjects" Relationship="Self.FK_Subjects_Users" FromRole="Users" ToRole="Subjects" />
-          <NavigationProperty Name="Tuitions" Relationship="Self.FK_Tuitions_Users" FromRole="Users" ToRole="Tuitions" />
         </EntityType>
         <Association Name="FK_Classes_Users">
           <End Role="Users" Type="Self.User" Multiplicity="0..1" />
@@ -604,18 +584,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Tuitions_Users">
-          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
-          <End Role="Tuitions" Type="Self.Tuition" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="Username" />
-            </Principal>
-            <Dependent Role="Tuitions">
-              <PropertyRef Name="CashierID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="SE358_SchoolManagementEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Classes" EntityType="Self.Class" />
           <EntitySet Name="Documents" EntityType="Self.Document" />
@@ -674,10 +642,6 @@
           <AssociationSet Name="FK_Subjects_Users" Association="Self.FK_Subjects_Users">
             <End Role="Users" EntitySet="Users" />
             <End Role="Subjects" EntitySet="Subjects" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tuitions_Users" Association="Self.FK_Tuitions_Users">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Tuitions" EntitySet="Tuitions" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -782,7 +746,6 @@
                 <ScalarProperty Name="StatusTuition" ColumnName="StatusTuition" />
                 <ScalarProperty Name="TuitionOfMonth" ColumnName="TuitionOfMonth" />
                 <ScalarProperty Name="StudentID" ColumnName="StudentID" />
-                <ScalarProperty Name="CashierID" ColumnName="CashierID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

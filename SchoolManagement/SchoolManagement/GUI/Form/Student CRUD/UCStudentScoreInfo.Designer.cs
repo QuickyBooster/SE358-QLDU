@@ -188,8 +188,8 @@
             // 
             // ExamID
             // 
-            //this.ExamID.HeaderText = "Exam ID";
-            //this.ExamID.Name = "ExamID";
+            this.ExamID.HeaderText = "Exam ID";
+            this.ExamID.Name = "ExamID";
             // 
             // Subject
             // 

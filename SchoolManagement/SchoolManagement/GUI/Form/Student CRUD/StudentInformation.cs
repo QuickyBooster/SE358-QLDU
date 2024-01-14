@@ -58,11 +58,7 @@ namespace SchoolManagement
 
         private void btnTuiitionfee_Click(object sender, EventArgs e)
         {
-            student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
-            UCStudentTuitionFees uc = new UCStudentTuitionFees(student);
-            uc.Dock = DockStyle.Fill;
-            this.panelDisplay.Controls.Clear();
-            this.panelDisplay.Controls.Add(uc);
+            
         }
 
         private static void deleteFile(string path)
