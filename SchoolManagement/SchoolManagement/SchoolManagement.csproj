@@ -356,7 +356,7 @@
     <Compile Include="GUI\Form\Student CRUD\UCAddStudentInfo.Designer.cs">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.cs">
+    <Compile Include="GUI\Form\Teacher information\UCPersonalInfo_Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.Designer.cs">
