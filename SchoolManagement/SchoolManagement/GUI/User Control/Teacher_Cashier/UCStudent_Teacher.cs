@@ -23,11 +23,11 @@ namespace SchoolManagement
 				lbTotalStudents.Text = students.Count.ToString();
 
 				gridviewSupplier.Rows.Clear();
-
+				int count = 1;
 				foreach (var p in students)
 				{
-					var part = p.Information.DateOfBirth.ToString().Split(' ');
-					gridviewSupplier.Rows.Add(p.Information.Image, p.FulName, p.Information.DateOfBirth, p.Class.Grade, p.Class.ClassName, p.Scores);
+					var dob = p.Information.DateOfBirth.ToString().Split(' ');
+					gridviewSupplier.Rows.Add(count++, p.FulName, dob[0], p.Class.Grade, p.Class.ClassName);
 				}
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}

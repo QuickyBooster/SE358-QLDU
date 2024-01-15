@@ -42,14 +42,14 @@
 			this.btnAddStudent = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.Avatar = new System.Windows.Forms.DataGridViewImageColumn();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Full_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Birthdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Score = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
 			this.guna2CustomGradientPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -210,7 +210,7 @@
 			this.gridviewSupplier.ColumnHeadersHeight = 38;
 			this.gridviewSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gridviewSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Avatar,
+            this.No,
             this.Full_name,
             this.Birthdate,
             this.Grade,
@@ -267,14 +267,39 @@
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			this.gridviewSupplier.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewSupplier_CellDoubleClick);
 			// 
-			// Avatar
+			// label3
 			// 
-			this.Avatar.FillWeight = 150F;
-			this.Avatar.HeaderText = "Avatar";
-			this.Avatar.MinimumWidth = 6;
-			this.Avatar.Name = "Avatar";
-			this.Avatar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			this.Avatar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.Transparent;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.label3.ForeColor = System.Drawing.Color.DarkGray;
+			this.label3.Location = new System.Drawing.Point(32, 52);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(531, 28);
+			this.label3.TabIndex = 42;
+			this.label3.Text = "These are list of all students classes teacher undertake";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.BackColor = System.Drawing.Color.Transparent;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.label4.Location = new System.Drawing.Point(32, 9);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(232, 30);
+			this.label4.TabIndex = 41;
+			this.label4.Text = "Students information";
+			// 
+			// No
+			// 
+			this.No.FillWeight = 35F;
+			this.No.HeaderText = "No";
+			this.No.MinimumWidth = 6;
+			this.No.Name = "No";
+			this.No.ReadOnly = true;
+			this.No.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+			this.No.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
 			// 
 			// Full_name
 			// 
@@ -307,30 +332,6 @@
 			this.Score.HeaderText = "Score";
 			this.Score.MinimumWidth = 6;
 			this.Score.Name = "Score";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.label3.ForeColor = System.Drawing.Color.DarkGray;
-			this.label3.Location = new System.Drawing.Point(32, 52);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(531, 28);
-			this.label3.TabIndex = 42;
-			this.label3.Text = "These are list of all students classes teacher undertake";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.BackColor = System.Drawing.Color.Transparent;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.label4.Location = new System.Drawing.Point(32, 9);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(232, 30);
-			this.label4.TabIndex = 41;
-			this.label4.Text = "Students information";
 			// 
 			// UCStudent_Teacher
 			// 
@@ -370,11 +371,11 @@
         private Guna.UI2.WinForms.Guna2DataGridView gridviewSupplier;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewImageColumn Avatar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Full_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Birthdate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Class;
-        private System.Windows.Forms.DataGridViewButtonColumn Score;
-    }
+		private System.Windows.Forms.DataGridViewTextBoxColumn No;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Full_name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Birthdate;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Class;
+		private System.Windows.Forms.DataGridViewButtonColumn Score;
+	}
 }
