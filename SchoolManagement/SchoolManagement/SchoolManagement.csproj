@@ -356,35 +356,53 @@
     <Compile Include="GUI\Form\Student CRUD\UCAddStudentInfo.Designer.cs">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Form\Teacher information\UCPersonalInfo_Teacher.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.Designer.cs">
-      <DependentUpon>UCPersonalInfo_Teacher.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Form\Student CRUD\UCParentsInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\Form\Student CRUD\UCParentsInfo.Designer.cs">
       <DependentUpon>UCParentsInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCFeeInfo_Teacher.cs">
+    <Compile Include="StudentInformation_Cashier_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInformation_Cashier_Update.Designer.cs">
+      <DependentUpon>StudentInformation_Cashier_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInformation_Teacher_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInformation_Teacher_Update.Designer.cs">
+      <DependentUpon>StudentInformation_Teacher_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFeeInfo_Cashier_Update.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCFeeInfo_Teacher.Designer.cs">
-      <DependentUpon>UCFeeInfo_Teacher.cs</DependentUpon>
+    <Compile Include="UCFeeInfo_Cashier_Update.Designer.cs">
+      <DependentUpon>UCFeeInfo_Cashier_Update.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCParentsInfo_Teacher.cs">
+    <Compile Include="UCFeeInfo_Teacher_Update.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCParentsInfo_Teacher.Designer.cs">
-      <DependentUpon>UCParentsInfo_Teacher.cs</DependentUpon>
+    <Compile Include="UCFeeInfo_Teacher_Update.Designer.cs">
+      <DependentUpon>UCFeeInfo_Teacher_Update.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCScoreInfo_Teacher.cs">
+    <Compile Include="UCParentsInfo_Teacher_Update.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCScoreInfo_Teacher.Designer.cs">
-      <DependentUpon>UCScoreInfo_Teacher.cs</DependentUpon>
+    <Compile Include="UCParentsInfo_Teacher_Update.Designer.cs">
+      <DependentUpon>UCParentsInfo_Teacher_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPersonalInfo_Teacher_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPersonalInfo_Teacher_Update.Designer.cs">
+      <DependentUpon>UCPersonalInfo_Teacher_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCScoreInfo_Teacher_Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCScoreInfo_Teacher_Update.Designer.cs">
+      <DependentUpon>UCScoreInfo_Teacher_Update.cs</DependentUpon>
     </Compile>
     <Compile Include="UCSettings_Cashier.cs">
       <SubType>UserControl</SubType>
@@ -416,23 +434,17 @@
     <Compile Include="GUI\Form\Student CRUD\UCStudentInfo.Designer.cs">
       <DependentUpon>UCStudentInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCFeeInfo_Cashier.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCFeeInfo_Cashier.Designer.cs">
-      <DependentUpon>UCFeeInfo_Cashier.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View_Class_Info_Detail.cs">
+    <Compile Include="View_Class_Info_Detail_Update.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View_Class_Info_Detail.Designer.cs">
-      <DependentUpon>View_Class_Info_Detail.cs</DependentUpon>
+    <Compile Include="View_Class_Info_Detail_Update.Designer.cs">
+      <DependentUpon>View_Class_Info_Detail_Update.cs</DependentUpon>
     </Compile>
-    <Compile Include="View_Score_Screen.cs">
+    <Compile Include="View_Score_Screen_Update.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View_Score_Screen.Designer.cs">
-      <DependentUpon>View_Score_Screen.cs</DependentUpon>
+    <Compile Include="View_Score_Screen_Update.Designer.cs">
+      <DependentUpon>View_Score_Screen_Update.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GUI\Form\ClassroomDetails.resx">
       <DependentUpon>ClassroomDetails.cs</DependentUpon>
@@ -549,20 +561,29 @@
     <EmbeddedResource Include="GUI\Form\Student CRUD\UCAddStudentInfo.resx">
       <DependentUpon>UCAddStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Control\Teacher_Cashier\UCPersonalInfo_Teacher.resx">
-      <DependentUpon>UCPersonalInfo_Teacher.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\Student CRUD\UCParentsInfo.resx">
       <DependentUpon>UCParentsInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCFeeInfo_Teacher.resx">
-      <DependentUpon>UCFeeInfo_Teacher.cs</DependentUpon>
+    <EmbeddedResource Include="StudentInformation_Cashier_Update.resx">
+      <DependentUpon>StudentInformation_Cashier_Update.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCParentsInfo_Teacher.resx">
-      <DependentUpon>UCParentsInfo_Teacher.cs</DependentUpon>
+    <EmbeddedResource Include="StudentInformation_Teacher_Update.resx">
+      <DependentUpon>StudentInformation_Teacher_Update.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCScoreInfo_Teacher.resx">
-      <DependentUpon>UCScoreInfo_Teacher.cs</DependentUpon>
+    <EmbeddedResource Include="UCFeeInfo_Cashier_Update.resx">
+      <DependentUpon>UCFeeInfo_Cashier_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFeeInfo_Teacher_Update.resx">
+      <DependentUpon>UCFeeInfo_Teacher_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCParentsInfo_Teacher_Update.resx">
+      <DependentUpon>UCParentsInfo_Teacher_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPersonalInfo_Teacher_Update.resx">
+      <DependentUpon>UCPersonalInfo_Teacher_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCScoreInfo_Teacher_Update.resx">
+      <DependentUpon>UCScoreInfo_Teacher_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCSettings_Cashier.resx">
       <DependentUpon>UCSettings_Cashier.cs</DependentUpon>
@@ -573,14 +594,11 @@
     <EmbeddedResource Include="GUI\Form\Student CRUD\UCStudentInfo.resx">
       <DependentUpon>UCStudentInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCFeeInfo_Cashier.resx">
-      <DependentUpon>UCFeeInfo_Cashier.cs</DependentUpon>
+    <EmbeddedResource Include="View_Class_Info_Detail_Update.resx">
+      <DependentUpon>View_Class_Info_Detail_Update.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View_Class_Info_Detail.resx">
-      <DependentUpon>View_Class_Info_Detail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View_Score_Screen.resx">
-      <DependentUpon>View_Score_Screen.cs</DependentUpon>
+    <EmbeddedResource Include="View_Score_Screen_Update.resx">
+      <DependentUpon>View_Score_Screen_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data\SchoolManagement.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -716,6 +734,9 @@
       <DependentUpon>SchoolManagement.edmx</DependentUpon>
       <LastGenOutput>SchoolManagement.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\Form\Teacher information\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
