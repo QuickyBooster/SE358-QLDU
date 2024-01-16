@@ -294,7 +294,7 @@
 			// No
 			// 
 			this.No.FillWeight = 35F;
-			this.No.HeaderText = "No";
+			this.No.HeaderText = "ID";
 			this.No.MinimumWidth = 6;
 			this.No.Name = "No";
 			this.No.ReadOnly = true;
@@ -307,24 +307,28 @@
 			this.Full_name.HeaderText = "Full name";
 			this.Full_name.MinimumWidth = 6;
 			this.Full_name.Name = "Full_name";
+			this.Full_name.ReadOnly = true;
 			// 
 			// Birthdate
 			// 
 			this.Birthdate.HeaderText = "Birthday";
 			this.Birthdate.MinimumWidth = 6;
 			this.Birthdate.Name = "Birthdate";
+			this.Birthdate.ReadOnly = true;
 			// 
 			// Grade
 			// 
 			this.Grade.HeaderText = "Grade";
 			this.Grade.MinimumWidth = 6;
 			this.Grade.Name = "Grade";
+			this.Grade.ReadOnly = true;
 			// 
 			// Class
 			// 
 			this.Class.HeaderText = "Class";
 			this.Class.MinimumWidth = 6;
 			this.Class.Name = "Class";
+			this.Class.ReadOnly = true;
 			// 
 			// Score
 			// 
@@ -332,6 +336,7 @@
 			this.Score.HeaderText = "Score";
 			this.Score.MinimumWidth = 6;
 			this.Score.Name = "Score";
+			this.Score.ReadOnly = true;
 			// 
 			// UCStudent_Teacher
 			// 

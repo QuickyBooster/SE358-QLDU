@@ -23,16 +23,13 @@ namespace SchoolManagement
 				lbTotalStudents.Text = students.Count.ToString();
 
 				gridviewSupplier.Rows.Clear();
-				int count = 1;
 				foreach (var p in students)
 				{
 					var dob = p.Information.DateOfBirth.ToString().Split(' ');
-					gridviewSupplier.Rows.Add(count++, p.FulName, dob[0], p.Class.Grade, p.Class.ClassName);
+					gridviewSupplier.Rows.Add(p.StudentID, p.FulName, dob[0], p.Class.Grade, p.Class.ClassName);
 				}
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
-
-
 
 		private void gridviewSupplier_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 		{
@@ -43,7 +40,8 @@ namespace SchoolManagement
 				if (idx < 0) return;
 				else
 				{
-					var editStudent = new StudentInformation(int.Parse(gridviewSupplier.Rows[idx].Cells["Student_ID"].Value.ToString()));
+					var editStudent = new StudentInformation_Teacher_Update(
+						int.Parse(gridviewSupplier.Rows[idx].Cells["No"].Value.ToString()));
 					editStudent.ShowDialog();
 					loadData(DataProvider.SchoolManagement.Students.ToList());
 				}
