@@ -88,7 +88,7 @@ namespace SchoolManagement
 
 		private void Settings_Click(object sender, EventArgs e)
 		{
-			uCSettings_Teacher = new UCSettings_Teacher();
+			uCSettings_Teacher = new UCSettings_Teacher(user);
 			uCSettings_Teacher.Dock = DockStyle.Fill;
 			this.HomePanel.Controls.Clear();
 			this.HomePanel.Controls.Add(uCSettings_Teacher);
