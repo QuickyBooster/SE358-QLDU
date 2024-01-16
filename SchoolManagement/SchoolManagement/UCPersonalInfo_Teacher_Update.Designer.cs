@@ -162,6 +162,7 @@
 			this.comboGrade.Name = "comboGrade";
 			this.comboGrade.Size = new System.Drawing.Size(399, 36);
 			this.comboGrade.TabIndex = 217;
+			this.comboGrade.SelectedValueChanged += new System.EventHandler(this.comboGrade_SelectedValueChanged);
 			// 
 			// label8
 			// 
