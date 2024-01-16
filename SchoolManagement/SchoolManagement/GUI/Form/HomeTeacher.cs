@@ -64,7 +64,7 @@ namespace SchoolManagement
 
 		private void Home_Click(object sender, EventArgs e)
 		{
-			uCHome_Teacher = new UCHome_Teacher();
+			uCHome_Teacher = new UCHome_Teacher(user);
 			uCHome_Teacher.Dock = DockStyle.Fill;
 			this.HomePanel.Controls.Clear();
 			this.HomePanel.Controls.Add(uCHome_Teacher);
