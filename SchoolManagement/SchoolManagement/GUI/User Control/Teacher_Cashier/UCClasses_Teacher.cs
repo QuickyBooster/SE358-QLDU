@@ -42,6 +42,11 @@ namespace SchoolManagement
 
 					gridviewSupplier.Rows.Add(c.ClassName, total);
 				}
+				var exams = DataProvider.SchoolManagement.Exams.AsNoTracking().ToList();
+				foreach (var exam in exams)
+				{
+					gridviewArea.Rows.Add(exam.Document.FilePath);
+				}
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 
