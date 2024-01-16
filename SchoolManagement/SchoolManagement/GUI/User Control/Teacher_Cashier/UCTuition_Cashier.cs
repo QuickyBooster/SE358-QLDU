@@ -27,14 +27,15 @@ namespace SchoolManagement
 				lbTotalStudents.Text = studentList.Count.ToString();
 
 				gridviewSupplier.Rows.Clear();
-				foreach (var p in studentList)
+                foreach (var p in studentList)
 				{
 					var dob = p.Information.DateOfBirth.ToString().Split(' ');
-					var teacherName = DataProvider.SchoolManagement.Users.ToList().Find(a => a.InfoID.ToString().Equals(p.Class.TeacherID));
-					gridviewSupplier.Rows.Add(p.StudentID, p.FulName, dob[0], p.Class.Grade, p.Class.ClassName, teacherName, "status?");
-				}
+					gridviewSupplier.Rows.Add(p.StudentID, p.FulName, dob[0], p.Class.Grade, p.Class.ClassName, p.Class.TeacherID, /*p.Tuitions.Last().ToString()*/"status?");
+                }
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
+
+
 		private void txtSearchStudent_TextChanged(object sender, EventArgs e)
 		{
 			try
