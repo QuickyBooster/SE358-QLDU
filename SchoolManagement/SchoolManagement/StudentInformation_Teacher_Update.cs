@@ -39,7 +39,9 @@ namespace SchoolManagement
 			//this.panelDisplay.Controls.Clear();
 			//this.panelDisplay.Controls.Add(uc);
 		}
+		
 
+		// waiting for Linh to fix
 		private void btnParents_Click(object sender, EventArgs e)
 		{
 			//student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
@@ -53,17 +55,18 @@ namespace SchoolManagement
 			this.panelDisplay.Controls.Clear();
 			this.panelDisplay.Controls.Add(uc);
 		}
+
 		private void btnScores_Click(object sender, EventArgs e)
 		{
-			//student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
-			//UCScoreInfo_Teacher_Update uc = new UCScoreInfo_Teacher_Update();
-			//uc.Dock = DockStyle.Fill;
-			//this.panelDisplay.Controls.Clear();
-			//this.panelDisplay.Controls.Add(uc);
-			var uCStudentScoreInfo = new UCStudentScoreInfo(student);
-			uCStudentScoreInfo.Dock = DockStyle.Fill;
+			student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
+			UCScoreInfo_Teacher_Update uc = new UCScoreInfo_Teacher_Update(student);
+			uc.Dock = DockStyle.Fill;
 			this.panelDisplay.Controls.Clear();
-			this.panelDisplay.Controls.Add(uCStudentScoreInfo);
+			this.panelDisplay.Controls.Add(uc);
+			//var uCStudentScoreInfo = new UCStudentScoreInfo(student);
+			//uCStudentScoreInfo.Dock = DockStyle.Fill;
+			//this.panelDisplay.Controls.Clear();
+			//this.panelDisplay.Controls.Add(uCStudentScoreInfo);
 		}
 
 		private void btnTuiitionfee_Click(object sender, EventArgs e)
