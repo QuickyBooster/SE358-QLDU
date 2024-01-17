@@ -80,7 +80,7 @@
 			this.btnAddStudent.Size = new System.Drawing.Size(204, 52);
 			this.btnAddStudent.TabIndex = 70;
 			this.btnAddStudent.Text = "Add new exam";
-			this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
+			this.btnAddStudent.Click += new System.EventHandler(this.btnAddExam_Click);
 			// 
 			// txtSearchStudent
 			// 
@@ -106,6 +106,7 @@
 			this.txtSearchStudent.SelectedText = "";
 			this.txtSearchStudent.Size = new System.Drawing.Size(315, 52);
 			this.txtSearchStudent.TabIndex = 69;
+			this.txtSearchStudent.TextChanged += new System.EventHandler(this.txtSearchExam_TextChanged);
 			// 
 			// btnSearch
 			// 

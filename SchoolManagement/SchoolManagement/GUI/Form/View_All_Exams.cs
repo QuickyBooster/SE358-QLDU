@@ -17,25 +17,25 @@ namespace SchoolManagement
 		public View_All_Exams()
 		{
 			InitializeComponent();
-			loadData();
-		}
-		private void loadData()
+			loadData(DataProvider.SchoolManagement.Exams.ToList());
+        }
+		private void loadData(List<Exam> list )
 		{
 			try
 			{
-				var exams = DataProvider.SchoolManagement.Exams.ToList();
-				lbTotalStudents.Text = DataProvider.SchoolManagement.Students.ToList().Count.ToString();
+				var exams = list;
+				lbTotalStudents.Text = exams.Count.ToString();
 
 				gridviewSupplier.Rows.Clear();
 				int num = 0;
 				foreach (var p in exams)
 				{
-					gridviewSupplier.Rows.Add(++num, p.Document.FilePath);
-				}
+                    gridviewSupplier.Rows.Add(++num, p.Document.FilePath);
+                }
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 
-		private void btnAddStudent_Click(object sender, EventArgs e)
+		private void btnAddExam_Click(object sender, EventArgs e)
 		{
 			OpenFileDialog openFileDialog = new OpenFileDialog();
 			openFileDialog.Filter = "Files|*.docx;*.pdf;*.xlxs|All files|*.*";
@@ -54,6 +54,24 @@ namespace SchoolManagement
 
 				destinationPath = destinationPath.Replace("\\bin\\Debug", "");
 			}
+		}
+		private void txtSearchExam_TextChanged(object sender, EventArgs e)
+		{
+			try
+			{
+
+				var list = new List<Exam>();
+
+				foreach (var p in DataProvider.SchoolManagement.Exams.ToList())
+				{
+					if (p.Document.FilePath.Contains(txtSearchStudent.Text))
+					{
+						list.Add(p);
+					}
+				}
+
+				loadData(list);
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 	}
 }
