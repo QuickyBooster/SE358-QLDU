@@ -63,7 +63,7 @@ namespace SchoolManagement
 
 		private void Home_Click(object sender, EventArgs e)
 		{
-			uCHome_Cashier = new UCHome_Cashier();
+			uCHome_Cashier = new UCHome_Cashier(user);
 			uCHome_Cashier.Dock = DockStyle.Fill;
 			this.HomePanel.Controls.Clear();
 			this.HomePanel.Controls.Add(uCHome_Cashier);
