@@ -229,7 +229,7 @@
             this.guna2Panel1.Controls.Add(this.picAvatar);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1333, 126);
             this.guna2Panel1.TabIndex = 8;
@@ -348,7 +348,7 @@
             this.panelDisplay.BackgroundImage = global::SchoolManagement.Properties.Resources.raucu;
             this.panelDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelDisplay.Location = new System.Drawing.Point(303, 130);
-            this.panelDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.panelDisplay.Name = "panelDisplay";
             this.panelDisplay.Size = new System.Drawing.Size(1031, 729);
             this.panelDisplay.TabIndex = 12;
@@ -368,7 +368,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentInformation";

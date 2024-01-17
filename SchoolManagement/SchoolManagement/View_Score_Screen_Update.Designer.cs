@@ -40,12 +40,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtSearchStudent = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSearchSubject = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnAddStudent = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Avatar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnAddScore = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Fullname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.First_exam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Second_exam = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,9 +120,9 @@
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
             this.label3.Location = new System.Drawing.Point(32, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(280, 28);
+            this.label3.Size = new System.Drawing.Size(307, 28);
             this.label3.TabIndex = 42;
-            this.label3.Text = "These are list scores of class";
+            this.label3.Text = "These are list scores of student";
             // 
             // label4
             // 
@@ -137,30 +136,30 @@
             this.label4.TabIndex = 41;
             this.label4.Text = "Score information ";
             // 
-            // txtSearchStudent
+            // txtSearchSubject
             // 
-            this.txtSearchStudent.AutoRoundedCorners = true;
-            this.txtSearchStudent.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchStudent.BorderColor = System.Drawing.Color.Gray;
-            this.txtSearchStudent.BorderRadius = 25;
-            this.txtSearchStudent.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchStudent.DefaultText = "";
-            this.txtSearchStudent.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchStudent.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchStudent.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStudent.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtSearchStudent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchStudent.Location = new System.Drawing.Point(123, 93);
-            this.txtSearchStudent.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txtSearchStudent.Name = "txtSearchStudent";
-            this.txtSearchStudent.PasswordChar = '\0';
-            this.txtSearchStudent.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtSearchStudent.PlaceholderText = "Enter student\'s name";
-            this.txtSearchStudent.SelectedText = "";
-            this.txtSearchStudent.Size = new System.Drawing.Size(315, 52);
-            this.txtSearchStudent.TabIndex = 74;
+            this.txtSearchSubject.AutoRoundedCorners = true;
+            this.txtSearchSubject.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchSubject.BorderColor = System.Drawing.Color.Gray;
+            this.txtSearchSubject.BorderRadius = 25;
+            this.txtSearchSubject.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchSubject.DefaultText = "";
+            this.txtSearchSubject.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchSubject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchSubject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchSubject.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchSubject.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtSearchSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchSubject.Location = new System.Drawing.Point(123, 93);
+            this.txtSearchSubject.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtSearchSubject.Name = "txtSearchSubject";
+            this.txtSearchSubject.PasswordChar = '\0';
+            this.txtSearchSubject.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtSearchSubject.PlaceholderText = "Enter subject\'s name";
+            this.txtSearchSubject.SelectedText = "";
+            this.txtSearchSubject.Size = new System.Drawing.Size(315, 52);
+            this.txtSearchSubject.TabIndex = 74;
             // 
             // btnSearch
             // 
@@ -193,29 +192,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(916, 476);
             this.guna2Panel1.TabIndex = 76;
             // 
-            // btnAddStudent
-            // 
-            this.btnAddStudent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddStudent.AutoRoundedCorners = true;
-            this.btnAddStudent.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddStudent.BorderRadius = 25;
-            this.btnAddStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddStudent.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddStudent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-            this.btnAddStudent.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(85)))), ((int)(((byte)(254)))));
-            this.btnAddStudent.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnAddStudent.ForeColor = System.Drawing.Color.White;
-            this.btnAddStudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnAddStudent.Location = new System.Drawing.Point(756, 93);
-            this.btnAddStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(204, 52);
-            this.btnAddStudent.TabIndex = 75;
-            this.btnAddStudent.Text = "Add new score";
-            // 
             // gridviewSupplier
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -234,7 +210,6 @@
             this.gridviewSupplier.ColumnHeadersHeight = 38;
             this.gridviewSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gridviewSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Avatar,
             this.Fullname,
             this.First_exam,
             this.Second_exam,
@@ -291,15 +266,33 @@
             this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Avatar
+            // btnAddScore
             // 
-            this.Avatar.HeaderText = "Avatar";
-            this.Avatar.MinimumWidth = 6;
-            this.Avatar.Name = "Avatar";
+            this.btnAddScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddScore.AutoRoundedCorners = true;
+            this.btnAddScore.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddScore.BorderRadius = 25;
+            this.btnAddScore.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddScore.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddScore.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddScore.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddScore.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddScore.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            this.btnAddScore.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(85)))), ((int)(((byte)(254)))));
+            this.btnAddScore.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnAddScore.ForeColor = System.Drawing.Color.White;
+            this.btnAddScore.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnAddScore.Location = new System.Drawing.Point(756, 93);
+            this.btnAddScore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddScore.Name = "btnAddScore";
+            this.btnAddScore.Size = new System.Drawing.Size(204, 52);
+            this.btnAddScore.TabIndex = 75;
+            this.btnAddScore.Text = "Add new score";
+            this.btnAddScore.Click += new System.EventHandler(this.btnAddScore_Click);
             // 
             // Fullname
             // 
-            this.Fullname.HeaderText = "Fullname";
+            this.Fullname.HeaderText = "Subject name";
             this.Fullname.MinimumWidth = 6;
             this.Fullname.Name = "Fullname";
             // 
@@ -341,10 +334,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(994, 673);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Controls.Add(this.txtSearchStudent);
+            this.Controls.Add(this.txtSearchSubject);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.btnAddStudent);
+            this.Controls.Add(this.btnAddScore);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -370,12 +363,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchStudent;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchSubject;
         private System.Windows.Forms.PictureBox btnSearch;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2GradientButton btnAddStudent;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAddScore;
         private Guna.UI2.WinForms.Guna2DataGridView gridviewSupplier;
-        private System.Windows.Forms.DataGridViewImageColumn Avatar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fullname;
         private System.Windows.Forms.DataGridViewTextBoxColumn First_exam;
         private System.Windows.Forms.DataGridViewTextBoxColumn Second_exam;

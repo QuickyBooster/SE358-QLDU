@@ -110,6 +110,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScore.Designer.cs">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Class.cs">
       <DependentUpon>SchoolManagement.tt</DependentUpon>
     </Compile>
@@ -446,6 +452,9 @@
     <Compile Include="View_Score_Screen_Update.Designer.cs">
       <DependentUpon>View_Score_Screen_Update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddScore.resx">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\ClassroomDetails.resx">
       <DependentUpon>ClassroomDetails.cs</DependentUpon>
     </EmbeddedResource>

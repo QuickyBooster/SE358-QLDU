@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace SchoolManagement
         public View_Score_Screen_Update()
         {
             InitializeComponent();
+        }
+
+        private void btnAddScore_Click(object sender, EventArgs e)
+        {
+            AddScore addScore = new AddScore();
+            addScore.ShowDialog();
+            // Load lại data
         }
     }
 }
