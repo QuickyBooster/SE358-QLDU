@@ -34,6 +34,13 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Full_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Birthdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Teacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtSearchStudent = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,13 +50,6 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Full_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Birthdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Teacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.gridviewSupplier)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -131,6 +131,56 @@
 			this.gridviewSupplier.ThemeStyle.RowsStyle.Height = 40;
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.gridviewSupplier.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewSupplier_CellDoubleClick);
+			// 
+			// ID
+			// 
+			this.ID.FillWeight = 42.78075F;
+			this.ID.HeaderText = "ID";
+			this.ID.MinimumWidth = 6;
+			this.ID.Name = "ID";
+			// 
+			// Full_name
+			// 
+			this.Full_name.FillWeight = 216.3484F;
+			this.Full_name.HeaderText = "Full name";
+			this.Full_name.MinimumWidth = 6;
+			this.Full_name.Name = "Full_name";
+			// 
+			// Birthdate
+			// 
+			this.Birthdate.FillWeight = 108.1742F;
+			this.Birthdate.HeaderText = "Birthday";
+			this.Birthdate.MinimumWidth = 6;
+			this.Birthdate.Name = "Birthdate";
+			// 
+			// Grade
+			// 
+			this.Grade.FillWeight = 108.1742F;
+			this.Grade.HeaderText = "Grade";
+			this.Grade.MinimumWidth = 6;
+			this.Grade.Name = "Grade";
+			// 
+			// Class
+			// 
+			this.Class.FillWeight = 108.1742F;
+			this.Class.HeaderText = "Class";
+			this.Class.MinimumWidth = 6;
+			this.Class.Name = "Class";
+			// 
+			// Teacher
+			// 
+			this.Teacher.FillWeight = 108.1742F;
+			this.Teacher.HeaderText = "Teacher";
+			this.Teacher.MinimumWidth = 6;
+			this.Teacher.Name = "Teacher";
+			// 
+			// Status
+			// 
+			this.Status.FillWeight = 108.1742F;
+			this.Status.HeaderText = "Status";
+			this.Status.MinimumWidth = 6;
+			this.Status.Name = "Status";
 			// 
 			// label3
 			// 
@@ -266,55 +316,6 @@
 			this.guna2CustomGradientPanel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 10, 10);
 			this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1028, 60);
 			this.guna2CustomGradientPanel1.TabIndex = 62;
-			// 
-			// ID
-			// 
-			this.ID.FillWeight = 42.78075F;
-			this.ID.HeaderText = "ID";
-			this.ID.MinimumWidth = 6;
-			this.ID.Name = "ID";
-			// 
-			// Full_name
-			// 
-			this.Full_name.FillWeight = 216.3484F;
-			this.Full_name.HeaderText = "Full name";
-			this.Full_name.MinimumWidth = 6;
-			this.Full_name.Name = "Full_name";
-			// 
-			// Birthdate
-			// 
-			this.Birthdate.FillWeight = 108.1742F;
-			this.Birthdate.HeaderText = "Birthday";
-			this.Birthdate.MinimumWidth = 6;
-			this.Birthdate.Name = "Birthdate";
-			// 
-			// Grade
-			// 
-			this.Grade.FillWeight = 108.1742F;
-			this.Grade.HeaderText = "Grade";
-			this.Grade.MinimumWidth = 6;
-			this.Grade.Name = "Grade";
-			// 
-			// Class
-			// 
-			this.Class.FillWeight = 108.1742F;
-			this.Class.HeaderText = "Class";
-			this.Class.MinimumWidth = 6;
-			this.Class.Name = "Class";
-			// 
-			// Teacher
-			// 
-			this.Teacher.FillWeight = 108.1742F;
-			this.Teacher.HeaderText = "Teacher";
-			this.Teacher.MinimumWidth = 6;
-			this.Teacher.Name = "Teacher";
-			// 
-			// Status
-			// 
-			this.Status.FillWeight = 108.1742F;
-			this.Status.HeaderText = "Status";
-			this.Status.MinimumWidth = 6;
-			this.Status.Name = "Status";
 			// 
 			// UCTuition_Cashier
 			// 

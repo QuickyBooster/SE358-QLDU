@@ -23,6 +23,12 @@ namespace SchoolManagement
 				this.student = DataProvider.SchoolManagement.Students.Find(s);
 				lbEventName.Text = student.FulName;
 				lbStudentID.Text = student.StudentID.ToString();
+				if (student.Information.Image != null)
+				{
+					string path = Application.StartupPath;
+					path = path.Replace("\\bin\\Debug", "");
+					picAvatar.Image = new System.Drawing.Bitmap(path + student.Information.Image);
+				}
 			} catch (Exception e) { Console.WriteLine(e.Message); }
 		}
 

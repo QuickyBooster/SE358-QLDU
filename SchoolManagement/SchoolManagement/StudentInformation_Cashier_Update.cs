@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using SchoolManagement.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,19 +12,34 @@ using System.Windows.Forms;
 
 namespace SchoolManagement
 {
-    public partial class StudentInformation_Cashier_Update : Form
-    {
-        public StudentInformation_Cashier_Update()
-        {
-            InitializeComponent();
-        }
+	public partial class StudentInformation_Cashier_Update : Form
+	{
+		private Student student;
+		public StudentInformation_Cashier_Update(int s)
+		{
+			try
+			{
 
-        private void btnTuiitionfee_Click(object sender, EventArgs e)
-        {
-            UCFeeInfo_Cashier_Update uc = new UCFeeInfo_Cashier_Update();
-            uc.Dock = DockStyle.Fill;
-            this.panelDisplay.Controls.Clear();
-            this.panelDisplay.Controls.Add(uc);
-        }
-    }
+				InitializeComponent();
+				this.student = DataProvider.SchoolManagement.Students.Find(s);
+				lbEventName.Text = student.FulName;
+				lbStudentID.Text = student.StudentID.ToString();
+				if (student.Information.Image != null)
+				{
+					string path = Application.StartupPath;
+					path = path.Replace("\\bin\\Debug", "");
+					picAvatar.Image = new System.Drawing.Bitmap(path + student.Information.Image);
+				}
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
+		}
+
+		private void btnTuiitionfee_Click(object sender, EventArgs e)
+		{
+			UCFeeInfo_Cashier_Update uc = new UCFeeInfo_Cashier_Update(student.StudentID);
+			uc.Dock = DockStyle.Fill;
+			this.panelDisplay.Controls.Clear();
+			this.panelDisplay.Controls.Add(uc);
+		}
+
+	}
 }

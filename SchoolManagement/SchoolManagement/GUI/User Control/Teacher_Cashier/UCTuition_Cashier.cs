@@ -54,5 +54,21 @@ namespace SchoolManagement
 				loadData(list);
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
+		private void gridviewSupplier_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+		{
+			try
+			{
+
+				int idx = e.RowIndex;
+				if (idx < 0) return;
+				else
+				{
+					var editStudent = new StudentInformation_Cashier_Update(
+						int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
+					editStudent.ShowDialog();
+					loadData(DataProvider.SchoolManagement.Students.ToList());
+				}
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
+		}
 	}
 }
