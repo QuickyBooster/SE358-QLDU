@@ -47,6 +47,12 @@
 			this.btnAddClass = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -56,12 +62,6 @@
 			this.File = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label7 = new System.Windows.Forms.Label();
 			this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-			this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Class_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.guna2CustomGradientPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -280,6 +280,47 @@
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			this.gridviewSupplier.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewSupplier_CellDoubleClick);
+			this.gridviewSupplier.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridviewSupplier_CellMouseClick);
+			// 
+			// ID
+			// 
+			this.ID.HeaderText = "ID";
+			this.ID.MinimumWidth = 6;
+			this.ID.Name = "ID";
+			this.ID.ReadOnly = true;
+			// 
+			// Class_name
+			// 
+			this.Class_name.FillWeight = 150F;
+			this.Class_name.HeaderText = "Class name";
+			this.Class_name.MinimumWidth = 6;
+			this.Class_name.Name = "Class_name";
+			// 
+			// Total
+			// 
+			this.Total.HeaderText = "Total";
+			this.Total.MinimumWidth = 6;
+			this.Total.Name = "Total";
+			// 
+			// Detail
+			// 
+			this.Detail.FillWeight = 50F;
+			this.Detail.HeaderText = "Detail";
+			this.Detail.MinimumWidth = 6;
+			this.Detail.Name = "Detail";
+			// 
+			// Edit
+			// 
+			this.Edit.HeaderText = "Edit";
+			this.Edit.MinimumWidth = 6;
+			this.Edit.Name = "Edit";
+			// 
+			// Delete
+			// 
+			this.Delete.FillWeight = 50F;
+			this.Delete.HeaderText = "Delete";
+			this.Delete.MinimumWidth = 6;
+			this.Delete.Name = "Delete";
 			// 
 			// label3
 			// 
@@ -356,7 +397,7 @@
 			this.label2.ForeColor = System.Drawing.Color.DarkGray;
 			this.label2.Location = new System.Drawing.Point(15, 54);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(299, 35);
+			this.label2.Size = new System.Drawing.Size(239, 28);
 			this.label2.TabIndex = 44;
 			this.label2.Text = "These are list document";
 			// 
@@ -433,49 +474,9 @@
 			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.label7.Location = new System.Drawing.Point(31, 14);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(200, 38);
+			this.label7.Size = new System.Drawing.Size(160, 30);
 			this.label7.TabIndex = 41;
 			this.label7.Text = "List document";
-			// 
-			// ID
-			// 
-			this.ID.HeaderText = "ID";
-			this.ID.MinimumWidth = 6;
-			this.ID.Name = "ID";
-			this.ID.ReadOnly = true;
-			// 
-			// Class_name
-			// 
-			this.Class_name.FillWeight = 150F;
-			this.Class_name.HeaderText = "Class name";
-			this.Class_name.MinimumWidth = 6;
-			this.Class_name.Name = "Class_name";
-			// 
-			// Total
-			// 
-			this.Total.HeaderText = "Total";
-			this.Total.MinimumWidth = 6;
-			this.Total.Name = "Total";
-			// 
-			// Detail
-			// 
-			this.Detail.FillWeight = 50F;
-			this.Detail.HeaderText = "Detail";
-			this.Detail.MinimumWidth = 6;
-			this.Detail.Name = "Detail";
-			// 
-			// Edit
-			// 
-			this.Edit.HeaderText = "Edit";
-			this.Edit.MinimumWidth = 6;
-			this.Edit.Name = "Edit";
-			// 
-			// Delete
-			// 
-			this.Delete.FillWeight = 50F;
-			this.Delete.HeaderText = "Delete";
-			this.Delete.MinimumWidth = 6;
-			this.Delete.Name = "Delete";
 			// 
 			// UCClasses_Teacher
 			// 

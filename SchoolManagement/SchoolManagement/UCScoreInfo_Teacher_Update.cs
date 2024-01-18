@@ -142,7 +142,8 @@ namespace SchoolManagement
 
 		private void btnEdit_Click(object sender, EventArgs e)
 		{
-
+			var addScore = new AddScore(student);
+			addScore.ShowDialog();
 		}
 	}
 }

@@ -36,11 +36,7 @@ namespace SchoolManagement
 		}
 
 
-		/// <summary>
-		/// Doi Linh lam xong
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
+
 		private void btnAddExam_Click(object sender, EventArgs e)
 		{
 			OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -64,7 +60,6 @@ namespace SchoolManagement
 				var document = new Document();
 				document.UploadDate = DateTime.Now;
 				document.FilePath = fileName;
-				document.DocumentID = DataProvider.SchoolManagement.Documents.ToList().Count + 1;
 				DataProvider.SchoolManagement.Documents.Add(document);
 				int i = DataProvider.SchoolManagement.SaveChanges();
 

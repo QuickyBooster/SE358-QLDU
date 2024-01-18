@@ -110,6 +110,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFee.Designer.cs">
+      <DependentUpon>AddFee.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -368,6 +374,11 @@
     <Compile Include="GUI\Form\Student CRUD\UCParentsInfo.Designer.cs">
       <DependentUpon>UCParentsInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="SE358_SchoolManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SE358_SchoolManagementDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StudentInformation_Cashier_Update.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -452,6 +463,9 @@
     <Compile Include="View_Score_Screen_Update.Designer.cs">
       <DependentUpon>View_Score_Screen_Update.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddFee.resx">
+      <DependentUpon>AddFee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddScore.resx">
       <DependentUpon>AddScore.cs</DependentUpon>
     </EmbeddedResource>
@@ -626,6 +640,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SE358_SchoolManagementDataSet.xsc">
+      <DependentUpon>SE358_SchoolManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SE358_SchoolManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SE358_SchoolManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SE358_SchoolManagementDataSet.xss">
+      <DependentUpon>SE358_SchoolManagementDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

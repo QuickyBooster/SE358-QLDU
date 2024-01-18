@@ -43,7 +43,7 @@ namespace SchoolManagement
 					gridviewSupplier.Rows.Add(c.ClassID, c.ClassName, total);
 				}
 				var docs = DataProvider.SchoolManagement.Documents.AsNoTracking().ToList();
-				gridviewArea.Rows.Clear();	
+				gridviewArea.Rows.Clear();
 				foreach (var doc in docs)
 				{
 					gridviewArea.Rows.Add(doc.FilePath);
@@ -67,13 +67,20 @@ namespace SchoolManagement
 			{
 
 				int idx = e.RowIndex;
-				if (idx < 0) return;
-				else
+				int col = e.ColumnIndex;
+				if (col <3)
 				{
-					var editClass = new AddNewClass(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
-					editClass.ShowDialog();
-					LoadData(DataProvider.SchoolManagement.Classes.AsNoTracking().ToList());
-				}
+
+					if (idx < 0) return;
+					else
+					{
+						var editClass = new AddNewClass(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
+						editClass.ShowDialog();
+						LoadData(DataProvider.SchoolManagement.Classes.AsNoTracking().ToList());
+					}
+				} else if (col ==3)
+					return;
+
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 
@@ -98,6 +105,49 @@ namespace SchoolManagement
 		{
 			Form viewAllExams = new View_All_Exams();
 			viewAllExams.Show();
+			LoadData(DataProvider.SchoolManagement.Classes.ToList());
+		}
+
+		private void gridviewSupplier_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+		{
+			try
+			{
+
+				int idx = e.RowIndex;
+				int col = e.ColumnIndex;
+				if (col <3)
+					return;
+				if (col != 5)
+				{
+
+					if (idx < 0) return;
+					else
+					{
+						var editClass = new AddNewClass(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
+						editClass.ShowDialog();
+						LoadData(DataProvider.SchoolManagement.Classes.AsNoTracking().ToList());
+					}
+				} else if (col ==5)
+				{
+					var classed = DataProvider.SchoolManagement.Classes.Find(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
+					if (classed != null)
+					{
+						DataProvider.SchoolManagement.Classes.Remove(classed);
+						int i = DataProvider.SchoolManagement.SaveChanges();
+						if (i >= 1)
+						{
+							MessageBox.Show("Success");
+						} else
+						{
+							MessageBox.Show("Fail");
+						}
+						LoadData(DataProvider.SchoolManagement.Classes.ToList());
+					}
+
+				}
+
+
+			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 	}
 }

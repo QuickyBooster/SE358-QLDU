@@ -20,8 +20,8 @@ namespace SchoolManagement
 
         private void btnAddScore_Click(object sender, EventArgs e)
         {
-            AddScore addScore = new AddScore();
-            addScore.ShowDialog();
+            //AddScore addScore = new AddScore();
+            //addScore.ShowDialog();
             // Load lại data
         }
     }
