@@ -29,7 +29,7 @@ namespace SchoolManagement
 				{
 					string path = Application.StartupPath;
 					path = path.Replace("\\bin\\Debug", "");
-					guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+					guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + "\\Resources\\"+user.Information.Image);
 				}
 			} catch (Exception e)
 			{

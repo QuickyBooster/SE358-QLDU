@@ -3,7 +3,7 @@ volumes:
   mssql-data:
     driver: local
 services:
-  sql-server-be:
+  sql-server-be-358:
     build:
       context: .
       dockerfile: Dockerfile

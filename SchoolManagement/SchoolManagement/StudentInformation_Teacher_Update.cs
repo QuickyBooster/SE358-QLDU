@@ -23,11 +23,11 @@ namespace SchoolManagement
 				this.student = DataProvider.SchoolManagement.Students.Find(s);
 				lbEventName.Text = student.FulName;
 				lbStudentID.Text = student.StudentID.ToString();
-				if (student.Information.Image != null)
+                if (student.Information.Image != null)
 				{
-					string path = Application.StartupPath;
+                    string path = Application.StartupPath;
 					path = path.Replace("\\bin\\Debug", "");
-					picAvatar.Image = new System.Drawing.Bitmap(path + student.Information.Image);
+                    picAvatar.Image = new System.Drawing.Bitmap(path + "\\Resources\\"+student.Information.Image);
 				}
 			} catch (Exception e) { Console.WriteLine(e.Message); }
 		}
@@ -77,16 +77,15 @@ namespace SchoolManagement
 
 		private void btnTuiitionfee_Click(object sender, EventArgs e)
 		{
-			//student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
-			//UCFeeInfo_Teacher_Update uc = new UCFeeInfo_Teacher_Update();
-			//uc.Dock = DockStyle.Fill;
-			//this.panelDisplay.Controls.Clear();
-			//this.panelDisplay.Controls.Add(uc);
-			student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
-			UCStudentTuitionFees uc = new UCStudentTuitionFees(student);
+			UCFeeInfo_Teacher_Update uc = new UCFeeInfo_Teacher_Update(student);
 			uc.Dock = DockStyle.Fill;
 			this.panelDisplay.Controls.Clear();
 			this.panelDisplay.Controls.Add(uc);
+			//student = DataProvider.SchoolManagement.Students.Find(student.StudentID);
+			//UCStudentTuitionFees uc = new UCStudentTuitionFees(student);
+			//uc.Dock = DockStyle.Fill;
+			//this.panelDisplay.Controls.Clear();
+			//this.panelDisplay.Controls.Add(uc);
 		}
 		private void btn_ChangeAvatar_Click(object sender, EventArgs e)
 		{

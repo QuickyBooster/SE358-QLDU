@@ -37,7 +37,6 @@
 			this.btnSearch = new System.Windows.Forms.PictureBox();
 			this.gridviewClass = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.lbStudentName = new System.Windows.Forms.Label();
-			this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.FeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Cashier = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,7 +96,6 @@
 			this.gridviewClass.ColumnHeadersHeight = 38;
 			this.gridviewClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gridviewClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.No,
             this.FeeName,
             this.Amount,
             this.Cashier,
@@ -166,16 +164,6 @@
 			this.lbStudentName.TabIndex = 41;
 			this.lbStudentName.Text = "Student name";
 			// 
-			// No
-			// 
-			this.No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-			this.No.Frozen = true;
-			this.No.HeaderText = "No";
-			this.No.MinimumWidth = 6;
-			this.No.Name = "No";
-			this.No.ReadOnly = true;
-			this.No.Width = 125;
-			// 
 			// FeeName
 			// 
 			this.FeeName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -231,7 +219,6 @@
         private System.Windows.Forms.PictureBox btnSearch;
         private Guna.UI2.WinForms.Guna2DataGridView gridviewClass;
         private System.Windows.Forms.Label lbStudentName;
-		private System.Windows.Forms.DataGridViewTextBoxColumn No;
 		private System.Windows.Forms.DataGridViewTextBoxColumn FeeName;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Cashier;

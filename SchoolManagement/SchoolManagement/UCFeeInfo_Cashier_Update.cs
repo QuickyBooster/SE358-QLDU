@@ -14,35 +14,32 @@ namespace SchoolManagement
 	public partial class UCFeeInfo_Cashier_Update : UserControl
 	{
 		private Student student;
-		public UCFeeInfo_Cashier_Update(int s)
+		public UCFeeInfo_Cashier_Update(Student student)
 		{
-			try
-			{
+			InitializeComponent();
 
-				InitializeComponent();
-				this.student = DataProvider.SchoolManagement.Students.Find(s);
-				lbStudentName.Text = student.FulName;
+			this.student = student;
+			lbStudentName.Text = student.FulName;
 
-				loadData(DataProvider.SchoolManagement.Tuitions.ToList());
-			} catch (Exception ex) { Console.WriteLine(ex.Message); }
+			LoadData();
 		}
 
-		private void loadData(List<Tuition> tuitions)
+		private void LoadData()
 		{
-			try
+			gridviewClass.Rows.Clear();
+
+			foreach (var p in DataProvider.SchoolManagement.Tuitions)
 			{
-				gridviewClass.Rows.Clear();
-				int num = 0;
-				foreach (var p in tuitions)
+				if (p.Student.StudentID == student.StudentID)
 				{
-					gridviewClass.Rows.Add(++num, p.TuitionOfMonth.ToString(), p.Fee.Value.ToString(), p.CashierID.ToString(), p.StatusTuition.ToString());
+					gridviewClass.Rows.Add(p.TuitionOfMonth, p.Fee, p.User.FulName, p.StatusTuition);
 				}
-			} catch (Exception ex) { Console.WriteLine(ex.Message); }
+			}
 		}
 
 		private void btnSearch_Click(object sender, EventArgs e)
 		{
-			loadData(DataProvider.SchoolManagement.Tuitions.ToList());
+			LoadData();	
 		}
 	}
 }

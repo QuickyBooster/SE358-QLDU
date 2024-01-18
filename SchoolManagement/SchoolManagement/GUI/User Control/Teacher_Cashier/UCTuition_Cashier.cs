@@ -63,11 +63,15 @@ namespace SchoolManagement
 				if (idx < 0) return;
 				else
 				{
-					var editStudent = new StudentInformation_Cashier_Update(
-						int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
-					editStudent.ShowDialog();
-					loadData(DataProvider.SchoolManagement.Students.ToList());
-				}
+                    Console.WriteLine(66);
+					var id = int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString());
+                    Console.WriteLine(id);
+                    var editStudent = new StudentInformation_Cashier_Update(id);
+                    Console.WriteLine(70);
+                    editStudent.ShowDialog();
+                    Console.WriteLine( 72);
+                    //loadData(DataProvider.SchoolManagement.Students.ToList());
+                }
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
 	}
