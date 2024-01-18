@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace SchoolManagement
 {
-    public partial class UCScoreInfo_Teacher_Update : UserControl
-    {
+	public partial class UCScoreInfo_Teacher_Update : UserControl
+	{
 		private Student student;
 		public UCScoreInfo_Teacher_Update(Student student)
 		{
@@ -52,42 +53,46 @@ namespace SchoolManagement
 
 					var subject = (from s in DataProvider.SchoolManagement.Subjects.ToList() where s.SubjectName.Equals(comboSemester.SelectedItem.ToString()) select s).FirstOrDefault();
 
-					foreach (var s in DataProvider.SchoolManagement.Scores.ToList())
+
+					var scores = DataProvider.SchoolManagement.Scores.ToList();
+					var exams = DataProvider.SchoolManagement.Exams.ToList();
+					var examList = exams.FindAll(a => a.SubjectID == subject.SubjectID);
+					var exam15 = examList.FindAll(a => a.TypeExam.Equals("Exam 15min"));
+					var exam45 = examList.FindAll(a => a.TypeExam.Equals("Exam 45min"));
+					var efinal = examList.FindAll(a => a.TypeExam.Equals("Exam Semester"));
+					string p15 = "", p45 = "", pfinal = "";
+
+					if (exam15.Count > 0)
 					{
-						if (s.Exam.Subject.SubjectID == subject.SubjectID && s.Student.StudentID == student.StudentID)
-						{
-							string type = s.Exam.TypeExam;
+						p15 = scores.FindAll(a => a.ExamID == exam15.Last().ExamID).Last().ScoreOfExam.ToString();
+						SumPoint += double.Parse(p15);
+						Console.WriteLine(SumPoint);
+						amountOfExams +=1;
+					}
 
-							if (type.Contains("15"))
-							{
-								type = 15 + " mins";
-								amountOfExams++;
-								SumPoint = (SumPoint * 1.00) + (double)s.ScoreOfExam;
-							} else if (type.Contains("45"))
-							{
-								type = 45 + "mins";
-								amountOfExams++;
-								amountOfExams++;
-								SumPoint = (SumPoint * 1.00) + (double)s.ScoreOfExam + (double)s.ScoreOfExam;
-							} else
-							{
-								type = "Final semester";
-								amountOfExams++;
-								amountOfExams++;
-								amountOfExams++;
-								SumPoint = (SumPoint * 1.00) + (double)s.ScoreOfExam + (double)s.ScoreOfExam + (double)s.ScoreOfExam;
-							}
+					if (exam45.Count > 0)
+					{
+						p45 = scores.FindAll(a => a.ExamID == exam45.Last().ExamID).Last().ScoreOfExam.ToString();
+						SumPoint+= (double.Parse(p45)*2);
+						Console.WriteLine(SumPoint);
+						amountOfExams +=2;
+					}
 
-							gridviewClass.Rows.Add(subject.SubjectName, type, s.ScoreOfExam);
-
-						}
+					if (efinal.Count > 0)
+					{
+						pfinal = scores.FindAll(a => a.ExamID == efinal.Last().ExamID).Last().ScoreOfExam.ToString();
+						SumPoint+=(double.Parse(pfinal)*3);
+						Console.WriteLine(SumPoint);
+						amountOfExams +=3;
 					}
 
 					if (SumPoint != 0)
 					{
 						AVGPoint = SumPoint / amountOfExams;
-						lbAVGPoint.Text = AVGPoint.ToString();
+						//lbAVGPoint.Text = AVGPoint.ToString();
 					}
+
+					gridviewClass.Rows.Add(subject.SubjectName, p15, p45, pfinal, Math.Round(AVGPoint, 2));
 				} else // All
 				{
 					double AVGPoint = 0.0;
@@ -99,39 +104,57 @@ namespace SchoolManagement
 						double AVGPointOfSubject = 0.0;
 						int amountOfExams = 0;
 
-						foreach (var p in DataProvider.SchoolManagement.Scores)
+						var scores = DataProvider.SchoolManagement.Scores.ToList();
+						var exams = DataProvider.SchoolManagement.Exams.ToList();
+						var examList = exams.FindAll(a => a.SubjectID == sub.SubjectID);
+						var exam15 = examList.FindAll(a => a.TypeExam.Equals("Exam 15min"));
+						var exam45 = examList.FindAll(a => a.TypeExam.Equals("Exam 45min"));
+						var efinal = examList.FindAll(a => a.TypeExam.Equals("Exam Semester"));
+						string p15 = "", p45 = "", pfinal = "";
+
+						if (exam15.Count > 0)
 						{
-							if (p.Exam.Subject.SubjectID == sub.SubjectID && p.Student.StudentID == student.StudentID)
-							{
-								if (p.Exam.TypeExam.Contains("15"))
-								{
-									amountOfExams++;
-									SumPoint = (SumPoint * 1.00) + (double)p.ScoreOfExam;
-								} else if (p.Exam.TypeExam.Contains("45"))
-								{
-									amountOfExams += 2;
-									SumPoint = (SumPoint * 1.00) + (double)p.ScoreOfExam + (double)p.ScoreOfExam;
-								} else
-								{
-									amountOfExams += 3;
-									SumPoint = (SumPoint * 1.00) + (double)p.ScoreOfExam + (double)p.ScoreOfExam + (double)p.ScoreOfExam;
-								}
-							}
+							p15 = scores.FindAll(a => a.ExamID == exam15.Last().ExamID).Last().ScoreOfExam.ToString();
+							SumPoint += double.Parse(p15);
+							Console.WriteLine(SumPoint);
+							amountOfExams +=1;
+						}
+
+						if (exam45.Count > 0)
+						{
+							p45 = scores.FindAll(a => a.ExamID == exam45.Last().ExamID).Last().ScoreOfExam.ToString();
+							SumPoint+= (double.Parse(p45)*2);
+							Console.WriteLine(SumPoint);
+							amountOfExams +=2;
+						}
+
+						if (efinal.Count > 0)
+						{
+							pfinal = scores.FindAll(a => a.ExamID == efinal.Last().ExamID).Last().ScoreOfExam.ToString();
+							SumPoint+=(double.Parse(pfinal)*3);
+							Console.WriteLine(SumPoint);
+							amountOfExams +=3;
 						}
 
 						if (SumPoint != 0)
 						{
 							AVGPointOfSubject = SumPoint / amountOfExams;
-							AVGPoint = (AVGPoint * 1.00) + AVGPointOfSubject;
+							//lbAVGPoint.Text = AVGPoint.ToString();
+						}
+
+						gridviewClass.Rows.Add(sub.SubjectName, p15, p45, pfinal, Math.Round(AVGPointOfSubject, 2));
+
+						if (SumPoint != 0)
+						{
+							AVGPoint += AVGPointOfSubject;
 							amountOfSubject++;
-							gridviewClass.Rows.Add(sub.SubjectName, "Average point", AVGPointOfSubject);
 						}
 					}
 
 					if (AVGPoint != 0)
 					{
 						AVGPoint = (AVGPoint * 1.00) / amountOfSubject;
-						lbAVGPoint.Text = AVGPoint.ToString();
+						lbAVGPoint.Text = Math.Round(AVGPoint, 2).ToString();
 					}
 				}
 			} catch (Exception ex)

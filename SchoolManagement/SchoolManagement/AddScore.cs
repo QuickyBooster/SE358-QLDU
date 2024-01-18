@@ -157,23 +157,24 @@ namespace SchoolManagement
 				var subject = subjects.Find(a => a.SubjectName == comboSemester.Text);
 				var exams = DataProvider.SchoolManagement.Exams.ToList();
 				var examList = exams.FindAll(a => a.SubjectID == subject.SubjectID);
+				var scores = DataProvider.SchoolManagement.Scores.ToList();
 				Console.WriteLine(161);
 				if (examList.Count!=0)
 				{
 
 					var exam15 = examList.FindAll(a => a.TypeExam.Equals("Exam 15min"));
 					if (exam15.Count!=0)
-						txtSubName.Text = DataProvider.SchoolManagement.Scores.ToList().FindAll(a => a.ExamID == exam15.Last().ExamID).Last().ScoreOfExam.ToString();
+						txtSubName.Text = scores.FindAll(a => a.ExamID == exam15.Last().ExamID).Last().ScoreOfExam.ToString();
 
 
 					var exam45 = examList.FindAll(a => a.TypeExam.Equals("Exam 45min"));
 					if (exam45.Count!=0)
-						guna2TextBox1.Text = DataProvider.SchoolManagement.Scores.ToList().FindAll(a => a.ExamID == exam45.Last().ExamID).Last().ScoreOfExam.ToString();
+						guna2TextBox1.Text = scores.FindAll(a => a.ExamID == exam45.Last().ExamID).Last().ScoreOfExam.ToString();
 
 
 					var final = examList.FindAll(a => a.TypeExam.Equals("Exam Semester"));
 					if (final.Count!=0)
-						guna2TextBox2.Text = DataProvider.SchoolManagement.Scores.ToList().FindAll(a => a.ExamID == final.Last().ExamID).Last().ScoreOfExam.ToString();
+						guna2TextBox2.Text = scores.FindAll(a => a.ExamID == final.Last().ExamID).Last().ScoreOfExam.ToString();
 				}
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
