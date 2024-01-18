@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/SchoolManagement/SchoolManagement/SE358_SchoolManagementDataSet.xsc
+/SchoolManagement/SchoolManagement/SE358_SchoolManagementDataSet.xsd
+/SchoolManagement/SchoolManagement/SE358_SchoolManagementDataSet.xss
