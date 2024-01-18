@@ -31,12 +31,13 @@ namespace SchoolManagement
 			lb_Name.Text = user.FulName;
 			lbUserName.Text = user.FulName;
 			lbEmail.Text = user.Email;
+			lbRole.Text = user.Role.RoleName;
 
 			if (user.Information.Image != null)
 			{
 				string path = Application.StartupPath;
 				path = path.Replace("\\bin\\Debug", "");
-				AvatarPic.Image = new System.Drawing.Bitmap(path+"\\Resources\\" + user.Information.Image);
+                AvatarPic.Image = new System.Drawing.Bitmap(path + user.Information.Image);
 			}
 		}
 
@@ -48,7 +49,7 @@ namespace SchoolManagement
 
 		private void btnChangeProfile_Click(object sender, EventArgs e)
 		{
-			AddNewEmployee addNewEmployee = new AddNewEmployee(user.Username, 2); // "2" is teacher
+			AddNewEmployee addNewEmployee = new AddNewEmployee(user.Username, (user.RoleID==2 ? 2 : 1)); // "2" is teacher
 			addNewEmployee.ShowDialog();
 			this.user = DataProvider.SchoolManagement.Users.Find(user.Username);
 			LoadData();

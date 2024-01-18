@@ -40,12 +40,13 @@ namespace SchoolManagement
 						}
 					}
 
-					gridviewSupplier.Rows.Add(c.ClassName, total);
+					gridviewSupplier.Rows.Add(c.ClassID, c.ClassName, total);
 				}
-				var exams = DataProvider.SchoolManagement.Exams.AsNoTracking().ToList();
-				foreach (var exam in exams)
+				var docs = DataProvider.SchoolManagement.Documents.AsNoTracking().ToList();
+				gridviewArea.Rows.Clear();	
+				foreach (var doc in docs)
 				{
-					gridviewArea.Rows.Add(exam.Document.FilePath);
+					gridviewArea.Rows.Add(doc.FilePath);
 				}
 			} catch (Exception ex) { Console.WriteLine(ex.Message); }
 		}
@@ -69,7 +70,7 @@ namespace SchoolManagement
 				if (idx < 0) return;
 				else
 				{
-					var editClass = new AddNewClass(int.Parse(gridviewSupplier.Rows[idx].Cells["ClassId"].Value.ToString()));
+					var editClass = new AddNewClass(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
 					editClass.ShowDialog();
 					LoadData(DataProvider.SchoolManagement.Classes.AsNoTracking().ToList());
 				}

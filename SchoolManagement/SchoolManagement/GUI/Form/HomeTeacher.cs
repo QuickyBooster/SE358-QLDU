@@ -93,5 +93,12 @@ namespace SchoolManagement
 			this.HomePanel.Controls.Clear();
 			this.HomePanel.Controls.Add(uCSettings_Teacher);
 		}
+
+		private void Log_out_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			Login login = new Login();
+			login.Show();
+		}
 	}
 }

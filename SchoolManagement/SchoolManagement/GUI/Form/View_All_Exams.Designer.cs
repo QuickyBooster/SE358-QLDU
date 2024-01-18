@@ -38,19 +38,16 @@
 			this.txtSearchStudent = new Guna.UI2.WinForms.Guna2TextBox();
 			this.btnSearch = new System.Windows.Forms.PictureBox();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-			this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.gridviewSupplier = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.File_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
 			this.lbTotalStudents = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.File_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
 			((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
 			this.guna2Panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.gridviewSupplier)).BeginInit();
@@ -74,12 +71,12 @@
 			this.btnAddStudent.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
 			this.btnAddStudent.ForeColor = System.Drawing.Color.White;
 			this.btnAddStudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btnAddStudent.Location = new System.Drawing.Point(753, 82);
+			this.btnAddStudent.Location = new System.Drawing.Point(690, 82);
 			this.btnAddStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnAddStudent.Name = "btnAddStudent";
-			this.btnAddStudent.Size = new System.Drawing.Size(204, 52);
+			this.btnAddStudent.Size = new System.Drawing.Size(267, 52);
 			this.btnAddStudent.TabIndex = 70;
-			this.btnAddStudent.Text = "Add new exam";
+			this.btnAddStudent.Text = "Add new document";
 			this.btnAddStudent.Click += new System.EventHandler(this.btnAddExam_Click);
 			// 
 			// txtSearchStudent
@@ -102,7 +99,7 @@
 			this.txtSearchStudent.Name = "txtSearchStudent";
 			this.txtSearchStudent.PasswordChar = '\0';
 			this.txtSearchStudent.PlaceholderForeColor = System.Drawing.Color.Gray;
-			this.txtSearchStudent.PlaceholderText = "Enter exam\'s name";
+			this.txtSearchStudent.PlaceholderText = "Enter document\'s name";
 			this.txtSearchStudent.SelectedText = "";
 			this.txtSearchStudent.Size = new System.Drawing.Size(315, 52);
 			this.txtSearchStudent.TabIndex = 69;
@@ -129,9 +126,7 @@
 			this.guna2Panel1.BorderColor = System.Drawing.Color.Gray;
 			this.guna2Panel1.BorderRadius = 35;
 			this.guna2Panel1.BorderThickness = 1;
-			this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
 			this.guna2Panel1.Controls.Add(this.gridviewSupplier);
-			this.guna2Panel1.Controls.Add(this.label3);
 			this.guna2Panel1.Controls.Add(this.label4);
 			this.guna2Panel1.FillColor = System.Drawing.Color.White;
 			this.guna2Panel1.Location = new System.Drawing.Point(32, 163);
@@ -139,22 +134,6 @@
 			this.guna2Panel1.Name = "guna2Panel1";
 			this.guna2Panel1.Size = new System.Drawing.Size(916, 476);
 			this.guna2Panel1.TabIndex = 71;
-			// 
-			// guna2ComboBox1
-			// 
-			this.guna2ComboBox1.AccessibleName = "";
-			this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.guna2ComboBox1.ItemHeight = 30;
-			this.guna2ComboBox1.Location = new System.Drawing.Point(606, 32);
-			this.guna2ComboBox1.Name = "guna2ComboBox1";
-			this.guna2ComboBox1.Size = new System.Drawing.Size(292, 36);
-			this.guna2ComboBox1.TabIndex = 44;
 			// 
 			// gridviewSupplier
 			// 
@@ -177,7 +156,6 @@
             this.Num,
             this.File_name,
             this.Download,
-            this.Edit,
             this.Delete});
 			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -228,50 +206,7 @@
 			this.gridviewSupplier.ThemeStyle.RowsStyle.Height = 40;
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.gridviewSupplier.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			// 
-			// Num
-			// 
-			this.Num.FillWeight = 200F;
-			this.Num.HeaderText = "Num";
-			this.Num.MinimumWidth = 6;
-			this.Num.Name = "Num";
-			// 
-			// File_name
-			// 
-			this.File_name.HeaderText = "File name";
-			this.File_name.MinimumWidth = 6;
-			this.File_name.Name = "File_name";
-			// 
-			// Download
-			// 
-			this.Download.FillWeight = 50F;
-			this.Download.HeaderText = "Download";
-			this.Download.MinimumWidth = 6;
-			this.Download.Name = "Download";
-			// 
-			// Edit
-			// 
-			this.Edit.HeaderText = "Edit";
-			this.Edit.MinimumWidth = 6;
-			this.Edit.Name = "Edit";
-			// 
-			// Delete
-			// 
-			this.Delete.HeaderText = "Delete";
-			this.Delete.MinimumWidth = 6;
-			this.Delete.Name = "Delete";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.label3.ForeColor = System.Drawing.Color.DarkGray;
-			this.label3.Location = new System.Drawing.Point(32, 52);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(287, 56);
-			this.label3.TabIndex = 42;
-			this.label3.Text = "These are list exams of class \r\n\r\n";
+			this.gridviewSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewSupplier_CellClick);
 			// 
 			// label4
 			// 
@@ -281,9 +216,9 @@
 			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.label4.Location = new System.Drawing.Point(32, 9);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(203, 30);
+			this.label4.Size = new System.Drawing.Size(318, 38);
 			this.label4.TabIndex = 41;
-			this.label4.Text = "Exam information ";
+			this.label4.Text = "Document information ";
 			// 
 			// guna2CustomGradientPanel1
 			// 
@@ -323,9 +258,9 @@
 			this.label1.ForeColor = System.Drawing.Color.White;
 			this.label1.Location = new System.Drawing.Point(49, 11);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(162, 35);
+			this.label1.Size = new System.Drawing.Size(249, 44);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Total exams ";
+			this.label1.Text = "Total document";
 			// 
 			// pictureBox1
 			// 
@@ -338,6 +273,34 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
+			// 
+			// Num
+			// 
+			this.Num.FillWeight = 52.94118F;
+			this.Num.HeaderText = "Num";
+			this.Num.MinimumWidth = 6;
+			this.Num.Name = "Num";
+			// 
+			// File_name
+			// 
+			this.File_name.FillWeight = 139.849F;
+			this.File_name.HeaderText = "File name";
+			this.File_name.MinimumWidth = 6;
+			this.File_name.Name = "File_name";
+			// 
+			// Download
+			// 
+			this.Download.FillWeight = 117.3609F;
+			this.Download.HeaderText = "Download";
+			this.Download.MinimumWidth = 6;
+			this.Download.Name = "Download";
+			// 
+			// Delete
+			// 
+			this.Delete.FillWeight = 139.849F;
+			this.Delete.HeaderText = "Delete";
+			this.Delete.MinimumWidth = 6;
+			this.Delete.Name = "Delete";
 			// 
 			// View_All_Exams
 			// 
@@ -374,18 +337,15 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearchStudent;
         private System.Windows.Forms.PictureBox btnSearch;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2DataGridView gridviewSupplier;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Num;
-        private System.Windows.Forms.DataGridViewTextBoxColumn File_name;
-        private System.Windows.Forms.DataGridViewButtonColumn Download;
-        private System.Windows.Forms.DataGridViewButtonColumn Edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.Label lbTotalStudents;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-    }
+		private System.Windows.Forms.DataGridViewTextBoxColumn Num;
+		private System.Windows.Forms.DataGridViewTextBoxColumn File_name;
+		private System.Windows.Forms.DataGridViewButtonColumn Download;
+		private System.Windows.Forms.DataGridViewButtonColumn Delete;
+	}
 }
