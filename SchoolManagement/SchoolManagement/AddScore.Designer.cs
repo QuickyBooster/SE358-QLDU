@@ -33,7 +33,6 @@
 			this.btn_Add = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
 			this.btn_Update = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btn_Delete = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btn_Cancel = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.label3 = new System.Windows.Forms.Label();
 			this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -68,12 +67,12 @@
 			this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_Add.ForeColor = System.Drawing.Color.White;
 			this.btn_Add.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btn_Add.Location = new System.Drawing.Point(473, 447);
+			this.btn_Add.Location = new System.Drawing.Point(421, 447);
 			this.btn_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btn_Add.Name = "btn_Add";
-			this.btn_Add.Size = new System.Drawing.Size(133, 43);
+			this.btn_Add.Size = new System.Drawing.Size(185, 43);
 			this.btn_Add.TabIndex = 164;
-			this.btn_Add.Text = "Add";
+			this.btn_Add.Text = "Update";
 			this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
 			// 
 			// guna2BorderlessForm1
@@ -107,27 +106,6 @@
 			this.btn_Update.TabIndex = 167;
 			this.btn_Update.Text = "Update";
 			// 
-			// btn_Delete
-			// 
-			this.btn_Delete.BackColor = System.Drawing.Color.Transparent;
-			this.btn_Delete.BorderRadius = 15;
-			this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btn_Delete.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btn_Delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-			this.btn_Delete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
-			this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_Delete.ForeColor = System.Drawing.Color.White;
-			this.btn_Delete.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btn_Delete.Location = new System.Drawing.Point(305, 447);
-			this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btn_Delete.Name = "btn_Delete";
-			this.btn_Delete.Size = new System.Drawing.Size(133, 43);
-			this.btn_Delete.TabIndex = 166;
-			this.btn_Delete.Text = "Delete";
-			// 
 			// btn_Cancel
 			// 
 			this.btn_Cancel.BackColor = System.Drawing.Color.Transparent;
@@ -145,9 +123,10 @@
 			this.btn_Cancel.Location = new System.Drawing.Point(138, 447);
 			this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btn_Cancel.Name = "btn_Cancel";
-			this.btn_Cancel.Size = new System.Drawing.Size(133, 43);
+			this.btn_Cancel.Size = new System.Drawing.Size(182, 43);
 			this.btn_Cancel.TabIndex = 165;
 			this.btn_Cancel.Text = "Cancel";
+			this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
 			// 
 			// label3
 			// 
@@ -243,7 +222,6 @@
 			this.label1.Size = new System.Drawing.Size(191, 35);
 			this.label1.TabIndex = 157;
 			this.label1.Text = "Add new Score";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// label4
 			// 
@@ -327,7 +305,6 @@
 			this.comboSemester.BorderColor = System.Drawing.Color.Gray;
 			this.comboSemester.BorderRadius = 12;
 			this.comboSemester.Cursor = System.Windows.Forms.Cursors.Default;
-			this.comboSemester.DataSource = this.subjectsBindingSource;
 			this.comboSemester.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
 			this.comboSemester.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboSemester.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(240)))));
@@ -341,6 +318,7 @@
 			this.comboSemester.Name = "comboSemester";
 			this.comboSemester.Size = new System.Drawing.Size(357, 36);
 			this.comboSemester.TabIndex = 205;
+			this.comboSemester.SelectedIndexChanged += new System.EventHandler(this.comboSemester_TextChanged);
 			// 
 			// subjectsBindingSource
 			// 
@@ -388,7 +366,6 @@
 			this.Controls.Add(this.guna2TextBox1);
 			this.Controls.Add(this.btn_Add);
 			this.Controls.Add(this.btn_Update);
-			this.Controls.Add(this.btn_Delete);
 			this.Controls.Add(this.btn_Cancel);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.guna2ControlBox3);
@@ -414,7 +391,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btn_Add;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Update;
-        private Guna.UI2.WinForms.Guna2GradientButton btn_Delete;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Cancel;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
