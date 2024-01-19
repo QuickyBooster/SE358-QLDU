@@ -129,7 +129,14 @@ namespace SchoolManagement
 					}
 				} else if (col ==5)
 				{
-					var classed = DataProvider.SchoolManagement.Classes.Find(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
+					if (int.Parse(gridviewSupplier.Rows[idx].Cells["Total"].Value.ToString())>0)
+					{
+						MessageBox.Show("Can't delete because still students in class");
+						return;
+					}
+
+                    Console.WriteLine(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString());
+                    var classed = DataProvider.SchoolManagement.Classes.Find(int.Parse(gridviewSupplier.Rows[idx].Cells["ID"].Value.ToString()));
 					if (classed != null)
 					{
 						DataProvider.SchoolManagement.Classes.Remove(classed);
@@ -142,7 +149,8 @@ namespace SchoolManagement
 							MessageBox.Show("Fail");
 						}
 						LoadData(DataProvider.SchoolManagement.Classes.ToList());
-					}
+					}else
+						MessageBox.Show("Fail");
 
 				}
 

@@ -37,8 +37,7 @@ namespace SchoolManagement
 			{
 				string path = Application.StartupPath;
 				path = path.Replace("\\bin\\Debug", "");
-                Console.WriteLine(path +"\\Resources\\" + user.Information.Image);
-                AvatarPic.Image = new System.Drawing.Bitmap(path +"\\Resources\\" + user.Information.Image);
+                AvatarPic.Image = new System.Drawing.Bitmap(path + user.Information.Image);
 			}
 		}
 

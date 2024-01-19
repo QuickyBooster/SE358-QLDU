@@ -29,7 +29,7 @@ namespace SchoolManagement
 				{
 					string path = Application.StartupPath;
 					path = path.Replace("\\bin\\Debug", "");
-					guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path + "\\Resources\\"+user.Information.Image);
+					guna2CirclePictureBox2.Image = new System.Drawing.Bitmap(path +user.Information.Image);
 				}
 			} catch (Exception e)
 			{
@@ -87,7 +87,7 @@ namespace SchoolManagement
 
 		private void Settings_Click(object sender, EventArgs e)
 		{
-			uCSettings_Cashier = new UCSettings_Cashier();
+			uCSettings_Cashier = new UCSettings_Cashier(user);
 			uCSettings_Cashier.Dock = DockStyle.Fill;
 			this.HomePanel.Controls.Clear();
 			this.HomePanel.Controls.Add(uCSettings_Cashier);
