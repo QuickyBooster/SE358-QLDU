@@ -123,6 +123,7 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel2.AutoRoundedCorners = true;
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 22;
@@ -137,6 +138,9 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.DimGray;
             this.guna2Panel1.BorderRadius = 40;
@@ -170,6 +174,7 @@
             // 
             // btnChangePass
             // 
+            this.btnChangePass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChangePass.BackColor = System.Drawing.Color.Transparent;
             this.btnChangePass.BorderRadius = 15;
             this.btnChangePass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -193,13 +198,14 @@
             // 
             // guna2Panel8
             // 
+            this.guna2Panel8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel8.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel8.BorderRadius = 15;
             this.guna2Panel8.BorderThickness = 2;
             this.guna2Panel8.Controls.Add(this.lbAddress);
             this.guna2Panel8.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Panel8.Location = new System.Drawing.Point(83, 331);
+            this.guna2Panel8.Location = new System.Drawing.Point(83, 343);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(840, 45);
@@ -220,11 +226,12 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(83, 309);
+            this.label8.Location = new System.Drawing.Point(83, 319);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 20);
@@ -233,6 +240,7 @@
             // 
             // guna2Panel7
             // 
+            this.guna2Panel7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.guna2Panel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel7.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel7.BorderRadius = 15;
@@ -260,6 +268,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
@@ -273,6 +282,7 @@
             // 
             // guna2Panel6
             // 
+            this.guna2Panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel6.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel6.BorderRadius = 15;
@@ -300,6 +310,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
@@ -313,6 +324,7 @@
             // 
             // guna2Panel5
             // 
+            this.guna2Panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel5.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel5.BorderRadius = 15;
@@ -340,6 +352,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
@@ -353,6 +366,7 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel4.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel4.BorderRadius = 15;
@@ -380,6 +394,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
@@ -393,6 +408,7 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel3.BorderRadius = 15;
@@ -420,6 +436,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
@@ -473,6 +490,7 @@
             // 
             // btnChangeProfile
             // 
+            this.btnChangeProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnChangeProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnChangeProfile.BorderRadius = 15;
             this.btnChangeProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

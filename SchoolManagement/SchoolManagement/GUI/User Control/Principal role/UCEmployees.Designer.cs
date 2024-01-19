@@ -84,6 +84,9 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.Gray;
             this.guna2Panel1.BorderRadius = 35;
@@ -105,6 +108,9 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gridviewSupplier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridviewSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(236)))), ((int)(((byte)(240)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
@@ -201,6 +207,7 @@
             // 
             // btnAddEmployee
             // 
+            this.btnAddEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddEmployee.BackColor = System.Drawing.Color.Transparent;
             this.btnAddEmployee.BorderRadius = 15;
             this.btnAddEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -225,7 +232,7 @@
             // 
             this.txtSearch.BackColor = System.Drawing.Color.Transparent;
             this.txtSearch.BorderColor = System.Drawing.Color.Gray;
-            this.txtSearch.BorderRadius = 10;
+            this.txtSearch.BorderRadius = 20;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearch.DefaultText = "";
             this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
