@@ -241,24 +241,24 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent1);
-            this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent2);
-            this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent3);
-            this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent4);
-            this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent5);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 184);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(450, 506);
-            this.flowLayoutPanel1.TabIndex = 16;
+            //this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            //| System.Windows.Forms.AnchorStyles.Left) 
+            //| System.Windows.Forms.AnchorStyles.Right)));
+            //this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent1);
+            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent2);
+            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent3);
+            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent4);
+            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent5);
+            //this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 184);
+            //this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            //this.flowLayoutPanel1.Size = new System.Drawing.Size(450, 506);
+            //this.flowLayoutPanel1.TabIndex = 16;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel2.Controls.Add(this.ucMiniEvent6);
@@ -270,7 +270,7 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(450, 506);
             this.flowLayoutPanel2.TabIndex = 18;
-            // 
+
             // label4
             // 
             this.label4.AutoSize = true;

@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectDetails));
             this.btn_Edit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbTotalSession = new System.Windows.Forms.Label();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbGrade = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbb_Teacher = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -51,17 +55,13 @@
             this.lbSubName = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.lbDescription = new System.Windows.Forms.Label();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbGrade = new System.Windows.Forms.Label();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbTotalSession = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
             this.panel_areacode.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_cover)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Edit
@@ -78,10 +78,10 @@
             this.btn_Edit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
             this.btn_Edit.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Edit.Location = new System.Drawing.Point(405, 604);
+            this.btn_Edit.Location = new System.Drawing.Point(405, 595);
             this.btn_Edit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(100, 35);
+            this.btn_Edit.Size = new System.Drawing.Size(110, 40);
             this.btn_Edit.TabIndex = 165;
             this.btn_Edit.Text = "Edit";
             // 
@@ -103,6 +103,60 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(602, 78);
             this.guna2Panel1.TabIndex = 164;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel5.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel5.BorderRadius = 15;
+            this.guna2Panel5.BorderThickness = 1;
+            this.guna2Panel5.Controls.Add(this.lbTotalSession);
+            this.guna2Panel5.FillColor = System.Drawing.Color.White;
+            this.guna2Panel5.Location = new System.Drawing.Point(310, 20);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(63, 38);
+            this.guna2Panel5.TabIndex = 170;
+            // 
+            // lbTotalSession
+            // 
+            this.lbTotalSession.AutoSize = true;
+            this.lbTotalSession.BackColor = System.Drawing.Color.Transparent;
+            this.lbTotalSession.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lbTotalSession.ForeColor = System.Drawing.Color.Gray;
+            this.lbTotalSession.Location = new System.Drawing.Point(12, 9);
+            this.lbTotalSession.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTotalSession.Name = "lbTotalSession";
+            this.lbTotalSession.Size = new System.Drawing.Size(33, 19);
+            this.lbTotalSession.TabIndex = 49;
+            this.lbTotalSession.Text = "000";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel4.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Panel4.BorderRadius = 15;
+            this.guna2Panel4.BorderThickness = 1;
+            this.guna2Panel4.Controls.Add(this.lbGrade);
+            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(87)))), ((int)(((byte)(254)))));
+            this.guna2Panel4.Location = new System.Drawing.Point(67, 20);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(114, 38);
+            this.guna2Panel4.TabIndex = 169;
+            // 
+            // lbGrade
+            // 
+            this.lbGrade.AutoSize = true;
+            this.lbGrade.BackColor = System.Drawing.Color.Transparent;
+            this.lbGrade.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lbGrade.ForeColor = System.Drawing.Color.White;
+            this.lbGrade.Location = new System.Drawing.Point(12, 9);
+            this.lbGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbGrade.Name = "lbGrade";
+            this.lbGrade.Size = new System.Drawing.Size(46, 19);
+            this.lbGrade.TabIndex = 49;
+            this.lbGrade.Text = "Grade";
             // 
             // label5
             // 
@@ -199,10 +253,10 @@
             this.btn_OK.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OK.ForeColor = System.Drawing.Color.White;
             this.btn_OK.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_OK.Location = new System.Drawing.Point(194, 604);
+            this.btn_OK.Location = new System.Drawing.Point(194, 595);
             this.btn_OK.Margin = new System.Windows.Forms.Padding(2);
             this.btn_OK.Name = "btn_OK";
-            this.btn_OK.Size = new System.Drawing.Size(100, 35);
+            this.btn_OK.Size = new System.Drawing.Size(110, 40);
             this.btn_OK.TabIndex = 166;
             this.btn_OK.Text = "OK";
             // 
@@ -243,7 +297,7 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(600, 24);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(621, 11);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(34, 24);
@@ -259,7 +313,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(634, 24);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(655, 11);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(34, 24);
@@ -375,60 +429,6 @@
             this.lbDescription.TabIndex = 49;
             this.lbDescription.Text = "Description";
             // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel4.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel4.BorderRadius = 15;
-            this.guna2Panel4.BorderThickness = 1;
-            this.guna2Panel4.Controls.Add(this.lbGrade);
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(87)))), ((int)(((byte)(254)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(67, 20);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(114, 38);
-            this.guna2Panel4.TabIndex = 169;
-            // 
-            // lbGrade
-            // 
-            this.lbGrade.AutoSize = true;
-            this.lbGrade.BackColor = System.Drawing.Color.Transparent;
-            this.lbGrade.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lbGrade.ForeColor = System.Drawing.Color.White;
-            this.lbGrade.Location = new System.Drawing.Point(12, 9);
-            this.lbGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbGrade.Name = "lbGrade";
-            this.lbGrade.Size = new System.Drawing.Size(46, 19);
-            this.lbGrade.TabIndex = 49;
-            this.lbGrade.Text = "Grade";
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel5.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Panel5.BorderRadius = 15;
-            this.guna2Panel5.BorderThickness = 1;
-            this.guna2Panel5.Controls.Add(this.lbTotalSession);
-            this.guna2Panel5.FillColor = System.Drawing.Color.White;
-            this.guna2Panel5.Location = new System.Drawing.Point(310, 20);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(63, 38);
-            this.guna2Panel5.TabIndex = 170;
-            // 
-            // lbTotalSession
-            // 
-            this.lbTotalSession.AutoSize = true;
-            this.lbTotalSession.BackColor = System.Drawing.Color.Transparent;
-            this.lbTotalSession.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.lbTotalSession.ForeColor = System.Drawing.Color.Gray;
-            this.lbTotalSession.Location = new System.Drawing.Point(12, 9);
-            this.lbTotalSession.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbTotalSession.Name = "lbTotalSession";
-            this.lbTotalSession.Size = new System.Drawing.Size(33, 19);
-            this.lbTotalSession.TabIndex = 49;
-            this.lbTotalSession.Text = "000";
-            // 
             // SubjectDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,16 +457,16 @@
             this.Text = "SubjectDetails";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel5.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
             this.panel_areacode.ResumeLayout(false);
             this.panel_areacode.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_cover)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2Panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
