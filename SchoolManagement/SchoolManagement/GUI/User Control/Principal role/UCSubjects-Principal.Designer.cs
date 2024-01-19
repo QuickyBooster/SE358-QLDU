@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.lbTotaSubjects = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,10 +43,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gridviewSubject = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
             this.Subject_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sub_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Teacher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -70,8 +70,11 @@
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(53, 45);
             this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.BorderRadius = 36;
+            this.guna2CustomGradientPanel1.ShadowDecoration.Color = System.Drawing.Color.Silver;
+            this.guna2CustomGradientPanel1.ShadowDecoration.Enabled = true;
             this.guna2CustomGradientPanel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 10, 10);
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1018, 49);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1018, 51);
             this.guna2CustomGradientPanel1.TabIndex = 66;
             // 
             // lbTotaSubjects
@@ -79,7 +82,7 @@
             this.lbTotaSubjects.AutoSize = true;
             this.lbTotaSubjects.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lbTotaSubjects.ForeColor = System.Drawing.Color.White;
-            this.lbTotaSubjects.Location = new System.Drawing.Point(257, 11);
+            this.lbTotaSubjects.Location = new System.Drawing.Point(257, 13);
             this.lbTotaSubjects.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTotaSubjects.Name = "lbTotaSubjects";
             this.lbTotaSubjects.Size = new System.Drawing.Size(56, 25);
@@ -91,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 11);
+            this.label1.Location = new System.Drawing.Point(26, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 25);
@@ -126,7 +129,7 @@
             this.btnAddSubject.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnAddSubject.ForeColor = System.Drawing.Color.White;
             this.btnAddSubject.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnAddSubject.Location = new System.Drawing.Point(901, 134);
+            this.btnAddSubject.Location = new System.Drawing.Point(901, 127);
             this.btnAddSubject.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddSubject.Name = "btnAddSubject";
             this.btnAddSubject.Size = new System.Drawing.Size(170, 47);
@@ -138,7 +141,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Image = global::SchoolManagement.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(53, 134);
+            this.btnSearch.Location = new System.Drawing.Point(53, 127);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(47, 47);
@@ -161,7 +164,7 @@
             this.txtSearchSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchSubject.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txtSearchSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchSubject.Location = new System.Drawing.Point(115, 134);
+            this.txtSearchSubject.Location = new System.Drawing.Point(115, 127);
             this.txtSearchSubject.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.txtSearchSubject.Name = "txtSearchSubject";
             this.txtSearchSubject.PasswordChar = '\0';
@@ -178,7 +181,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(24, 38);
+            this.label3.Location = new System.Drawing.Point(24, 36);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(406, 21);
@@ -198,58 +201,62 @@
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(54, 226);
+            this.guna2Panel1.Location = new System.Drawing.Point(55, 210);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1017, 529);
+            this.guna2Panel1.ShadowDecoration.BorderRadius = 36;
+            this.guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.Silver;
+            this.guna2Panel1.ShadowDecoration.Enabled = true;
+            this.guna2Panel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(5, 5, 15, 15);
+            this.guna2Panel1.Size = new System.Drawing.Size(1017, 549);
             this.guna2Panel1.TabIndex = 70;
             // 
             // gridviewSubject
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.gridviewSubject.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridviewSubject.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridviewSubject.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewSubject.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(236)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewSubject.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridviewSubject.ColumnHeadersHeight = 38;
             this.gridviewSubject.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gridviewSubject.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Subject_ID,
             this.Sub_name,
             this.Teacher});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridviewSubject.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(82)))), ((int)(((byte)(254)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridviewSubject.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridviewSubject.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridviewSubject.Location = new System.Drawing.Point(3, 68);
+            this.gridviewSubject.Location = new System.Drawing.Point(3, 67);
             this.gridviewSubject.Name = "gridviewSubject";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewSubject.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewSubject.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gridviewSubject.RowHeadersVisible = false;
             this.gridviewSubject.RowHeadersWidth = 50;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewSubject.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewSubject.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gridviewSubject.RowTemplate.Height = 40;
             this.gridviewSubject.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewSubject.Size = new System.Drawing.Size(1011, 423);
+            this.gridviewSubject.Size = new System.Drawing.Size(1011, 461);
             this.gridviewSubject.TabIndex = 43;
             this.gridviewSubject.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gridviewSubject.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -274,19 +281,6 @@
             this.gridviewSubject.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gridviewSubject.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewSubject_CellDoubleClick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(24, 7);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 25);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Subjects information";
-            // 
             // Subject_ID
             // 
             this.Subject_ID.HeaderText = "Subject ID";
@@ -303,6 +297,19 @@
             this.Teacher.FillWeight = 150F;
             this.Teacher.HeaderText = "Teacher";
             this.Teacher.Name = "Teacher";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(24, 7);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(189, 25);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "Subjects information";
             // 
             // UCSubjects_Principal
             // 

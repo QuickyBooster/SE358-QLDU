@@ -219,7 +219,7 @@
             this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.ForeColor = System.Drawing.Color.White;
             this.btn_Add.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Add.Location = new System.Drawing.Point(323, 532);
+            this.btn_Add.Location = new System.Drawing.Point(324, 515);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(125, 39);
@@ -348,7 +348,7 @@
             this.btn_Update.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.White;
             this.btn_Update.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btn_Update.Location = new System.Drawing.Point(323, 532);
+            this.btn_Update.Location = new System.Drawing.Point(324, 515);
             this.btn_Update.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(125, 39);

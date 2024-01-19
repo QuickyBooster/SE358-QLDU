@@ -44,24 +44,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            //this.ucMiniEvent6 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent7 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent8 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent9 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent10 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent1 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent2 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent3 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent4 = new SchoolManagement.UCMiniEvent();
-            //this.ucMiniEvent5 = new SchoolManagement.UCMiniEvent();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.guna2CustomGradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -241,128 +229,34 @@
             // 
             // flowLayoutPanel1
             // 
-            //this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            //| System.Windows.Forms.AnchorStyles.Left) 
-            //| System.Windows.Forms.AnchorStyles.Right)));
-            //this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent1);
-            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent2);
-            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent3);
-            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent4);
-            //this.flowLayoutPanel1.Controls.Add(this.ucMiniEvent5);
-            //this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 184);
-            //this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            //this.flowLayoutPanel1.Size = new System.Drawing.Size(450, 506);
-            //this.flowLayoutPanel1.TabIndex = 16;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 19;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel2.Controls.Add(this.ucMiniEvent6);
-            this.flowLayoutPanel2.Controls.Add(this.ucMiniEvent7);
-            this.flowLayoutPanel2.Controls.Add(this.ucMiniEvent8);
-            this.flowLayoutPanel2.Controls.Add(this.ucMiniEvent9);
-            this.flowLayoutPanel2.Controls.Add(this.ucMiniEvent10);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(590, 184);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(623, 198);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(450, 506);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(450, 547);
             this.flowLayoutPanel2.TabIndex = 18;
-
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(585, 141);
+            this.label4.Location = new System.Drawing.Point(618, 165);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 25);
             this.label4.TabIndex = 17;
             this.label4.Text = "Cashier";
-            // 
-            // ucMiniEvent6
-            // 
-            //this.ucMiniEvent6.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent6.Location = new System.Drawing.Point(3, 3);
-            //this.ucMiniEvent6.Name = "ucMiniEvent6";
-            //this.ucMiniEvent6.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent6.TabIndex = 0;
-            //// 
-            //// ucMiniEvent7
-            //// 
-            //this.ucMiniEvent7.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent7.Location = new System.Drawing.Point(3, 104);
-            //this.ucMiniEvent7.Name = "ucMiniEvent7";
-            //this.ucMiniEvent7.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent7.TabIndex = 1;
-            //// 
-            //// ucMiniEvent8
-            //// 
-            //this.ucMiniEvent8.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent8.Location = new System.Drawing.Point(3, 205);
-            //this.ucMiniEvent8.Name = "ucMiniEvent8";
-            //this.ucMiniEvent8.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent8.TabIndex = 2;
-            //// 
-            //// ucMiniEvent9
-            //// 
-            //this.ucMiniEvent9.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent9.Location = new System.Drawing.Point(3, 306);
-            //this.ucMiniEvent9.Name = "ucMiniEvent9";
-            //this.ucMiniEvent9.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent9.TabIndex = 3;
-            //// 
-            //// ucMiniEvent10
-            //// 
-            //this.ucMiniEvent10.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent10.Location = new System.Drawing.Point(3, 407);
-            //this.ucMiniEvent10.Name = "ucMiniEvent10";
-            //this.ucMiniEvent10.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent10.TabIndex = 4;
-            //// 
-            //// ucMiniEvent1
-            //// 
-            //this.ucMiniEvent1.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent1.Location = new System.Drawing.Point(3, 3);
-            //this.ucMiniEvent1.Name = "ucMiniEvent1";
-            //this.ucMiniEvent1.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent1.TabIndex = 0;
-            //// 
-            //// ucMiniEvent2
-            //// 
-            //this.ucMiniEvent2.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent2.Location = new System.Drawing.Point(3, 104);
-            //this.ucMiniEvent2.Name = "ucMiniEvent2";
-            //this.ucMiniEvent2.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent2.TabIndex = 1;
-            //// 
-            //// ucMiniEvent3
-            //// 
-            //this.ucMiniEvent3.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent3.Location = new System.Drawing.Point(3, 205);
-            //this.ucMiniEvent3.Name = "ucMiniEvent3";
-            //this.ucMiniEvent3.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent3.TabIndex = 2;
-            //// 
-            //// ucMiniEvent4
-            //// 
-            //this.ucMiniEvent4.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent4.Location = new System.Drawing.Point(3, 306);
-            //this.ucMiniEvent4.Name = "ucMiniEvent4";
-            //this.ucMiniEvent4.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent4.TabIndex = 3;
-            //// 
-            //// ucMiniEvent5
-            //// 
-            //this.ucMiniEvent5.BackColor = System.Drawing.Color.Transparent;
-            //this.ucMiniEvent5.Location = new System.Drawing.Point(3, 407);
-            //this.ucMiniEvent5.Name = "ucMiniEvent5";
-            //this.ucMiniEvent5.Size = new System.Drawing.Size(450, 95);
-            //this.ucMiniEvent5.TabIndex = 4;
             // 
             // UCHome
             // 
@@ -389,8 +283,6 @@
             this.guna2CustomGradientPanel3.ResumeLayout(false);
             this.guna2CustomGradientPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
