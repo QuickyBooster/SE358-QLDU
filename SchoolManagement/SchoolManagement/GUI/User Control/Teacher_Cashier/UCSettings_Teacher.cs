@@ -30,14 +30,15 @@ namespace SchoolManagement
 			lbUserName2.Text = user.Username;
 			lb_Name.Text = user.FulName;
 			lbUserName.Text = user.FulName;
-			lbEmail.Text = user.Email;
+			lbEmail2.Text = user.Email;
 			lbRole.Text = user.Role.RoleName;
 
 			if (user.Information.Image != null)
 			{
 				string path = Application.StartupPath;
 				path = path.Replace("\\bin\\Debug", "");
-                AvatarPic.Image = new System.Drawing.Bitmap(path + user.Information.Image);
+                Console.WriteLine(path +"\\Resources\\" + user.Information.Image);
+                AvatarPic.Image = new System.Drawing.Bitmap(path +"\\Resources\\" + user.Information.Image);
 			}
 		}
 
