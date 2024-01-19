@@ -201,7 +201,7 @@ namespace SchoolManagement
             }
             else
             {
-                MessageBox.Show("Updated failed", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Updated failed, nothing to update", "Student information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

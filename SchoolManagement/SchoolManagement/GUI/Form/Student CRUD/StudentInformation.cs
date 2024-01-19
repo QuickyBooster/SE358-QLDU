@@ -149,6 +149,14 @@ namespace SchoolManagement
 
                 int i = DataProvider.SchoolManagement.SaveChanges();   
 
+                if (i > 0)
+                {
+                    MessageBox.Show("Changed image successfully", "Student Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }    
+                else
+                {     
+                    MessageBox.Show("You chose the same image", "Student Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

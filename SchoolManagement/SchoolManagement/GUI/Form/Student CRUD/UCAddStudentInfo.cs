@@ -129,6 +129,11 @@ namespace SchoolManagement
                 MessageBox.Show("Fill all information", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (cbFemale.Checked == true && checkbox_male.Checked == true)
+            {
+                MessageBox.Show("Choosing 1 gender for student", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (comboGrade.SelectedItem == null)
             {
                 MessageBox.Show("Fill all information", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -210,6 +215,11 @@ namespace SchoolManagement
                 MessageBox.Show("Fill all information", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (cbFemale.Checked == true && checkbox_male.Checked == true)
+            {
+                MessageBox.Show("Choosing 1 gender for student", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (comboGrade.SelectedItem == null)
             {
                 MessageBox.Show("Fill all information", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -241,7 +251,7 @@ namespace SchoolManagement
             }    
             else
             {
-                MessageBox.Show("Updated personal information failed", "Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Updated personal information failed, nothing to update", "Student Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
