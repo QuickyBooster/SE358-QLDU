@@ -302,10 +302,10 @@ namespace SchoolManagement
 
                 string fileName = Path.GetFileName(selectedFilePath);
                 fileName = (DataProvider.SchoolManagement.Information.ToList().Count + 1).ToString() + fileName;
-                //string destinationPath = Path.Combine(resourceFolderPath, fileName);
+                string destinationPath = Path.Combine(resourceFolderPath, fileName);
 
-                //destinationPath = destinationPath.Replace("\\bin\\Debug", "");
-                //destinationPathOfImage = destinationPath;
+                destinationPath = destinationPath.Replace("\\bin\\Debug", "");
+                destinationPathOfImage = destinationPath;
                 selectedPath = selectedFilePath;
                 path = "\\Resources\\" + fileName;
                 picture_product.Image = new System.Drawing.Bitmap(selectedPath);
